@@ -698,6 +698,10 @@ hy-drawer {
     margin-right: 2rem;
     max-width: 80rem;
   }
+  
+  #instafeed .project-card {
+    flex: 0 1 31%;
+  }
 }
 
 
@@ -731,6 +735,10 @@ hy-drawer {
     margin-left: 35rem;
     margin-right: 2rem;
     max-width: 95rem;
+  }
+  
+  #instafeed .project-card {
+    flex: 0 1 31%;
   }
 
 }
