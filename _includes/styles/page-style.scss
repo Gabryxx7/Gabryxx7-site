@@ -4,61 +4,121 @@
 {% assign color       = include.color       | default:'#4fb1ba' %}
 {% assign theme_color = include.theme_color | default:'#193747' %}
 
+// // 0
+// .content a:not(.btn) {
+//   color: var(--title-text);
+//   border-color: fade-out(var(--title-text), 0.8);
+// }
+
+// // 1
+// .content a:not(.btn):hover {
+//   border-color: var(--title-text);
+// }
+
+// // 2
+// :focus {
+//   outline-color: var(--title-text)!important;
+// }
+
+// // 3
+// .btn-primary {
+//   color: #fff;
+//   background-color: var(--title-text);
+//   border-color: var(--title-text);
+// }
+
+// // 4
+// .btn-primary:focus, .btn-primary.focus, .form-control:focus, .form-control.focus {
+//   box-shadow: 0 0 0 3px rgba(var(--title-text), .5);
+// }
+
+// // 5
+// .btn-primary:hover, .btn-primary.hover {
+//   color: #fff;
+//   background-color: darken(var(--title-text), 7.5%);
+//   border-color: darken(var(--title-text), 7.5%);
+// }
+
+// // 6
+// .btn-primary:disabled, .btn-primary.disabled {
+//   color: #fff;
+//   background-color: var(--title-text);
+//   border-color: var(--title-text);
+// }
+
+// // 7
+// .btn-primary:active, .btn-primary.active {
+//   color: #fff;
+//   background-color: darken(var(--title-text), 7.5%);
+//   border-color: darken(var(--title-text), 7.5%);
+// }
+
+// ::selection {
+//   color: #fff;
+//   background: var(--title-text);
+// }
+
+// ::-moz-selection {
+//   color: #fff;
+//   background: var(--title-text);
+// }
+
+
 // 0
 .content a:not(.btn) {
-  color: {{ color }};
-  border-color: fade-out({{ color }}, 0.8);
+  color: var(--title-text);
+  border-color: var(--title-text);
 }
 
 // 1
 .content a:not(.btn):hover {
-  border-color: {{ color }};
+  border-color: var(--title-text);
 }
 
 // 2
 :focus {
-  outline-color: {{ color }}!important;
+  outline-color: var(--title-text)!important;
 }
 
 // 3
 .btn-primary {
   color: #fff;
-  background-color: {{ color }};
-  border-color: {{ color }};
+  background-color: var(--title-text);
+  border-color: var(--title-text);
 }
 
 // 4
 .btn-primary:focus, .btn-primary.focus, .form-control:focus, .form-control.focus {
-  box-shadow: 0 0 0 3px rgba({{ color }}, .5);
+  box-shadow: 0 0 0 3px rgba(var(--title-text), .5);
 }
 
 // 5
 .btn-primary:hover, .btn-primary.hover {
   color: #fff;
-  background-color: darken({{ color }}, 7.5%);
-  border-color: darken({{ color }}, 7.5%);
+  background-color: var(--title-text);
+  border-color: var(--title-text);
 }
 
 // 6
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: {{ color }};
-  border-color: {{ color }};
+  background-color: var(--title-text);
+  border-color: var(--title-text);
 }
 
 // 7
 .btn-primary:active, .btn-primary.active {
   color: #fff;
-  background-color: darken({{ color }}, 7.5%);
-  border-color: darken({{ color }}, 7.5%);
+  background-color: var(--title-text);
+  border-color: var(--title-text);
 }
 
 ::selection {
   color: #fff;
-  background: {{ color }};
+  background: var(--title-text);
 }
 
 ::-moz-selection {
   color: #fff;
-  background: {{ color }};
+  background: var(--title-text);
 }
