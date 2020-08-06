@@ -1,7 +1,7 @@
 ---
 layout: photos
 title: Photography
-fullscreen: true
+fullscreen: false
 #include:
 #     js:
 #         - /assets/gabryxx7/js/instafeed.min.js
