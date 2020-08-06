@@ -52,15 +52,24 @@ photos: true
 {% if page.photos %}
     {% assign photolist = site.data.photos-list %}
     {% for photo in photolist.photos %}
-        <article class='project-card'>
-            <div class='project-card-img img'>
-                <img data-ignore src='{{ photolist.preview_folder }}{{ photo.file }}' loading='lazy'/>
-            </div>
-            <a href='{{ photo.url }}' class='no-hover no-print-link project-card-caption'>
-                <div class='img-title'> {{ photo.title }}</div>
-                <div class='img-descr'> {{ photo.caption }} </div>
-            </a>
-        </article>        
+        {% if photo.file %}
+            <article class='project-card'>
+                <div class='project-card-img img'>
+                    <img data-ignore src='{{ photolist.preview_folder }}{{ photo.file }}' loading='lazy'/>
+                </div>
+        {% else %}  
+            <article class='project-card multiple'>
+                <div class='project-card-img img'>
+                {% for file in photo.files %}
+                    <img data-ignore src='{{ photolist.preview_folder }}{{ file }}' loading='lazy' style="width: {{ 100 | minus: photo.files.size | divided_by: photo.files.size }}%"/>
+                {% endfor %}    
+                </div>
+        {% endif %}
+        <a href='{{ photo.url }}' class='no-hover no-print-link project-card-caption'>
+            <div class='img-title'> {{ photo.title }}</div>
+            <div class='img-descr'> {{ photo.caption }} </div>
+        </a>     
+    </article>  
     {% endfor %}    
 {% endif %}
     </div>
