@@ -321,7 +321,6 @@ div#instafeed {
 @media screen {
   body.light-mode {
     --text-muted: #888;
-    --title-text: rgb(41, 47, 53);
     --gray-bg: rgba(0, 0, 0, 0.025);
     --gray-text: #666;
     --menu-text: #bbb;
@@ -332,7 +331,6 @@ div#instafeed {
 
   body.dark-mode {
     --text-muted: rgba(255, 255, 255, .5);
-    --title-text: rgb(174, 194, 215);
     --gray-bg: rgba(255, 255, 255, .033);
     --gray-text: rgba(255, 255, 255, .625);
     --menu-text: rgba(255, 255, 255, .25);

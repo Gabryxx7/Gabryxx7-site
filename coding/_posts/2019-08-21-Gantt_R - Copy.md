@@ -4,7 +4,8 @@ title: Gantt charts in R
 excerpt_separator: <!--more-->
 # image: /assets/img/blog/hydejack-8.png
 ---
-## Title test
+## Title test2
+
 list:
 - list1
 - list 2
@@ -13,7 +14,6 @@ list:
 
 The blog part is a WIP, this is a test
 <!--more-->
-
 {% comment %}
 {% highlight R linenos %}
 {% endhighlight %}

@@ -27,6 +27,8 @@ layout: compress
 {% assign image       = site.accent_image | default:'/assets/img/sidebar-bg.jpg' %}
 {% assign color       = site.accent_color | default:'#4fb1ba' %}
 {% assign theme_color = site.theme_color  | default:'#193747' %}
+{% assign light_text_color       = site.light_text_color | default:'#4fb1ba' %}
+{% assign dark_text_color        = site.dark_text_color  | default:'#193747' %}
 
 {% if page.accent_image %}{% assign image       = page.accent_image %}{% endif %}
 {% if page.accent_color %}{% assign color       = page.accent_color %}{% endif %}

@@ -1,124 +1,130 @@
 // These styles interact with JavsScript!
 // Their ordering MUST NOT be changed. See `_js/cross-fader.js`!
 
-{% assign color       = include.color       | default:'#4fb1ba' %}
-{% assign theme_color = include.theme_color | default:'#193747' %}
+{% assign light_text_color   = include.light_text_color  | default:'#4fb1ba' %}
+{% assign dark_text_color    = include.dark_text_color   | default:'#193747' %}
 
-// // 0
-// .content a:not(.btn) {
-//   color: var(--title-text);
-//   border-color: fade-out(var(--title-text), 0.8);
-// }
-
-// // 1
-// .content a:not(.btn):hover {
-//   border-color: var(--title-text);
-// }
-
-// // 2
-// :focus {
-//   outline-color: var(--title-text)!important;
-// }
-
-// // 3
-// .btn-primary {
-//   color: #fff;
-//   background-color: var(--title-text);
-//   border-color: var(--title-text);
-// }
-
-// // 4
-// .btn-primary:focus, .btn-primary.focus, .form-control:focus, .form-control.focus {
-//   box-shadow: 0 0 0 3px rgba(var(--title-text), .5);
-// }
-
-// // 5
-// .btn-primary:hover, .btn-primary.hover {
-//   color: #fff;
-//   background-color: darken(var(--title-text), 7.5%);
-//   border-color: darken(var(--title-text), 7.5%);
-// }
-
-// // 6
-// .btn-primary:disabled, .btn-primary.disabled {
-//   color: #fff;
-//   background-color: var(--title-text);
-//   border-color: var(--title-text);
-// }
-
-// // 7
-// .btn-primary:active, .btn-primary.active {
-//   color: #fff;
-//   background-color: darken(var(--title-text), 7.5%);
-//   border-color: darken(var(--title-text), 7.5%);
-// }
-
-// ::selection {
-//   color: #fff;
-//   background: var(--title-text);
-// }
-
-// ::-moz-selection {
-//   color: #fff;
-//   background: var(--title-text);
-// }
+body.light-mode{
+  // 0
+  .content a:not(.btn) {
+    color: {{ light_text_color }};
+    border-color: fade-out({{ light_text_color }}, 0.8);
+  }
 
 
-// 0
-.content a:not(.btn) {
-  color: var(--title-text);
-  border-color: var(--title-text);
+  // 1
+  .content a:not(.btn):hover {
+    border-color: {{ light_text_color }};
+  }
+
+  // 2
+  :focus {
+    outline-color: {{ light_text_color }}!important;
+  }
+
+  // 3
+  .btn-primary {
+    color: #fff;
+    background-color: {{ light_text_color }};
+    border-color: {{ light_text_color }};
+  }
+
+  // 4
+  .btn-primary:focus, .btn-primary.focus, .form-control:focus, .form-control.focus {
+    box-shadow: 0 0 0 3px rgba({{ light_text_color }}, .5);
+  }
+
+  // 5
+  .btn-primary:hover, .btn-primary.hover {
+    color: #fff;
+    background-color: darken({{ light_text_color }}, 7.5%);
+    border-color: darken({{ light_text_color }}, 7.5%);
+  }
+
+  // 6
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: {{ light_text_color }};
+    border-color: {{ light_text_color }};
+  }
+
+  // 7
+  .btn-primary:active, .btn-primary.active {
+    color: #fff;
+    background-color: darken({{ light_text_color }}, 7.5%);
+    border-color: darken({{ light_text_color }}, 7.5%);
+  }
+
+  ::selection {
+    color: #fff;
+    background: {{ light_text_color }};
+  }
+
+  ::-moz-selection {
+    color: #fff;
+    background: {{ light_text_color }};
+  }
 }
 
-// 1
-.content a:not(.btn):hover {
-  border-color: var(--title-text);
-}
 
-// 2
-:focus {
-  outline-color: var(--title-text)!important;
-}
+body.dark-mode{
+  // 0
+  .content a:not(.btn) {
+    color: {{ dark_text_color }};
+    border-color: fade-out({{ dark_text_color }}, 0.8);
+  }
 
-// 3
-.btn-primary {
-  color: #fff;
-  background-color: var(--title-text);
-  border-color: var(--title-text);
-}
 
-// 4
-.btn-primary:focus, .btn-primary.focus, .form-control:focus, .form-control.focus {
-  box-shadow: 0 0 0 3px rgba(var(--title-text), .5);
-}
+  // 1
+  .content a:not(.btn):hover {
+    border-color: {{ dark_text_color }};
+  }
 
-// 5
-.btn-primary:hover, .btn-primary.hover {
-  color: #fff;
-  background-color: var(--title-text);
-  border-color: var(--title-text);
-}
+  // 2
+  :focus {
+    outline-color: {{ dark_text_color }}!important;
+  }
 
-// 6
-.btn-primary:disabled, .btn-primary.disabled {
-  color: #fff;
-  background-color: var(--title-text);
-  border-color: var(--title-text);
-}
+  // 3
+  .btn-primary {
+    color: #fff;
+    background-color: {{ dark_text_color }};
+    border-color: {{ dark_text_color }};
+  }
 
-// 7
-.btn-primary:active, .btn-primary.active {
-  color: #fff;
-  background-color: var(--title-text);
-  border-color: var(--title-text);
-}
+  // 4
+  .btn-primary:focus, .btn-primary.focus, .form-control:focus, .form-control.focus {
+    box-shadow: 0 0 0 3px rgba({{ dark_text_color }}, .5);
+  }
 
-::selection {
-  color: #fff;
-  background: var(--title-text);
-}
+  // 5
+  .btn-primary:hover, .btn-primary.hover {
+    color: #fff;
+    background-color: darken({{ dark_text_color }}, 7.5%);
+    border-color: darken({{ dark_text_color }}, 7.5%);
+  }
 
-::-moz-selection {
-  color: #fff;
-  background: var(--title-text);
+  // 6
+  .btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: {{ dark_text_color }};
+    border-color: {{ dark_text_color }};
+  }
+
+  // 7
+  .btn-primary:active, .btn-primary.active {
+    color: #fff;
+    background-color: darken({{ dark_text_color }}, 7.5%);
+    border-color: darken({{ dark_text_color }}, 7.5%);
+  }
+
+  ::selection {
+    color: #fff;
+    background: {{ dark_text_color }};
+  }
+
+  ::-moz-selection {
+    color: #fff;
+    background: {{ dark_text_color }};
+  }
 }

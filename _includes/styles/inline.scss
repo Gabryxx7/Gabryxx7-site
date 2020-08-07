@@ -56,7 +56,9 @@ html { font-family: $font-family; }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: $font-family-heading; }
 
 {% if site.hydejack.no_page_style %}
-  {% assign color       = site.accent_color | default:'#4fb1ba' %}
-  {% assign theme_color = site.theme_color  | default:'#193747' %}
-  {% include styles/page-style.scss color=color theme_color=theme_color %}
+{% assign color       = site.accent_color | default:'#4fb1ba' %}
+{% assign theme_color = site.theme_color  | default:'#193747' %}
+{% assign light_text_color       = site.light_text_color | default:'#4fb1ba' %}
+{% assign dark_text_color = site.dark_text_color  | default:'#193747' %}
+  {% include styles/page-style.scss color=color theme_color=theme_color light_text_color=light_text_color dark_text_color=dark_text_color %}
 {% endif %}

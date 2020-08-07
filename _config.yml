@@ -99,9 +99,12 @@ accent_color:          rgb(41, 47, 53)
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
 #theme_color:           rgb(29,53,64) #old one
-#theme_color:           rgb(42,84,104)
+# theme_color:           rgb(42,84,104)
 #theme_color:           rgb(61, 71, 82)
-theme_color:           rgb(41, 47, 53)
+#theme_color:           rgb(41, 47, 53)
+
+light_text_color:        rgb(41, 47, 53)
+dark_text_color:         rgb(174, 194, 215)
 
 # The string encoding which fonts to fetch from Google Fonts.
 # See: <https://hydejack.com/docs/configuration/>
@@ -342,8 +345,8 @@ relative_links:
   collections:         true
 
 titles_from_headings:
-  strip_title:         true
-  collections:         true
+  strip_title:         false
+  collections:         false
   
 replace_img:
   re_img:              <img\s*(?<attrs>.*?)\s*/>
