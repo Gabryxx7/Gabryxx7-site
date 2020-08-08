@@ -2,19 +2,19 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  # dateformats: "%F"
-  dateformats: "%b %Y"
+  # dateformats: "%b %Y" # Moved to strings.yml/date_formats
   name: "Gabriele Marini"
   nationality: "Italian"
   dob: 12-09-1992
   dob-long: 12th of September 1992
   label: "PhD Candidate and Programmer"
   picture: "/assets/icons/icon-small.jpg"
-  email: ""
+  email: "giaga7@gmail.com"
   phone: "(+61) 048 1149376"
   website: "http://gabryxx7.com"
   summary: |
     Computer Scientist, researcher, photographer and traveller. Currently pursuing a PhD in Computing and Information System at the University of Melbourne. 
+    [Download my Resume here](/assets/Resume.pdf)
   location:
     address: "168, The University of Melbourne, Grattan St, Parkville"
     postalCode: "VIC 3052"
@@ -43,26 +43,32 @@ basics:
 work:
   - company: "The University of Melbourne"
     position: "PhD Candidate in Computing and Information Systems"
-    startDate: "2018-05-01"
+    website: "https://piedpiper.com"
+    startDate: "2018-05-07"
+    endDate: ""
     location: Melbourne, Australia
-    summary: "Working on Ubiquitous Computing and IoT"
+    summary: >
+     Working on Ubiquitous Computing and IoT
+    highlights:
     extra: |-
-      > __Teaching__
+       > __Teaching__
          * S1 2020: [INFO90003 - Designing Novel Interaction](https://handbook.unimelb.edu.au/2020/subjects/info90003)
          * S2 2019: [COMP30019 - Computer Graphics and Interaction](https://handbook.unimelb.edu.au/2019/subjects/comp30019)
          * S2 2019: [SWEN20003 - Object-Oriented Software Development](https://handbook.unimelb.edu.au/2019/subjects/swen20003) (Taught at the [International House College](https://ihouse.unimelb.edu.au/home))
          * S2 2018: [COMP30019 - Computer Graphics and Interaction](https://handbook.unimelb.edu.au/2018/subjects/comp30019)
        
-      > __Extras__
-         * Treasurer of the Computing and Information System GRaduate Research Students group ([CIS-GReS](https://www.cis-gres.org))
-         * Floor Warden
-         * Assets manager
-         * Part of the NH ERC
+        > __Extras__
+          * Treasurer of the Computing and Information System GRaduate Research Students group ([CIS-GReS](https://www.cis-gres.org))
+          * Floor Warden
+          * Assets manager
+          * Part of the NH ERC
+  
   - company: "CSIRO - Data61"
     position: "PhD Candidate"
     summary: "PhD Sponsored by a top-up Data61 - CSIRO scholarship"
     startDate: "2018-05-01"
     location: Melbourne, Australia
+
   - company: "European Central Bank"
     position: "Consultant"
     startDate: "2017-10-01"
@@ -72,6 +78,7 @@ work:
     extra: |-
       > - Implementation of an online survey to be sent out to all the banks in Europe 
       > - Technical support for IT-related matters (Python scripts, WordPress websites management, Javascript, VBA)
+
   - company: "Scuola Superiore Sant'Anna - TeCIP Institute"
     position: "Research Assistant"
     startDate: "2017-07-01"
@@ -82,6 +89,7 @@ work:
       > - Robot Vision and Hand-Eye Camera Robot calibration
       > - HMI development (C#, MySQL)
       > - 3D Viewer of robotic arm with Inverse Kinematics
+
   - company: "Software Engineer Intern"
     position: "VRMedia SRL"
     startDate: "2016-10-01"
@@ -90,16 +98,26 @@ work:
     extra: |-
       > I worked on my Master's thesis under the supervision of Franco Tecchia and Marcello Carrozzino. Occasional work on part of other projects on the Unreal Engine.
       > I developed a plugin for the Unreal Engine that implements the S3D scripting language and the of the XVR Environment (included its VM) in the engine. The project also includes the development of a code editor with a custom debugger and a debug UI
+  
   - company: "Università di Cagliari"
     position: "Internship"
     startDate: "2014-05-01"
     endDate: "2014-07-01"
     location: Cagliari, Italy
     summary: "Bachelor's thesis project under the supervision of Riccardo Scateni"
+
 volunteer:
-  - organization: "UbiComp 2019"
-    website: "http://ubicomp.org/ubicomp2019/"
+  - organization: "UbiComp 2020"
     position: "Student Volunteer (SV)"
+    website: "http://ubicomp.org/ubicomp2020/"
+    startDate: "2020-09-06"
+    endDate: "2020-09-13"
+    summary:  "Conference reception and technical support"
+    # highlights:
+    #   - test
+  - organization: "UbiComp 2019"
+    position: "Student Volunteer (SV)"
+    website: "http://ubicomp.org/ubicomp2019/"
     startDate: "2019-09-06"
     endDate: "2019-09-13"
     summary:  "Conference reception and technical support"
@@ -123,11 +141,17 @@ education:
   - institution: "University of Melbourne"
     area: "Computing and Information Systems"
     studyType: "PhD"
+    location: Melbourne, Astralia
     # description: "test"
     # extra: "test2"
     startDate: "2017-05-01"
-    gradeDescription: ""
-    course: ""
+    # endDate: ""
+    # grade_description: "with a grade of"
+    grade_description: ""
+    # grade: "110/110 *cum laude*"
+    # courses:
+    #   - "DB1101 - Basic SQL"
+    #   - "CS2011 - Java Introduction"
     extra: |-
       > - "INFO90003 - Designing Novel Interaction (Best Project Award)"
       > - "COMP90044 - Research Methods"  
@@ -157,8 +181,9 @@ education:
 awards:
   - title: "Data61 - CSIRO Scholarship"
     date: "2019-05-01"
-    awarder: "Data61 - CSIRO"
+    awarder: Data61 - CSIRO"
     website: "https://www.data61.csiro.au/"
+    # summary : ""
   - title: "Top graduates (Academic year 2017)"
     date: "2017-07-01"
     awarder: "Università degli studi di Pisa"
@@ -189,6 +214,21 @@ publications:
     publisher: "UbiComp/ISWC '19 Adjunct "
     releaseDate: "2019-07-01"
     website: "https://dl.acm.org/citation.cfm?id=3349306"
+
+languages:
+  - language: "Italian"
+    fluency: "Native speaker"
+    stars: 5
+  - language: "English"
+    fluency: "C2- Proficient"
+    stars: 4
+  - language: "Spanish"
+    fluency: "Intermediate"
+    stars: 3
+  - language: "Portuguese"
+    fluency: "Beginner"
+    stars: 2
+
 certificates:
   - title: "TOEFL"
     date: "2019-05-01"
@@ -256,16 +296,6 @@ skills:
       - "Adobe Photoshop"
       - "Adobe Illustrator"
       - "Adobe Premiere"
-languages:
-  - language: "Italian"
-    fluency: "Native speaker"
-    stars: 5
-  - language: "English"
-    fluency: "C2- Proficient"
-    stars: 4
-  - language: "Spanish"
-    fluency: "Intermediate"
-    stars: 3
 interests:
   - name: "Hobbies"
     keywords:
@@ -285,3 +315,4 @@ references:
   #   reference: >
   #     It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
   #     Company proved that he will be a valuable addition to any company.
+

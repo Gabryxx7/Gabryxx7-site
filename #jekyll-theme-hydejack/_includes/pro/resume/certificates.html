@@ -1,0 +1,27 @@
+{% if resume.certificates.size > 0 %}
+<section class="npb">
+  <h2 id="certificates" class="h3 hr-bottom">
+    {{ strings.resume.certificates | default:"Certificates" }}
+    <span class="symbol {{ icons.certificates | default:'icon-profile' }}"></span>
+  </h2>
+  <dl class="certificates">
+    {% for crt in resume.certificates %}
+      <strong class="fl">{{ crt.title }}</strong>
+      <span class="faded clearafter" style="font-size: 0.9rem; margin: 0rem;">          
+        {% if crt.date.size > 0 %}
+         - 
+          {% include components/from-to.html from=crt.date no_end="" format=from_to_format %}
+          {% if work.location %}
+            {{ crt.location | prepend: " &centerdot; " | default:"" }} 
+          {% endif %}
+      {% endif %}
+      {% if crt.extra %}
+      <blockquote style="margin: 0rem; padding: 0.5rem;">
+        {{ crt.extra }} 
+      </blockquote>
+      {% endif %}
+      </span>
+    {% endfor %}
+  </dl>
+</section>
+{% endif %}

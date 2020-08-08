@@ -1,0 +1,96 @@
+/**
+ * Code Highlighting Style for Jekyll or Pygments
+ * Ayu Dark by dempfi
+ * https://github.com/dempfi
+ */
+
+ $_dark_accent: #e6b450;
+ $_dark_background: #0a0e14;
+ $_dark_foreground: #b3b1ad;
+ $_dark_ui: #3d424d;
+ $_dark_tag: #39bae6;
+ $_dark_func: #ffb454;
+ $_dark_entity: #59c2ff;
+ $_dark_string: #c2d94c;
+ $_dark_regexp: #95e6cb;
+ $_dark_markup: #f07178;
+ $_dark_keyword: #ff8f40;
+ $_dark_special: #e6b673;
+ $_dark_comment: #626a73;
+ $_dark_constant: #ffee99;
+ $_dark_operator: #f29668;
+ $_dark_error: #ff3333;
+
+.dark-mode .highlight {
+  background-color: $_dark_background;
+  color: $_dark_foreground;
+  .c { color: $_dark_comment; font-style: italic; } /* Comment */
+  .err { color: $_dark_background; background-color: $_dark_error; } /* Error */
+  // .g { color: $_dark_generic } /* Generic */
+  .k { color: $_dark_keyword } /* Keyword */
+  // .l { color: #93a1a1 } /* Literal */
+  // .n { color: #93a1a1 } /* Name */
+  .o { color: $_dark_operator } /* Operator */
+  // .x { color: #cb4b16 } /* Other */
+  // .p { color: #93a1a1 } /* Punctuation */
+  .cm { color: $_dark_comment } /* Comment.Multiline */
+  .cp { color: $_dark_comment } /* Comment.Preproc */
+  .c1 { color: $_dark_comment } /* Comment.Single */
+  .cs { color: $_dark_special } /* Comment.Special */
+  .gd { color: $_dark_error } /* Generic.Deleted */
+  .ge { font-style: italic } /* Generic.Emph */
+  .gr { color: $_dark_background; background-color: $_dark_error; } /* Generic.Error */
+  .gh { color: $_dark_accent } /* Generic.Heading */
+  .gi { color: $_dark_string } /* Generic.Inserted */
+  .go { color: $_dark_foreground } /* Generic.Output */
+  .gp { color: $_dark_foreground } /* Generic.Prompt */
+  .gs { font-weight: bold } /* Generic.Strong */
+  .gu { color: $_dark_foreground } /* Generic.Subheading */
+  .gt { color: $_dark_background; background-color: $_dark_error; } /* Generic.Traceback */
+  .kc { color: $_dark_keyword } /* Keyword.Constant */
+  .kd { color: $_dark_keyword } /* Keyword.Declaration */
+  .kn { color: $_dark_operator } /* Keyword.Namespace */
+  .kp { color: $_dark_keyword } /* Keyword.Pseudo */
+  .kr { color: $_dark_keyword } /* Keyword.Reserved */
+  .kt { color: $_dark_keyword } /* Keyword.Type */
+  // .ld { color: #93a1a1 } /* Literal.Date */
+  .m { color: $_dark_constant } /* Literal.Number */
+  .s { color: $_dark_constant } /* Literal.String */
+  .na { color: $_dark_entity } /* Name.Attribute */
+  .nb { color: $_dark_entity } /* Name.Builtin */
+  .nc { color: $_dark_func } /* Name.Class */
+  .no { color: $_dark_constant } /* Name.Constant */
+  .nd { color: $_dark_func } /* Name.Decorator */
+  .ni { color: $_dark_entity } /* Name.Entity */
+  .ne { color: $_dark_func } /* Name.Exception */
+  .nf { color: $_dark_func } /* Name.Function */
+  .nl { color: $_dark_entity } /* Name.Label */
+  .nn { color: $_dark_entity } /* Name.Namespace */
+  // .nx { color: #93a1a1 } /* Name.Other */
+  // .py { color: #93a1a1 } /* Name.Property */
+  .nt { color: $_dark_tag } /* Name.Tag */
+  .nv { color: $_dark_entity } /* Name.Variable */
+  .ow { color: $_dark_operator } /* Operator.Word */
+  .w { color: $_dark_entity } /* Text.Whitespace */
+  .mf { color: $_dark_constant } /* Literal.Number.Float */
+  .mh { color: $_dark_constant } /* Literal.Number.Hex */
+  .mi { color: $_dark_constant } /* Literal.Number.Integer */
+  .mo { color: $_dark_constant } /* Literal.Number.Oct */
+  .sb { color: $_dark_string } /* Literal.String.Backtick */
+  .sc { color: $_dark_string } /* Literal.String.Char */
+  .sd { color: $_dark_string } /* Literal.String.Doc */
+  .s2 { color: $_dark_string } /* Literal.String.Double */
+  .se { color: $_dark_constant } /* Literal.String.Escape */
+  .sh { color: $_dark_string } /* Literal.String.Heredoc */
+  .si { color: $_dark_string } /* Literal.String.Interpol */
+  .sx { color: $_dark_string } /* Literal.String.Other */
+  .sr { color: $_dark_regexp } /* Literal.String.Regex */
+  .s1 { color: $_dark_string } /* Literal.String.Single */
+  .ss { color: $_dark_tag } /* Literal.String.Symbol */
+  .s { color: $_dark_string } /* Literal.String */
+  .bp { color: $_dark_entity } /* Name.Builtin.Pseudo */
+  .vc { color: $_dark_entity } /* Name.Variable.Class */
+  .vg { color: $_dark_entity } /* Name.Variable.Global */
+  .vi { color: $_dark_entity } /* Name.Variable.Instance */
+  .il { color: $_dark_constant } /* Literal.Number.Integer.Long */
+}

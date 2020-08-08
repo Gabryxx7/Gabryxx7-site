@@ -1,8 +1,7 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
-# Change `author1` to your shortname.
-author1:
-  # Replace <...> with your own (remove the < >)
+# Change `gabryxx7` to your shortname.
+gabryxx7:
   name:              Gabriele Marini
   email:             giaga7@gmail.com
 
@@ -27,6 +26,7 @@ author1:
   social:
     # twitter:         <username>
     github:          gabryxx7
+    # github:         https://github.com/gabryxx7
     email:           giaga7@gmail.com
     # rss:             https://<url>/feed.xml
     facebook:        Gabryxx7
@@ -63,21 +63,18 @@ author1:
     # stumbleupon:     <username>
     # paypal:          <username>
     # download:        <url>
-
-# Another author (optional)
-# author2:
-#   name:              <firtname> <lastname>
-#   email:             <mail@domain.tld>
+    # keybase          <username>
+# Another author
+# mdo:
+#   name:              Mark Otto
 #   about:             |
-#     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-#     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-#     Open `_data/authors.yml` to edit this text.
-#   picture:           https://placehold.it/128x128
-#   twitter:           <username>
-#   github:            <username>
-#   accent_color:      '#268bd2'
+#     Mark Otto is the designer of the original [Hyde Jekyll theme](http://hyde.getpoole.com) and author of this blog post.
+#     The post is included here as filler content and to showcase Hydejacks's multi-author feature.
+#     This is NOT an endorsement of this product on his part.
+#   picture:           https://pbs.twimg.com/profile_images/630796572691804161/kYW5TxUR.jpg
+#   twitter:           mdo
+#   github:            mdo
+#   accent_color:     '#268bd2'
 #   accent_image:
-#     background:      '#202020'
-#     overlay:         false
+#     background:     '#202020'
+#     overlay:        false
