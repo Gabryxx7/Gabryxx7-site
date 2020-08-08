@@ -68,8 +68,10 @@ local_photos: true
                 </div>
         {% endif %}
         <a href='{{ photo.url }}' class='no-hover no-print-link photo-card-caption'>
-            <div class='img-title'> {{ photo.title }}</div>
-            <div class='img-descr'> {{ photo.caption }} </div>
+            {% if photo.title.size > 0 %}
+                <div class='img-title'> <h3>{{ photo.title }}</h3></div>
+            {% endif %}
+            <div class='img-descr'> <p> {{ photo.caption }} </p> </div>
         </a>     
     </article>  
     {% endfor %}    
