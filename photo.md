@@ -63,7 +63,7 @@ local_photos: true
             <article class='photo-card multiple'>
                 <div class='photo-card-img img'>
                 {% for file in photo.files %}
-                    <img data-ignore src='{{ photolist.preview_folder }}{{ file }}' loading='lazy' style="width: {{ 100 | minus: photo.files.size | divided_by: photo.files.size }}%"/>
+                    <img data-ignore src='{{ photolist.preview_folder }}{{ file }}' loading='lazy' style="width: {{ 100 | divided_by: photo.files.size }}%"/>
                 {% endfor %}    
                 </div>
         {% endif %}
