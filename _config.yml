@@ -78,7 +78,7 @@ menu:
   - title:             Publications
     url:               /resume/#publications
   - title:             Projects
-    url:               /projects/
+    url:               /showcase/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -345,7 +345,7 @@ plugins:
   - jekyll-relative-links
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-titles-from-headings
+  # - jekyll-titles-from-headings
   - jekyll-include-cache
   - jekyll-last-modified-at
 

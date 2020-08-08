@@ -61,9 +61,9 @@ div#instafeed {
   //box-shadow: #7d7d7d5c 2px 3px 5px 0;
   margin-bottom: 1%;
   flex: 0 1 47%;
-  -webkit-box-shadow: 7px 8px 10px -7px rgba(125,125,125,1);
-  -moz-box-shadow: 7px 8px 10px -7px rgba(125,125,125,1);
-  box-shadow: 7px 8px 10px -7px rgba(125,125,125,1);
+  -webkit-box-shadow: 0.125rem 0.125rem 1rem rgba(0,0,0,0.2);
+  -moz-box-shadow: 0.125rem 0.125rem 1rem rgba(0,0,0,0.2);
+  box-shadow: 0.125rem 0.125rem 1rem rgba(0,0,0,0.2);
 }
 
 #instafeed .photo-card.multiple {
@@ -286,6 +286,11 @@ div#instafeed {
   }
 }
 
+
+article.photo-card,
+article.project-card {  
+  border-radius: .4rem;
+}
 
 
 
