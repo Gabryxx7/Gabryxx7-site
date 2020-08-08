@@ -123,6 +123,17 @@ hy-push-state a:hover {
       margin-bottom: 5%;
     }
   }
+
+  .location {
+    background-color: var(--gray-bg);
+    margin: 0;
+    padding: 2%;
+    color: grey;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: var(--body-color);
+  }
 }
 
 #instafeed .photo-card:hover,

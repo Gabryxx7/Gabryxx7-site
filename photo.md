@@ -73,6 +73,9 @@ local_photos: true
             {% endif %}
             <div class='img-descr'> <p> {{ photo.caption }} </p> </div>
         </a>     
+    {% if photo.location %}
+        <div class="location"> <span class="icon-location2" style="font-size: 0.9rem;"> </span> {{ photo.location }}</div>
+    {% endif %}
     </article>  
     {% endfor %}    
 {% endif %}
