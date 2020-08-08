@@ -141,7 +141,7 @@ education:
   - institution: "University of Melbourne"
     area: "Computing and Information Systems"
     studyType: "PhD"
-    location: Melbourne, Astralia
+    location: Melbourne, Australia
     # description: "test"
     # extra: "test2"
     startDate: "2017-05-01"
@@ -161,6 +161,7 @@ education:
     studyType: "MSc"
     startDate: "2014-09-01"
     endDate: "2017-06-01"
+    location: Pisa, Italy
     gradeDescription: with a grade of 
     grade: 110/110 *cum laude*
   - institution: "Università degli studi di Cagliari"
@@ -168,6 +169,7 @@ education:
     studyType: "BSc"
     startDate: "2011-09-01"
     endDate: "2014-07-01"
+    location: Cagliari, Italy
     gradeDescription: with a grade of 
     grade: 110/110 *cum laude*
   # - institution: "University of Melbourne"

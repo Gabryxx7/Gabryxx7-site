@@ -25,14 +25,16 @@
       </h3>
       <div class="faded">
        {% if work.startDate.size > 0 %}
-        <p style="float: left;">
+        <span style="float: left;">
+          <span class="icon-calendar" style="font-size: 0.9rem;"> </span>
           {% include components/from-to.html from=work.startDate to=work.endDate format=from_to_format %}
-        </p>
+        </span>
       {% endif %}
       {% if work.location.size > 0 %}
-        <p style="float: right;">
+        <span style="float: right;">
+          <span class="icon-location2" style="font-size: 0.9rem;"> </span>
          {{ work.location | default:"" }} 
-        </p>
+        </span>
       {% endif %}
       </div>
       <div style="clear: both;margin-bottom: -0.5rem;"></div>
@@ -40,7 +42,7 @@
      
 
     <!-- {% include components/message.html class="note" text=work.summary alt="" %} -->
-    {% include components/message.html class="message" text=work.summary alt="" style="margin: 0rem 0rem 0rem -0.2rem; padding: 0.5rem;" %}
+    {% include components/message.html class="message" text=work.summary alt="" style="margin: 0.5rem 0rem 0rem -0.2rem; padding: 0.5rem;" %}
     {{ work.extra | markdownify }}
 
     {% if work.highlights.size > 0 %}

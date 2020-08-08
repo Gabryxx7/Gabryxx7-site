@@ -25,14 +25,16 @@
       </h3>
       <div class="faded" style="clear: both;">
        {% if edu.startDate.size > 0 %}
-        <p style="float: left;">
+        <span style="float: left;">
+          <span class="icon-calendar" style="font-size: 0.9rem;"> </span>
           {% include components/from-to.html from=edu.startDate to=edu.endDate format=from_to_format %}
-        </p>
+        </span>
       {% endif %}
       {% if edu.location.size > 0 %}
-        <p style="float: right;">
+        <span style="float: right;">
+          <span class="icon-location2" style="font-size: 0.9rem;"> </span>
          {{ edu.location | default:"" }} 
-        </p>
+        </span>
       {% endif %}
       </div>
       <div style="clear: both;margin-bottom: -0.5rem;"></div>

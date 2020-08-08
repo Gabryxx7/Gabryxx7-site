@@ -8,7 +8,13 @@
   {% for vol in resume.volunteer %}
   <section class="no-page-break">
     <header class="{% unless forloop.first %}mt2{% endunless %}">     
-      <h3 class="h4 faded">
+      {% if vol.startDate.size > 0 %}
+        <span class="faded">
+          {% include components/from-to.html from=vol.startDate to=vol.endDate no_end="" format=from_to_format %}
+        </span>
+      {% endif %}
+       - 
+      <span class="h4 faded">
         {% capture position %}<span class="bc">{{ vol.position }}</span>{% endcapture %}
         {% capture organization %}{% include components/link.html title=vol.organization href=vol.website span_class="bc" %}{% endcapture %}
         {{ strings.resume.volunteer_title
@@ -16,16 +22,11 @@
           | replace:"<!--position-->", position
           | replace:"<!--organization-->", organization
         }}
-      </h3>
-      {% if vol.startDate.size > 0 %}
-        <p class="faded">
-          {% include components/from-to.html from=vol.startDate to=vol.endDate format=from_to_format %}
-        </p>
-      {% endif %}
+      </span>      
     </header>
 
     <!-- {% include components/message.html class="note" text=vol.summary alt="" %} -->
-    {% include components/message.html class="message" text=vol.summary alt="" style="margin: 0rem 0rem 0rem -0.2rem; padding: 0.5rem;" %}
+    {% include components/message.html class="message" text=vol.summary alt="" style="margin: 0.5rem 0rem 0rem -0.2rem; padding: 0.5rem;" %}
 
     <h4 class="sr-only">{{ strings.resume.highlights | default:"Highlights" }}</h4>
     <ul>
