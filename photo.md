@@ -60,10 +60,10 @@ local_photos: true
                     <img data-ignore src='{{ photolist.preview_folder }}{{ photo.file }}' loading='lazy'/>
                 </div>
         {% else %}  
-            <article class='photo-card multiple'>
+            <article class='photo-card multiple multi-{{ photo.files.size }}'>
                 <div class='photo-card-img img'>
                 {% for file in photo.files %}
-                    <img data-ignore src='{{ photolist.preview_folder }}{{ file }}' loading='lazy' style="width: {{ 100 | divided_by: photo.files.size }}%"/>
+                    <img data-ignore src='{{ photolist.preview_folder }}{{ file }}' loading='lazy'/>
                 {% endfor %}    
                 </div>
         {% endif %}

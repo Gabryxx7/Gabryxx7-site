@@ -69,6 +69,38 @@ div#instafeed {
 #instafeed .photo-card.multiple {
   flex: 0 1 99% !important;
 }
+
+#instafeed .photo-card.multiple.multi-2 img {
+  width: 48%;
+}
+#instafeed .photo-card.multiple.multi-3 img {
+  width: 32.5%;
+}
+#instafeed .photo-card.multiple.multi-4 img {
+  width: 24%;
+}
+#instafeed .photo-card.multiple.multi-5 img {
+  width: 19%;
+}
+
+
+//Content 64em
+@media screen and (min-width: 64em) {
+  
+  #instafeed .photo-card.multiple.multi-2 img {
+    width: 44.5%;
+  }
+  #instafeed .photo-card.multiple.multi-3 img {
+    width: 33%;
+  }
+  #instafeed .photo-card.multiple.multi-4 img {
+    width: 24.5%;
+  }
+  #instafeed .photo-card.multiple.multi-5 img {
+    width: 19.5%;
+  }
+}
+
 #instafeed .photo-card.multiple .photo-card-img {
   text-align: center;
   // width: 33% !important;
