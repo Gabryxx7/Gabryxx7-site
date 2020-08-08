@@ -5,12 +5,14 @@
         <img src="{% include_cached smart-url url=site.logo %}" class="avatar" alt="{{ site.short_title | default:site.title }}" width="120" height="120" loading="lazy" />
       </a>
     {% endif %}
-    <a class="sidebar-title" href="{{ '/' | relative_url }}"><h2 class="h1">{{ site.short_title | default:site.title }}</h2></a>
-    {% assign text = site.tagline | default:site.description %}
-    
-    {% if site.short_bio %}
-      <h3> {{ site.short_bio }} </h3>
+    <a class="sidebar-title" href="{{ '/' | relative_url }}"><h2 class="h1">{{ site.short_title | default:site.title }}</h2>
+        
+      {% if site.short_bio %}
+      <h3 class="faded"> {{ site.short_bio }} </h3>
     {% endif %}
+    </a>
+    {% assign text = site.tagline | default:site.description %}
+
     {% if text %}
       <p class="{% if text.size > 100 %}fine{% endif %}">
         {{ text | markdownify | replace:'<p>','' | replace:'</p>','' }}
