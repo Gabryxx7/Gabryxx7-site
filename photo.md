@@ -14,12 +14,12 @@ instagram: false
 local_photos: true
 ---
 
-I am an amateur photographer who enjoys taking landscape pictures
-My current gear comprises of:
-- Sony A7r III + Tamron 28-75mm f2.8
-- Mavic Air 2
-- Google Pixel 3 XL
-
+> I am an amateur photographer who enjoys taking mostly landscape pictures. My current gear comprises:
+> - Sony A7r III + Tamron 28-75mm f2.8
+> - Mavic Air 2
+> - Google Pixel 3 XL
+{:.lead}
+<!-- {:.message} -->
     
 
  <div class="columns">
