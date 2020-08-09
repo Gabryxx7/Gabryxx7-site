@@ -103,21 +103,26 @@ strong {
     text-align: center;
     font-size: 0.8rem;
     padding-top: 0.1rem;
-    color: #616161;
+    color: #848282;
     font-weight: 700;
   }
   .typing-toolbar-btn.close {
-    background-color: #ca2626;
+    background-color: #e01e1e;
   }
+  .typing-toolbar-btn.close.disabled {
+    background-color: #693737;
+    color: #8e8e8e;
+  }
+  
   .typing-toolbar-btn.min {
     background-color: var(--body-bg);
   }
   .typing-toolbar-btn.size {
     background-color: var(--body-bg);
   }
-  .typing-toolbar-btn.close:hover,
-  .typing-toolbar-btn.close:focus,
-  .typing-toolbar-btn.close:active {
+  .typing-toolbar-btn.close:not(.disabled):hover,
+  .typing-toolbar-btn.close:not(.disabled):focus,
+  .typing-toolbar-btn.close:not(.disabled):active {
     background-color: #f94b29;
     cursor: pointer;
 }
