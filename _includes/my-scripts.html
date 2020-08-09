@@ -33,10 +33,19 @@ function appendLeadingZeroes(n){
 
 
 var startTyper = function(){
-  var app = document.getElementById('typing-window');
+  var typingWindow = document.getElementById('typing-window');
+  var app = document.getElementById('typing-area');
 
   if(!app)
     return;
+
+  var closeBtn =  document.getElementById('typing-close-btn');
+  typingWindow.addEventListener('transitionend', () => typingWindow.remove());
+  closeBtn.onclick = function() {
+        console.log("Btn clicked");
+        typewriter.stop();
+        typingWindow.style.opacity = 0;
+    };
   console.log("Starting typer!");
 
   var totalLoops = 20;
