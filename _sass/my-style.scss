@@ -52,8 +52,8 @@ hy-push-state a:hover {
 
 
 .typing-window {
-  transition: all 0.5s;
-  font-size: 1.8rem;
+  transition: opacity 0.5s;
+  font-size: 1.6rem;
   line-height: 1.2;
   font-weight: 400;
   font-family: var(--code-font-family);
@@ -71,13 +71,13 @@ strong {
 
 @media screen and (max-width: 42em)  {
   .typing-window{
-   font-size: 1.2rem;
+   font-size: 1.1rem;
   }
   }
   
   @media screen and (max-width: 54em)  {
     .typing-window{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     }
   }
 
