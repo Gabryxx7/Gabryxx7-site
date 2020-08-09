@@ -1,6 +1,7 @@
 ---
 layout: photo-feed
 title: Photos
+grouped: true
 addons: [comments, about]
 ---
 
@@ -11,10 +12,24 @@ addons: [comments, about]
 {:.lead}
 <!-- {:.message} -->
     
+
 <div class="photo-feed">
 {% assign photolist = site.data.photos-list %}
-{% for photo in photolist.photos %}
+{% assign photo_sorted = site.data.photos-list.photos | sort:"date" | reverse %}
+{% assign prev_date = 0 %}
+
+{% for photo in photo_sorted %}
+    {% assign current_date = photo.date | date:"%Y" %}
     {% if photo.file %}
+        {% if page.grouped %}
+            {% if current_date != prev_date %}
+                <blockquote class="photo-group-date">
+                    <div class="photo-group-date-container">
+                        {{ current_date }}
+                    </div>
+                </blockquote>
+            {% endif %}
+        {% endif %}
         {% if photo.highlight %}
             <article class='photo-card' style="flex: 0 1 auto;">
         {% else %}
@@ -37,9 +52,10 @@ addons: [comments, about]
         {% endif %}
         <div class='img-descr'> <p> {{ photo.caption }} </p> </div>
     </a>     
-{% if photo.location %}
-    <div class="location"> <span class="icon-location2" style="font-size: 0.9rem;"> </span> {{ photo.location }}</div>
-{% endif %}
-</article>  
+    {% if photo.location %}
+        <div class="location"> <span class="icon-location2" style="font-size: 0.9rem;"> </span> {{ photo.location }}</div>
+    {% endif %}
+    </article>  
+    {% assign prev_date = current_date %}
 {% endfor %}   
 </div>

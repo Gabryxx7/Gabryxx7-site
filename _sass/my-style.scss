@@ -50,6 +50,38 @@ hy-push-state a:hover {
   }
 }
 
+
+
+#typing-window {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: var(--code-font-family);
+  background-color: #1f1f21;
+  border-radius: 0.5rem;
+  padding: 2rem 2rem 2rem 1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+  
+strong {
+  font-weight: 700;
+}
+}
+
+@media screen and (max-width: 42em)  {
+#typing-window{
+ font-size: 1.2rem;
+}
+}
+
+@media screen and (max-width: 54em)  {
+#typing-window{
+ font-size: 1.2rem;
+}
+}
+
+
 // .lead.aspect-ratio.sixteen-nine { 
 //   border: 1px solid var(--border-color);
 //   transition: border-color 500ms ease;
@@ -62,6 +94,31 @@ hy-push-state a:hover {
   align-items: center;
   width: 100%;
   height: auto;
+
+  .photo-group-date {
+    width: 100%;
+    color: var(--body-color);
+    font-weight: 700;
+    font-size: 3rem;
+    border-left-width: 0.4rem;
+    margin-left: -3rem;
+    margin-right: -1rem;
+    padding: 0rem 1rem 0rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .photo-group-date::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 52%;
+    height: 5rem;
+    margin: auto;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.02), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 8px 20px 33.4px rgba(0, 0, 0, 0.02), 0 100px 80px rgba(0, 0, 0, 0.01);
+    z-index: -1;
+    padding: 0;
+    margin-left: -1rem;
+  }
 }
 
 
@@ -73,9 +130,7 @@ hy-push-state a:hover {
   //box-shadow: #7d7d7d5c 2px 3px 5px 0;
   margin-bottom: 1%;
   flex: 0 1 47%;
-  -webkit-box-shadow: 0.125rem 0.125rem 1rem rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0.125rem 0.125rem 1rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0.125rem 0.125rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.05), 0 2px 2px rgba(0,0,0,0.05), 0 4px 4px rgba(0,0,0,0.05), 0 6px 8px rgba(0,0,0,0.05), 0 8px 16px rgba(0,0,0,0.05);
 
   img {
     transition: all 250ms;
