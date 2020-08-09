@@ -138,6 +138,7 @@ hy-push-state a:hover {
 }
 
 #instafeed .photo-card:hover,
+#instafeed .photo-card:active,
 #instafeed .photo-card:focus {
   transition: all 250ms ease-out;
   box-shadow: 0.125rem 0.375rem 1.15rem rgba(0, 0, 0, 0.25);
@@ -157,7 +158,6 @@ hy-push-state a:hover {
     opacity: 1;
   }
 }
-
 
 
 #instafeed .photo-card.multiple {

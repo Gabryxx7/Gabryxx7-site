@@ -56,7 +56,11 @@ local_photos: true
     {% assign photolist = site.data.photos-list %}
     {% for photo in photolist.photos %}
         {% if photo.file %}
-            <article class='photo-card'>
+            {% if photo.highlight %}
+                <article class='photo-card' style="flex: 0 1 auto;">
+            {% else %}
+                <article class='photo-card'>
+            {% endif %}
                 <div class='photo-card-img img'>
                     <img data-ignore src='{{ photolist.preview_folder }}{{ photo.file }}' loading='lazy'/>
                 </div>
