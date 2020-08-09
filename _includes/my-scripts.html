@@ -23,12 +23,12 @@ function appendLeadingZeroes(n){
     if(n <= 9){
       return "0" + n;
     }
-    return n
-  }
+    return n;
+  };
   function strip(html){
     var doc = new DOMParser().parseFromString(html, 'text/html');
     return doc.body.textContent || "";
-  }
+  };
 
 
 var startTyper = function(){
@@ -38,7 +38,7 @@ var startTyper = function(){
     return;
   console.log("Starting typer!");
 
-  var totalLoops = 20
+  var totalLoops = 20;
   var wordList = ["<em>PhD Student</em> 📚", "Programmer 💻", "Photographer 📷", "Pizza Lover 🍕", "Gamer 👾", "Swimmer 🏊","Traveller 🌏"];
   var pause = [1000, 4500];
   var terminalStarter = "> <span style='color: #5cd400;'> gabryxx7@blog: </span> ";
@@ -73,6 +73,6 @@ var startTyper = function(){
 
 
 document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
-    startTyper()
+    startTyper();
 });
 </script>
