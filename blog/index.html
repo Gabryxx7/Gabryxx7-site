@@ -13,7 +13,8 @@ hide_image: false
 
 <style>
 
-  #typing-window {font-size: 25pt;
+  #typing-window {
+    font-size: 25pt;
     line-height: 1.2;
     font-weight: 400;
     font-family: var(--code-font-family);
@@ -46,7 +47,7 @@ var typewriter = new Typewriter(app, {
 });
 
 var typeNextWordInList = function(elements){
-  console.log("Typing next word")
+  console.log("Typing next word");
   }
 
 typewriter
@@ -57,7 +58,7 @@ typewriter
   .typeString(" I'm <strong>Gabriele</strong>.")
   .pauseFor(1000)
   .pasteString("<br/> > ")
-  .typeString(" I'm a...")
+  .typeString(" I'm a...");
 
   var wordList = ["PhD Student 📚", "Programmer 💻", "Photographer 📷", "Pizza Lover 🍕", "Gamer 👾", "Swimmer 🏊", "Traveller 🌏"]
   var pause = [1000, 4500]
@@ -66,11 +67,9 @@ typewriter
       typewriter
       .typeString(wordList[i])
       .pauseFor(Math.random() * (pause[1] - pause[0]) + pause[0])
-      .deleteChars(wordList[i].length)
+      .deleteChars(wordList[i].length);
     }
   }
-  typewriter.start()
+  typewriter.start();
 
 </script>
-
-<!-- > #Latest Blog Posts -->
