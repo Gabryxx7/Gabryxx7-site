@@ -3,7 +3,24 @@ Code used for embedding Gumroad on the Hydejack Site.
 Left here for reference, feel free to delete.
 -->
 
+{% comment %}
+<!--
+Using `preload` so that page rendering doesn't get blocked.
+Fill in `href`. You may have to adjust `as` and `onload`/`rel`, depending on content.
+-->
+<link href="<path/to/content.css>" rel="preload" as="style" onload="this.rel='stylesheet'">
+
+<!--
+Fallback in case JavaScript isn't enabled.
+Fill in `href`. You may have to adjust `rel`.
+-->
+<noscript><link href="<path/to/content.css>" rel="stylesheet"></noscript>
+{% endcomment %}
+
+<!-- It's better to but it here as it is loaded BEFORE my-scripts.html -->
 <script src="/assets/gabryxx7/js/jquery-3.5.1.min.js"></script>
+
+
 
 <link rel="dns-prefetch" href="https://assets.gumroad.com">
 <script type="module">
@@ -63,19 +80,3 @@ Left here for reference, feel free to delete.
     });
   }
 </script>
-
-
-<script>
-  var toggleDarkMode = function(){
-    var e = document.body.classList;
-    e.contains("dark-mode") || !e.contains("light-mode") && matchMedia("(prefers-color-scheme: dark)").matches ? (e.remove("dark-mode"),
-    e.add("light-mode")) : (e.remove("light-mode"),
-    e.add("dark-mode"))
-  }
-  var localTime = new Date();
-  if(localTime.getHours() > 18 || localTime.getHours() < 8){
-    toggleDarkMode();
-  }
-</script>
-
-<script type="text/javascript" src="/assets/gabryxx7/js/instafeed.min.js"></script>

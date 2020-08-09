@@ -1,7 +1,8 @@
 ---
 layout: home
 cover: true
-image: /assets/img/blog/hydejack-9.jpg
+# image: /assets/img/blog/hydejack-9.jpg
+image: /assets/gabryxx7/img/matrix_coding.gif
 description: >
   Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
   with a focus on personal sites that are meant to impress.
@@ -17,10 +18,46 @@ selected_posts:
   - hydejack/_posts/2018-06-01-example-content-iii.md
 posts_page: /posts/
 no_third_column: true
+title: Gabryxx7
 ---
 
-# Gabryxx7
 # [Gabryxx7 Personal Blog](http://gabryxx7.com/)
+![Screenshot](/assets/gabryxx7/img/matrix_coding.gif){:.lead width="1920" height="1080" loading="lazy"}
+
+~~~r
+
+library(tidyverse)
+library(lubridate)
+library(scales)
+library(Cairo)
+library(data.table)
+library(reshape2)
+library(Cairo)
+
+generateGantt <- function(tasks, hlines, vlines=NULL, plotTitle="Timeline", fontFamily="Open Sans"){
+  # Custom theme for making a clean Gantt chart
+  theme_gantt <- function(base_size=11, base_family=fontFamily) {
+    ret <- theme_bw(base_size, base_family) %+replace%
+      theme(panel.background = element_rect(fill="#ffffff", colour=NA),
+            axis.title.x=element_text(vjust=-0.2), axis.title.y=element_text(vjust=1.5),
+            title=element_text(vjust=1.2, family=fontFamily),
+            panel.border = element_blank(),
+            axis.line=element_blank(),
+            panel.grid.minor.x=element_line(size=0.2, colour="grey90"),
+            panel.grid.major.x = element_line(size=0.4, colour="grey85"),
+            panel.grid.major.y = element_blank(),
+            panel.grid.minor.y = element_blank(),
+            axis.ticks=element_blank(),
+            legend.position="none", 
+            axis.title=element_text(size=rel(0.8), family=fontFamily),
+            strip.text=element_text(size=rel(1), family=fontFamily),
+            strip.background=element_rect(fill="#ffffff", colour=NA),
+            panel.spacing.y=unit(1.5, "lines"),
+            legend.key = element_blank())
+    ret
+  }
+
+~~~
 
 ```r
 library(tidyverse)

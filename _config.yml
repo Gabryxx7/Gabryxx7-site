@@ -70,15 +70,15 @@ author:
 
 menu:
   - title:             Blog
-    url:               /
-  - title:             Photography
+    url:               /blog
+  - title:             Photos
     url:               /photo/
   - title:             Résumé\CV
     url:               /resume/
   - title:             Publications
     url:               /resume/#publications
   - title:             Projects
-    url:               /showcase/
+    url:               /projects/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -200,7 +200,7 @@ disqus:                gabryxx7-com
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
-tinyletter:            gabryxx7
+# tinyletter:            gabryxx7
 
 
 # Hydejack Settings
@@ -209,10 +209,12 @@ tinyletter:            gabryxx7
 
 hydejack:
   # Configure the order of complementary content on blog posts
+  # post_addons:         [about, related, random, comments]
   post_addons:         [about, newsletter, related, random, comments]
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about, newsletter, other, comments]
+  # project_addons:      [about, newsletter, other, comments]
+  project_addons:      [about, other, comments]
 
   # Set to `true` if you don't want to show an icon indicating external links
   no_mark_external:    false
@@ -287,6 +289,8 @@ hydejack:
 
     # Set to `true` to use the dark theme based on visitors' preference (OS setting).
     dynamic:           true
+    sunrise: 8
+    sunset:  18
 
     # Set to `true` to allow visitors to switch between light and dark mode.
     icon:              true
@@ -325,6 +329,8 @@ collections:
 exclude:
   - ./#jekyll-theme-hydejack/node_modules
   - ./#jekyll-theme-hydejack/.git
+  - ./#old_theme/node_modules
+  - ./#old_theme/.git
   - .jekyll-cache
   - .sass-cache
   - vendor
