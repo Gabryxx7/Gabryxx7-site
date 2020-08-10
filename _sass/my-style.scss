@@ -81,6 +81,11 @@ hy-push-state a:hover {
   }
 }
 
+.typing-window-wrapper{
+  transition: opacity 0.5s, max-height 0.5s;
+  max-height: 9000px;
+}
+
 .typing-window {
   transition: opacity 0.5s, max-height 0.5s;
   max-height: 9000px;

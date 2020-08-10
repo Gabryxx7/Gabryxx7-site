@@ -39,16 +39,17 @@ var startBlogTyper = function(typingWindow){
   if(!typingWindow){
     return;
   };
+  var typingWindowWrapper = document.getElementsByClassName('typing-window-wrapper')[0];  
   var app = typingWindow.getElementsByClassName('typing-area')[0];
   var closeBtn =  typingWindow.getElementsByClassName('typing-toolbar-btn close')[0];
-  typingWindow.addEventListener('transitionend', function(event) {
+  typingWindowWrapper.addEventListener('transitionend', function(event) {
     if(event.target !== event.currentTarget)
       return;
       /* Javascript returns max-height as a string "opx" */
-    if (event.propertyName === "max-height" && typingWindow.style.maxHeight === "0px"){
-      typingWindow.remove();
-    }else if(event.propertyName === "opacity" && typingWindow.style.opacity < 0.1){
-      typingWindow.style.maxHeight = 0;
+    if (event.propertyName === "max-height" && typingWindowWrapper.style.maxHeight === "0px"){
+      typingWindowWrapper.remove();
+    }else if(event.propertyName === "opacity" && typingWindowWrapper.style.opacity < 0.1){
+      typingWindowWrapper.style.maxHeight = 0;
     };
  });
 
@@ -56,7 +57,7 @@ var startBlogTyper = function(typingWindow){
     closeBtn.classList.toggle('disabled');
     closeBtn.onclick = function() {
           typewriter.stop();
-          typingWindow.style.opacity = 0.01;
+          typingWindowWrapper.style.opacity = 0.01;
       };
   }, 10000);
   console.log("Starting blog typer!");
