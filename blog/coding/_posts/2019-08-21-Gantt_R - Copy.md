@@ -2,6 +2,11 @@
 layout: post
 title: Gantt charts in R
 excerpt_separator: <!--more-->
+image: 
+  path: /assets/gabryxx7/img/typing-window.png
+  class: "wide-img"
+  html: |-
+    <div style='background-color: var(--body-bg);'><h2> DAMN </h2></div>
 # categories: [coding]
 # image: /assets/img/blog/hydejack-8.png
 ---

@@ -31,15 +31,16 @@ function appendLeadingZeroes(n){
     return doc.body.textContent || "";
   };
 
+var blogTyperStarted = false;
+var startBlogTyper = function(typingWindow){
+  blogTyperStarted = true
+  var typingWindow = document.getElementsByClassName('typing-window blog')[0];  
 
-var startTyper = function(){
-  var typingWindow = document.getElementById('typing-window');
-  var app = document.getElementById('typing-area');
-
-  if(!app)
+  if(!typingWindow){
     return;
-
-  var closeBtn =  document.getElementById('typing-close-btn');
+  }
+  var app = typingWindow.getElementsByClassName('typing-area')[0];
+  var closeBtn =  typingWindow.getElementsByClassName('typing-toolbar-btn close')[0];
   typingWindow.addEventListener('transitionend', function(event) {
     if(event.target !== event.currentTarget)
       return;
@@ -58,7 +59,7 @@ var startTyper = function(){
           typingWindow.style.opacity = 0.01;
       };
   }, 10000);
-  console.log("Starting typer!");
+  console.log("Starting blog typer!");
 
   var totalLoops = 20;
   var wordList = ["<em>PhD Student</em> 📚", "Programmer 💻", "Photographer 📷", "Pizza Lover 🍕", "Gamer 👾", "Swimmer 🏊", "Traveller 🌏"];
@@ -116,10 +117,18 @@ var startTyper = function(){
     };
   };
   typewriter.start();
+}
+
+var startTypers = function(){
+  if(!blogTyperStarted){  startBlogTyper() };
+  
 };
 
 
 document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
-    startTyper();
+    startTypers();
 });
+document.addEventListener('DOMContentLoaded', function(){ 
+    startTypers();
+}, false);
 </script>

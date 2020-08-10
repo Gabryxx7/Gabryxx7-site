@@ -18,10 +18,13 @@
   {% endcapture %}
 {% endif %}
 
+{% assign img_class = include.img.class | default:"" %}
+{% assign include_class = include.class | default:"" %}
+{% assign classes = include_class | append:img_class %}
 <img
   {{ sources }}
   {% if include.alt %}alt="{{ include.alt }}"{% endif %}
-  {% if include.class %}class="{{ include.class }}"{% endif %}
+  {% if classes != '' %}class="{{ classes }}"{% endif %}
   {% if include.property %}property="{{ include.property }}"{% endif %}
   {% if include.width %}width="{{ include.width }}"{% endif %}
   {% if include.height %}height="{{ include.height }}"{% endif %}
