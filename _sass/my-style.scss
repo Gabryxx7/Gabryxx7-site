@@ -64,10 +64,21 @@ hy-push-state a:hover {
 }
 
 .typing-window-wrapper .note-sm{
-  position: absolute;
-  right: 23rem;
-  width: 21rem;
-  padding: 0.5rem 1rem 0 1rem;
+  position: relative;
+  right: unset;
+  width: unset;
+  top: unset;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 1760px){
+  .typing-window-wrapper .note-sm{
+    position: absolute;
+    right: 23rem;
+    top: 9rem;
+    width: 21rem;
+    padding: 0.5rem 1rem 0 1rem;
+  }
 }
 
 .typing-window {
@@ -154,6 +165,9 @@ hy-push-state a:hover {
   }
 }
 
+.typing-window.blog {
+  margin-bottom: 0.5rem;
+}
 
 
 
