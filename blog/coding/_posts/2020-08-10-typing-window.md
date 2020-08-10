@@ -28,7 +28,7 @@ var startPostTyper = function(typingWindow){
 
   if(!typingWindow){
     return;
-  }
+  };
   
   var app = typingWindow.getElementsByClassName('typing-area')[0];
   var terminalStarter = "> <span style='color: #5cd400;'> gabryxx7@blog:</span><span style='color: #1c39c7;'>~</span>$ ";
@@ -56,7 +56,7 @@ var startPostTyper = function(typingWindow){
   .pauseFor(500)
   .typeString("Here is a tutorial!")
   .start();
-}
+};
 document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
     if(!postTyperStarted) startPostTyper();
 });
@@ -334,10 +334,10 @@ var startTestTyper = function() {
     }else if(event.propertyName === "opacity" && typingWindow.style.opacity < 0.1){
       //We FIRST change the opacity to make it invisible and only THEN we scale it down to slide the other content up
       typingWindow.style.maxHeight = 0;
-    }
+    };
  });
   ...
-}
+};
 ~~~
 
 <div class='typing-window test-close'>
@@ -375,7 +375,7 @@ var startTestCloseTyper = function() {
       typingWindow.remove();
     }else if(event.propertyName === "opacity" && typingWindow.style.opacity < 0.1){
       typingWindow.style.maxHeight = 0;
-    }
+    };
  });
 
   var app = typingWindow.getElementsByClassName('typing-area')[0];
@@ -393,7 +393,7 @@ var startTestCloseTyper = function() {
   .typeString(" Noooo don't delete mee!")
   .pauseFor(1000)
   .start();
-}
+};
 
 document.addEventListener('DOMContentLoaded', function(){ 
   if(!closeTyperStarted) startTestCloseTyper();
@@ -426,7 +426,7 @@ I wanted my typewriter to keep changing the last few words in loop so I implemen
 function appendLeadingZeroes(n){
   if(n <= 9){
     return "0" + n;
-  }
+  };
   return n;
 };
 
@@ -622,6 +622,21 @@ description: >
 ~~~
 
 Beware that this only works in the post page or in the post preview, it will NOT work in the post card when showed as related post (you'd have to edit `_includes/component/post-card.html` for that). I would not recommend it as it makes everything more complicated and messy with loading randomg javascript all the time. For this reason I would suggest to have an image to display as a fallback option
+
+## Adding the javascript
+When it comes to the post terminal I can simply add the javascript shown above in between the `<script></script>` tags. For the page, I added the javascript to the `_includes/my-scripts.html`. The event listeners will try to load the terminal at every page but the function returns if there is no element with classes `typing-window blog`.
+
+**IMPORTANT**: When deploying jekyll with the command `JEKYLL_ENV=production bundle exec jekyll build` (to enable the search function) make sure that your javascript is **PERFECT** as in, add a `;` to EVERY statement. Otherwise then it gets minified, something like 
+~~~javascript
+var test = 1
+var test = 3
+~~~
+Becomes:
+~~~javascript
+var test = 1var test = 3
+~~~
+Generating an error and making your whole javascript code crash
+
 
 An important note, if you end up using IDs instead of classes, multiple terminials on the same page might not work. The reason is that when Javascript calls `getElementById()` it always retreives one only element with that id. That's the purpose of IDs, right? Uniquely identifying elements. If we want it to work for ANY html element with the class `typing-window` we need to use `getElementByClass()` as shown above.
 
