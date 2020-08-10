@@ -23,7 +23,7 @@ description: >
 var postTyperStarted = false;
 
 var startPostTyper = function(typingWindow){
-  postTyperStarted = true
+  postTyperStarted = true;
   var typingWindow = document.getElementsByClassName('typing-window post')[0];  
 
   if(!typingWindow){
@@ -166,7 +166,7 @@ var startTyper = function() {
   .typeString(" Noooo don't delete mee!")
   .pauseFor(1000)
   .start();
-}
+};
 ~~~
 
 We also need to make sure that the typing only starts when the page content is loaded. In the case of Hydejack (the Jekyll theme I am using), we need to account for dynamic page loading so:
@@ -211,7 +211,7 @@ var startTestTyper = function() {
   .typeString(" Noooo don't delete mee!")
   .pauseFor(1000)
   .start();
-}
+};
 
 document.addEventListener('DOMContentLoaded', function(){ 
   if(!typerStarted) startTestTyper();
@@ -357,7 +357,6 @@ var startTestCloseTyper = function() {
   if(!typingWindow){
     return;
   };
-  console.log("Starting test-close typer");
   
   var closeBtn =  typingWindow.getElementsByClassName('typing-toolbar-btn close')[0];
   setTimeout (function() {
