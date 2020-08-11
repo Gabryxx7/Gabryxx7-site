@@ -1,21 +1,53 @@
 @import "ayu-mirage";
 // @import "ayu-light";
 
-.highlight pre{
+pre {
+    font-size: 0.8rem;
+    background-color: transparent;
+}
+
+.gutter.gl{    
+    background-color: transparent !important;
+}
+
+.highlight > pre{
   text-align: left;
   box-shadow: inset -3px 1px 2px rgba(0,0,0,0.1), inset -9px -4px 14px -7px rgba(0,0,0, 0.12), 0 1px 0 rgba(255,255,255,0.04), 0 -1px 0 rgba(0,0,0,0.2);
   border-radius: .4rem;
 //   text-shadow: 1px 1px 1px #3c3c3c11;
-  font-size: 0.75rem;
   line-height: 1.4;
   -webkit-transform: translate3d(0,0,0);
   -moz-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+  padding: 1rem;
+  
+  :has(pre){
+    padding: 0;
+  }
 }
 
-.highlight pre code[data-lang]::before {
+.highlight td pre{
+    padding: 1rem;
+
+}
+
+.highlight pre table{
+    background-color: transparent;
+    margin: 0;
+    tbody{
+        background-color: transparent;
+        tr{
+            background-color: transparent;
+            td{
+                background-color: transparent !important;   
+            }
+        }
+    }
+}
+
+pre code[data-lang]::before {
     /* font-family: "Ubuntu Mono",SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New","Noto Serif SC",STSong,monospace; */
     font-family: var(--font-family);
     content: attr(data-lang);
