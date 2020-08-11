@@ -2,48 +2,11 @@
   width: 10rem;
   height: 10rem;
 }
-
-@import "ayu-mirage";
-@import "ayu-light";
-
-.highlight pre{
-  text-align: left;
-  box-shadow: inset -3px 1px 2px rgba(0,0,0,0.1), inset -9px -4px 14px -7px rgba(0,0,0, 0.12), 0 1px 0 rgba(255,255,255,0.04), 0 -1px 0 rgba(0,0,0,0.2);
-  border-radius: .4rem;
-  text-shadow: 1px 1px 1px #3c3c3c11;
-  font-size: 0.75rem;
-  line-height: 1.4;
+.sidebar-about>a.sidebar-title>h3 {
+  color: #adadad;
+  font-size: 1.1rem;
 }
 
-.highlight pre code[data-lang]::before {
-    /* font-family: "Ubuntu Mono",SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New","Noto Serif SC",STSong,monospace; */
-    font-family: var(--font-family);
-    content: attr(data-lang);
-    font-size: 0.9rem;
-    color: var(--body-color);
-    position: absolute;
-    display: block;
-    right: 1rem;
-    top: 0.5rem;
-    z-index: 5;
-    background-color: rgba(0,0,0,0.3);
-    padding: 0.5rem;
-    text-align: center;
-    line-height: 1;
-    border-radius: 0.4rem;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.05), 0 2px 2px rgba(0,0,0,0.05), 0 4px 4px rgba(0,0,0,0.05), 0 6px 8px rgba(0,0,0,0.05), 0 8px 16px rgba(0,0,0,0.05);
-}
-
-figure table::-webkit-scrollbar,pre::-webkit-scrollbar {
-  height: 5px;
-  background-color: rgba(37, 37, 37, 0.2);
-  width: 0;
-}
-
-figure table::-webkit-scrollbar-thumb,pre::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: var(--body-color);
-}
 
 .content .aspect-ratio img.wide-img {
   margin: auto;
@@ -77,14 +40,12 @@ article.project-card {
   }
 }
 
-
 // .lead.aspect-ratio.sixteen-nine { 
 //   border: 1px solid var(--border-color);
 //   transition: border-color 500ms ease;
 // }
 
-
-
+@import "code-highlight";
 @import "typing-window";
 @import "photo-gallery";
 @import "icomoon-icons";
