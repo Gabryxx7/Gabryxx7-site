@@ -9,33 +9,41 @@
  $_dark_background: #262d35;
  $_dark_foreground: #cbccc6;
  $_dark_ui: #707a8c;
- $_dark_tag: #5ccfe6;
+//  $_dark_tag: #5ccfe6;
+ $_dark_tag:  #e06c75;
  $_dark_func: #ffd580;
- $_dark_entity: #73d0ff;
- $_dark_string: #bae67e;
+//  $_dark_entity: #73d0ff;
+ $_dark_entity:  #e5c07b;
+//  $_dark_string: #bae67e;
+ $_dark_string:  #98c379;
  $_dark_regexp: #95e6cb;
  $_dark_markup: #f28779;
- $_dark_keyword: #ffa759;
+//  $_dark_keyword: #ffa759;
+ $_dark_keyword: #c678dd;
  $_dark_special: #ffe6b3;
  $_dark_comment: #5c6773;
- $_dark_constant: #d4bfff;
- $_dark_operator: #f29e74;
- $_dark_error: #ff3333;
-
+ $_dark_constant: #baabd8;
+//  $_dark_operator: #f29e74;
+ $_dark_operator: #abb2bf;
+ $_dark_error: #d25151;
+//  $_dark_generic:  #93a1a1;
+ $_dark_generic: #e06c75;
 //  .dark-mode .highlight {
 // body.dark-mode pre.highlight{
-.highlight pre{
+  .highlight pre,
+  body.light-mode .highlight pre,
+  body.dark-mode .highlight pre{
   background-color: $_dark_background;
   color: $_dark_foreground;
   .c { color: $_dark_comment; font-style: italic; } /* Comment */
-  .err { color: $_dark_background; background-color: $_dark_error; } /* Error */
+  .err { color: $_dark_error; text-decoration: underline; font-weight: 500; } /* Error */
   // .g { color: $_dark_generic } /* Generic */
   .k { color: $_dark_keyword } /* Keyword */
-  // .l { color: #93a1a1 } /* Literal */
-  // .n { color: #93a1a1 } /* Name */
+  .l { color:  $_dark_generic } /* Literal */
+  .n { color:  $_dark_generic } /* Name */
   .o { color: $_dark_operator } /* Operator */
-  // .x { color: #cb4b16 } /* Other */
-  // .p { color: #93a1a1 } /* Punctuation */
+  .x { color: #cb4b16 } /* Other */
+  .p { color:  $_dark_operator } /* Punctuation */
   .cm { color: $_dark_comment } /* Comment.Multiline */
   .cp { color: $_dark_comment } /* Comment.Preproc */
   .c1 { color: $_dark_comment } /* Comment.Single */
@@ -56,10 +64,10 @@
   .kp { color: $_dark_keyword } /* Keyword.Pseudo */
   .kr { color: $_dark_keyword } /* Keyword.Reserved */
   .kt { color: $_dark_keyword } /* Keyword.Type */
-  // .ld { color: #93a1a1 } /* Literal.Date */
+  .ld { color:  $_dark_generic } /* Literal.Date */
   .m { color: $_dark_constant } /* Literal.Number */
   .s { color: $_dark_constant } /* Literal.String */
-  .na { color: $_dark_entity } /* Name.Attribute */
+  .na { color: $_dark_constant } /* Name.Attribute */
   .nb { color: $_dark_entity } /* Name.Builtin */
   .nc { color: $_dark_func } /* Name.Class */
   .no { color: $_dark_constant } /* Name.Constant */
@@ -69,8 +77,8 @@
   .nf { color: $_dark_func } /* Name.Function */
   .nl { color: $_dark_entity } /* Name.Label */
   .nn { color: $_dark_entity } /* Name.Namespace */
-  // .nx { color: #93a1a1 } /* Name.Other */
-  // .py { color: #93a1a1 } /* Name.Property */
+  .nx { color:  $_dark_generic } /* Name.Other */
+  .py { color:  $_dark_generic } /* Name.Property */
   .nt { color: $_dark_tag } /* Name.Tag */
   .nv { color: $_dark_entity } /* Name.Variable */
   .ow { color: $_dark_operator } /* Operator.Word */

@@ -29,11 +29,11 @@ body.light-mode .highlight pre{
   .err { color: $background; background-color: $error; } /* Error */
   // .g { color: $generic } /* Generic */
   .k { color: $keyword } /* Keyword */
-  // .l { color: #93a1a1 } /* Literal */
-  // .n { color: #93a1a1 } /* Name */
+  .l { color: #93a1a1 } /* Literal */
+  .n { color: #93a1a1 } /* Name */
   .o { color: $operator } /* Operator */
-  // .x { color: #cb4b16 } /* Other */
-  // .p { color: #93a1a1 } /* Punctuation */
+  .x { color: #cb4b16 } /* Other */
+  .p { color: #93a1a1 } /* Punctuation */
   .cm { color: $comment } /* Comment.Multiline */
   .cp { color: $comment } /* Comment.Preproc */
   .c1 { color: $comment } /* Comment.Single */
@@ -54,7 +54,7 @@ body.light-mode .highlight pre{
   .kp { color: $keyword } /* Keyword.Pseudo */
   .kr { color: $keyword } /* Keyword.Reserved */
   .kt { color: $keyword } /* Keyword.Type */
-  // .ld { color: #93a1a1 } /* Literal.Date */
+  .ld { color: #93a1a1 } /* Literal.Date */
   .m { color: $constant } /* Literal.Number */
   .s { color: $constant } /* Literal.String */
   .na { color: $entity } /* Name.Attribute */
@@ -67,8 +67,8 @@ body.light-mode .highlight pre{
   .nf { color: $func } /* Name.Function */
   .nl { color: $entity } /* Name.Label */
   .nn { color: $entity } /* Name.Namespace */
-  // .nx { color: #93a1a1 } /* Name.Other */
-  // .py { color: #93a1a1 } /* Name.Property */
+  .nx { color: #93a1a1 } /* Name.Other */
+  .py { color: #93a1a1 } /* Name.Property */
   .nt { color: $tag } /* Name.Tag */
   .nv { color: $entity } /* Name.Variable */
   .ow { color: $operator } /* Operator.Word */

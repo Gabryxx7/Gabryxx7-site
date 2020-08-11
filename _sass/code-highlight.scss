@@ -1,5 +1,5 @@
 @import "ayu-mirage";
-@import "ayu-light";
+// @import "ayu-light";
 
 .highlight pre{
   text-align: left;
@@ -15,7 +15,7 @@
     font-family: var(--font-family);
     content: attr(data-lang);
     font-size: 0.9rem;
-    color: var(--body-color);
+    color: #ccc;
     position: absolute;
     display: block;
     right: 1rem;
@@ -37,5 +37,5 @@ figure table::-webkit-scrollbar,pre::-webkit-scrollbar {
   
   figure table::-webkit-scrollbar-thumb,pre::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: var(--body-color);
+    background-color: #ccc;
   }
