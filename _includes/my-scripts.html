@@ -126,9 +126,28 @@ var startTypers = function(){
   
 };
 
+var addCodeLines = function(){
+  var codeLinesSpan = "<span class='code-lines' style='display: none;'> </span>";
+  var codeLinesBtn = "<span class='code-lines-btn'>lines</span>";
+  var code = $(".highlight pre").each(function(index){
+    if($(this).find(".code-lines").length > 0)
+      return;
+    var lines = $(this).find("code").text().split(/\r\n|\r|\n/).length;
+    var linesSpan = $(codeLinesSpan);
+    var linesBtnSpan = $(codeLinesBtn);
+    linesBtnSpan.click(function(){
+      $(this).parent().find(".code-lines").fadeToggle();
+    });
+    linesSpan.text([...Array(lines).keys()].join("\n"));
+    $(this).prepend(linesSpan);
+    $(this).prepend(linesBtnSpan);
+  });
+};
+
 
 document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
     startTypers();
+    addCodeLines();
 });
 document.addEventListener('DOMContentLoaded', function(){ 
     startTypers();
