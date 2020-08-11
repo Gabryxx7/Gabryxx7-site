@@ -3,7 +3,7 @@
 # See also: <https://jsonresume.org/>.
 basics:
   # dateformats: "%b %Y" # Moved to strings.yml/date_formats
-  name: "Gabriele Marini"
+  name: "Gabriele Marini [<span style='font-size: 1.3rem;'>[.pdf]</span>](/assets/Resume.pdf)"
   nationality: "Italian"
   dob: 12-09-1992
   dob-long: 12th of September 1992
@@ -13,8 +13,7 @@ basics:
   phone: "(+61) 048 1149376"
   website: "http://gabryxx7.com"
   summary: |
-    Computer Scientist, researcher, photographer and traveller. Currently pursuing a PhD in Computing and Information System at the University of Melbourne. 
-    [Download my Resume here](/assets/Resume.pdf)
+    Computer Scientist, researcher, photographer and traveller. Currently pursuing a PhD in Computing and Information System at the University of Melbourne.
   location:
     address: "168, The University of Melbourne, Grattan St, Parkville"
     postalCode: "VIC 3052"
