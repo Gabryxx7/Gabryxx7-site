@@ -1,7 +1,11 @@
 {% assign image       = include.image       %}
 {% assign color       = include.color       %}
 {% assign theme_color = include.theme_color %}
+{% assign bg_html = "" %}
 
+{% if image.html_background %}
+  {% assign bg_html = image.html_background %} 
+{% endif %}
 {% if image.background %}
   {% capture bg_style %}background:{{ image.background }}{% endcapture %}
   {% capture bg_class %}sidebar-bg {% if image.overlay %}sidebar-overlay{% endif %}{% endcapture %}
@@ -10,4 +14,10 @@
   {% capture bg_style %}background-color:{{ bg_color }};{% if image != 'none' %}background-image:url({% include_cached smart-url url=image %}){% endif %}{% endcapture %}
   {% capture bg_class %}sidebar-bg {% if image != 'none' %}sidebar-overlay{% endif %}{% endcapture %}
 {% endif %}
-<div class="{{ bg_class }}" style="{{ bg_style }}"></div>
+<div class="{{ bg_class }}" style="{{ bg_style }}">
+{% if bg_html != "" %}
+  <div id='sidebar_bg_div_overlay'>
+    {{ bg_html }}
+  </div>
+{% endif %}
+ </div>

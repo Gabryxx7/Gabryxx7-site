@@ -19,6 +19,10 @@ gabryxx7:
     srcset:
       1x:            assets/icons/icon-small.jpg
       2x:            assets/icons/icon-small.jpg
+    # accent_color:     '#268bd2'
+    # accent_image:
+    #   background:     '#202020'
+    #   overlay:        false
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
