@@ -3,7 +3,7 @@
 # See also: <https://jsonresume.org/>.
 basics:
   # dateformats: "%b %Y" # Moved to strings.yml/date_formats
-  name: "Gabriele Marini [<span style='font-size: 1.3rem;'>[.pdf]</span>](/assets/Resume.pdf)"
+  name: "Gabriele Marini <span style='font-size: 40%;vertical-align: middle;'>[ <a href='/assets/Resume.pdf' style=''>.pdf</a> ]</span>"
   nationality: "Italian"
   dob: 12-09-1992
   dob-long: 12th of September 1992
