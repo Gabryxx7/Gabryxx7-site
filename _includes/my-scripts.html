@@ -127,7 +127,7 @@ var startTypers = function(){
 };
 
 var addCodeLines = function(){
-  var codeLinesSpan = "<span class='code-lines' style='display: none;'> </span>";
+  var codeLinesSpan = "<span class='code-lines' style='max-width: 0px; font-size: 0px; padding: 0px;'> </span>";
   var codeLinesBtn = "<span class='code-lines-btn'>lines</span>";
   var code = $(".highlight pre").each(function(index){
     if($(this).find(".code-lines").length > 0)
@@ -136,7 +136,17 @@ var addCodeLines = function(){
     var linesSpan = $(codeLinesSpan);
     var linesBtnSpan = $(codeLinesBtn);
     linesBtnSpan.click(function(){
-      $(this).parent().find(".code-lines").fadeToggle();
+      if( $(this).hasClass("enabled")){
+        $(this).parent().find(".code-lines").css('max-width', '0px');    
+        $(this).parent().find(".code-lines").css('font-size', '0');      
+        $(this).parent().find(".code-lines").css('padding', '0');        
+      }
+      else{   
+        $(this).parent().find(".code-lines").css('max-width', '2000px');      
+        $(this).parent().find(".code-lines").css('font-size', '');      
+        $(this).parent().find(".code-lines").css('padding', '');   
+      }
+      $(this).toggleClass("enabled");
     });
     linesSpan.text([...Array(lines).keys()].join("\n"));
     $(this).prepend(linesSpan);
