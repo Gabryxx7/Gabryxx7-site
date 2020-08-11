@@ -126,8 +126,19 @@ figure table::-webkit-scrollbar,pre::-webkit-scrollbar {
     background-color: rgba(37, 37, 37, 0.2);
     width: 0;
   }
+figure table:hover::-webkit-scrollbar,pre:hover::-webkit-scrollbar {
+    height: 0.4rem;
+    background-color: rgba(29, 29, 29, 0.233);
+    width: 0;
+  }
+
   
   figure table::-webkit-scrollbar-thumb,pre::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: #848484;
+  }
+  
+  figure table:hover::-webkit-scrollbar-thumb,pre:hover::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #dddddd;
   }
