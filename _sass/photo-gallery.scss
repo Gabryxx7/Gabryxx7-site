@@ -6,6 +6,11 @@
     align-items: center;
     width: 100%;
     height: auto;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
   
     .photo-group-date-container {
       width: 100%;
@@ -46,6 +51,11 @@
     flex: 0 1 47%;
     border-radius: 0.4rem;
     box-shadow: 0 1px 1px rgba(0,0,0,0.05), 0 2px 2px rgba(0,0,0,0.05), 0 4px 4px rgba(0,0,0,0.05), 0 6px 8px rgba(0,0,0,0.05), 0 8px 16px rgba(0,0,0,0.05);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
   
     img {
       transition: all 250ms;
