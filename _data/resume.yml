@@ -127,7 +127,7 @@ volunteer:
     startDate: "2019-08-23"
     endDate: "2019-08-23"
     summary:  "Showcase of PhD and side projects"
-  - organization: "Open Day Volunteer - University of Melbourne"
+  - organization: "University of Melbourne"
     position: "Open Day Volunteer"
     startDate: "2019-08-18"
     endDate: "2019-08-18"
@@ -154,8 +154,8 @@ education:
     #   - "DB1101 - Basic SQL"
     #   - "CS2011 - Java Introduction"
     extra: |-
-      > - "INFO90003 - Designing Novel Interaction (Best Project Award)"
-      > - "COMP90044 - Research Methods"  
+      > - "INFO90003 - Designing Novel Interaction (Best Project Award) - H1"
+      > - "COMP90044 - Research Methods - H2B"  
       > - "MTC-GR - Melbourne Teaching Certificate for Graduate Research"  
   - institution: "Università degli studi di Pisa"
     area: "Computer Science"
@@ -183,7 +183,7 @@ education:
   #   gradeDescription: ""
 awards:
   - title: "Data61 - CSIRO Scholarship"
-    date: "2019-05-01"
+    date: "2017-05-01"
     awarder: Data61 - CSIRO
     website: "https://www.data61.csiro.au/"
     # summary : ""
@@ -234,7 +234,7 @@ languages:
 
 certificates:
   - title: "TOEFL"
-    date: "2019-05-01"
+    date: "2017-05-01"
     extra: "Total 112 (Reading: 28, Listening: 28, Speaking: 26, Writing: 30)"
   - title: "MTC-GR"
     date: "2019-11-01"
@@ -285,7 +285,7 @@ skills:
       - "SQL"
       - "MySQL"
       - "SQLite"
-      - "NodeJS"
+      - "Node.JS"
   - name: "Writing"
     level: "Master"
     # stars: 3
@@ -296,6 +296,7 @@ skills:
     level: "Master"
     # stars: 3
     keywords:
+      - "Adobe Lightroom"
       - "Adobe Photoshop"
       - "Adobe Illustrator"
       - "Adobe Premiere"
@@ -304,14 +305,16 @@ interests:
     keywords:
       - "Traveling"
       - "Gaming"
-      - "Spearfishing"
+      - "Programming"
   - name: "Sports"
     keywords:
       - "Swimming"
+      - "Calisthenics"
       - "Martial Arts"
   - name: "Photography"
     keywords:
       - "Landscape"
+      - "Aerial Photography"
       - "Astrophotography"
 references:
   # - name: "Erlich Bachman"
