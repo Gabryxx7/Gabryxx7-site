@@ -2,6 +2,11 @@
 
 @import "pro/syntax-dark";
 
+@media screen {
+  body.dark-mode {
+    @include darkmode-syntax();
+  }
+}
 @media screen and (prefers-color-scheme: dark) {
   body {
     @include darkmode-syntax();

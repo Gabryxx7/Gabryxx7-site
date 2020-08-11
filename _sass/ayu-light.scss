@@ -21,7 +21,8 @@ $constant: #a37acc;
 $operator: #ed9366;
 $error: #f51818;
 
-.highlight {
+// .highlight {
+body.light-mode .highlight pre{
   background-color: $background;
   color: $foreground;
   .c { color: $comment; font-style: italic; } /* Comment */

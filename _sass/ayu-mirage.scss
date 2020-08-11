@@ -1,27 +1,30 @@
 /**
  * Code Highlighting Style for Jekyll or Pygments
- * Ayu Dark by dempfi
+ * Ayu Mirage by dempfi
  * https://github.com/dempfi
  */
 
- $_dark_accent: #e6b450;
- $_dark_background: #0a0e14;
- $_dark_foreground: #b3b1ad;
- $_dark_ui: #3d424d;
- $_dark_tag: #39bae6;
- $_dark_func: #ffb454;
- $_dark_entity: #59c2ff;
- $_dark_string: #c2d94c;
+ $background: #f4f4f4;
+ $_dark_accent: #ffcc66;
+ $_dark_background: #262d35;
+ $_dark_foreground: #cbccc6;
+ $_dark_ui: #707a8c;
+ $_dark_tag: #5ccfe6;
+ $_dark_func: #ffd580;
+ $_dark_entity: #73d0ff;
+ $_dark_string: #bae67e;
  $_dark_regexp: #95e6cb;
- $_dark_markup: #f07178;
- $_dark_keyword: #ff8f40;
- $_dark_special: #e6b673;
- $_dark_comment: #626a73;
- $_dark_constant: #ffee99;
- $_dark_operator: #f29668;
+ $_dark_markup: #f28779;
+ $_dark_keyword: #ffa759;
+ $_dark_special: #ffe6b3;
+ $_dark_comment: #5c6773;
+ $_dark_constant: #d4bfff;
+ $_dark_operator: #f29e74;
  $_dark_error: #ff3333;
 
-.dark-mode .highlight {
+//  .dark-mode .highlight {
+// body.dark-mode pre.highlight{
+.highlight pre{
   background-color: $_dark_background;
   color: $_dark_foreground;
   .c { color: $_dark_comment; font-style: italic; } /* Comment */
@@ -93,4 +96,7 @@
   .vg { color: $_dark_entity } /* Name.Variable.Global */
   .vi { color: $_dark_entity } /* Name.Variable.Instance */
   .il { color: $_dark_constant } /* Literal.Number.Integer.Long */
+  td.gutter.gl {
+    background-color:  $background !important;
+  }
 }

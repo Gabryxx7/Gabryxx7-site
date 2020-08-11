@@ -1,0 +1,118 @@
+
+.typing-window-wrapper .note-sm{
+    position: relative;
+    right: unset;
+    width: unset;
+    top: unset;
+    margin-top: 0.5rem;
+  }
+  
+  @media screen and (min-width: 1500px){
+    .typing-window-wrapper .note-sm{    
+      position: absolute;
+      right: 7rem;
+      width: 21rem;
+      top: 9rem;
+      margin-bottom: 1.5rem;
+      padding: 0.5rem 1rem 0 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 1930px){
+    .typing-window-wrapper .note-sm{    
+      right: 24rem;
+    }
+  }
+  
+  .typing-window-wrapper{
+    transition: opacity 0.5s, max-height 0.5s;
+    max-height: 9000px;
+    margin-bottom: 3rem;
+  }
+  
+  .typing-window {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: var(--code-font-family);
+    background-color: #1f1f21;
+    border-radius: 0.5rem;
+    padding: 0;
+    color: #ccc;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+    
+    strong {
+      font-weight: 700;
+    }
+  
+    .typing-area{
+      padding: 1.5rem 1.5rem 1.5rem 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 42em)  {
+    .typing-window{
+     font-size: 1.1rem;
+    }
+    }
+    
+    @media screen and (max-width: 54em)  {
+      .typing-window{
+      font-size: 1.1rem;
+      }
+    }
+  
+  .typing-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    height: 1.6rem;
+    padding: 0.1rem 0.1rem 0.2rem 0.2rem;
+    background-color: var(--border-color);
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    box-shadow: inset -6px 3px 10px 0px rgba(0,0,0,0.11);
+  
+    .typing-toolbar-btn {
+      transition: background-color 250ms;
+      display: inline-block;
+      height: 1.1rem;
+      width: 1.1rem;
+      margin-top: 0.1rem;
+      margin-right: 0.7rem;
+      position: relative;
+      z-index: 2;
+      border-radius: 100%;
+      margin-bottom: 0.2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      padding-top: 0.1rem;
+      color: #848282;
+      font-weight: 700;
+    }
+    .typing-toolbar-btn.close {
+      background-color: #e01e1e;
+    }
+    .typing-toolbar-btn.close.disabled {
+      background-color: #693737;
+      color: #8e8e8e;
+    }
+    
+    .typing-toolbar-btn.min {
+      background-color: var(--body-bg);
+    }
+    .typing-toolbar-btn.size {
+      background-color: var(--body-bg);
+    }
+    .typing-toolbar-btn.close:not(.disabled):hover,
+    .typing-toolbar-btn.close:not(.disabled):focus,
+    .typing-toolbar-btn.close:not(.disabled):active {
+      transition: background-color 250ms;
+      background-color: #f94b29;
+      cursor: pointer;
+    }
+  }
+  
+  .typing-window.blog {
+    margin-bottom: 0.5rem;
+  }
+  

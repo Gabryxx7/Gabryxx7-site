@@ -86,18 +86,18 @@ The challenge was of course to make sure it looked nice and smooth!
 ## The basic HTML
 The `html` is really simple, nothing to explain here. I just added a pipe `▌` character as default in the typing area so it does not look empty when the user loads the page and Typewriter has not started typing yet.
 
-~~~html
+{% highlight html %}
   <div class='typing-window'>
     <div class="typing-area">▌</div>
   </div>
-~~~
+{% endhighlight %}
 
 Now that we have our `html` structure we can start styling it and adding the actual typewriter to it!
 
 ## Styling the terminal
 I wanted to give it a terminal look, but also not a `DOS` look, something a bit more fancy and modern. So I started with a simple rounded rectangle with a nice dark gray background:
 
-~~~css
+{% highlight css %}
 .typing-window {
   transition: opacity 0.5s, max-height 0.5s;
   max-height: 9000px;
@@ -120,7 +120,7 @@ I wanted to give it a terminal look, but also not a `DOS` look, something a bit 
     padding: 1.5rem 1.5rem 1.5rem 1rem;
   }
 }
-~~~
+{% endhighlight %}
 
 {% raw %}
 
@@ -143,7 +143,7 @@ This is the best part of the project!
 Now that we have everything set up we can start typing in text into the terminal. Let's start by retreiving the container where the text will go
 
 Ok so now that we have our container, we need to look for the typing area. It's also a good idea to only start typing if the container exists, and do nothing otherwise.
-~~~javascript
+{% highlight javascript %}
 var typerStarted = false;
 var startTyper = function() {   
   typerStarted = true;
@@ -167,18 +167,18 @@ var startTyper = function() {
   .pauseFor(1000)
   .start();
 };
-~~~
+{% endhighlight %}
 
 We also need to make sure that the typing only starts when the page content is loaded. In the case of Hydejack (the Jekyll theme I am using), we need to account for dynamic page loading so:
 
-~~~javascript
+{% highlight javascript %}
 document.addEventListener('DOMContentLoaded', function(){ 
   if(!typerStarted) startTyper();
 }, false);
 document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
   if(!typerStarted) startTyper();
 });
-~~~
+{% endhighlight %}
 
 Alright so let's test it out, shall we?
 
@@ -225,7 +225,7 @@ document.getElementById('_pushState').addEventListener('hy-push-state-load', fun
 ## Adding a status bar
 Let's try and give it more of a terminal look now by adding a Ubuntu-styled status bar. Let's add a few `div`s for the bar and its buttons
 
-~~~html
+{% highlight html %}
   <div class='typing-window'>
     <div class='typing-toolbar'>
       <div class="typing-toolbar-btn min">—</div>
@@ -234,13 +234,13 @@ Let's try and give it more of a terminal look now by adding a Ubuntu-styled stat
     </div>
     <div class="typing-area">▌</div>
   </div>
-~~~
+{% endhighlight %}
 
 Let's style it up a little bit now. We want to use an `inset` shadow, and give a different color to the buttons.
 The only clickable button should be the closing button so let's change it's `:hover:` CSS and also add a `disabled` state.
 
 
-~~~css
+{% highlight css %}
 .typing-toolbar {
   display: flex;
   justify-content: flex-end;
@@ -289,7 +289,7 @@ The only clickable button should be the closing button so let's change it's `:ho
     cursor: pointer;
   }
 }
-~~~
+{% endhighlight %}
 
 <div class='typing-window test-close_noaction'>
   <div class='typing-toolbar'>
@@ -302,7 +302,7 @@ The only clickable button should be the closing button so let's change it's `:ho
 
 Now for the final touch, let's make it so that the close button actually closes the terminal, but we'll enable the button after 10 seconds so there is time for some text to be typed in the terminal!
 
-~~~javascript
+{% highlight javascript %}
 var startTestTyper = function() {   
   typerStarted = true;
   var typingWindow = document.getElementsByClassName('typing-window test')[0];  
@@ -338,7 +338,7 @@ var startTestTyper = function() {
  });
   ...
 };
-~~~
+{% endhighlight %}
 
 <div class='typing-window test-close'>
   <div class='typing-toolbar'>
@@ -422,7 +422,7 @@ The way `Typewriter.js` works is by adding events to a queue. Calling `pasteStri
 
 I wanted my typewriter to keep changing the last few words in loop so I implemented a little trick without having to rewrite the library:
 
-~~~javascript
+{% highlight javascript %}
 function appendLeadingZeroes(n){
   if(n <= 9){
     return "0" + n;
@@ -473,7 +473,7 @@ var randomDelay = function(){
     };
   };
   typewriter.start();
-~~~
+{% endhighlight %}
 So the main idea is to have a list of words that keep being written and deleted, but I did not want to manually enter the char to delete every time.
 So by using a list I can delete the length of the previous word and type in the new one:
 
@@ -499,7 +499,7 @@ So first thing I did was to allow for the Hydejack's blog page layout to include
 {:.message}
 
 {% raw %}
-~~~liquid
+{% highlight liquid %}
 ---
 layout: base
 ---
@@ -521,7 +521,7 @@ layout: base
   {% include components/pagination.html %}
 {% endif %}
 
-~~~
+{% endhighlight %}
 {% endraw %}
 
 So you can see how I added {% raw %}`{{ content | markdownify }}`{% endraw %} to the top to add whatever content I'll write to any page using `blog-custom` as a layout.
@@ -538,7 +538,7 @@ For the first point I simply added custom classes for posts, I added a `class` p
 In order to use this new property I edited the `_incudes/component/hy-img.html` as below:
 
 {% raw %}
-~~~liquid
+{% highlight liquid %}
 {% assign img_class = include.img.class | default:"" %}
 {% assign include_class = include.class | default:"" %}
 {% classes = include_class | concat: img_class %}
@@ -551,13 +551,13 @@ In order to use this new property I edited the `_incudes/component/hy-img.html` 
   {% if include.height %}height="{{ include.height }}"{% endif %}
   {% if include.width and include.height %}loading="lazy"{% endif %}
 />
-~~~
+{% endhighlight %}
 {% endraw %}
 I simply always add classes to the `img` tag which are empty by default, in this way I am sure this will work with the pre-existing configuration. If I always added `include.img.class` when it did not exist I could have incurred into issues later, and I definitely wouldn't want to remove `include.class` as it might be used in otehr cases. Furthermore, I did not want to add any `style` tag simply because I noticed the `hy-img` always end up with `style="opacity: 0;` in the final `html` page and I am not sure if that's needed or not so I did not want to overwrite that.
 
 Let's not forget to add the `CSS` for dealing with wide featured images:
 
-~~~css
+{% highlight css %}
 .content .aspect-ratio img.wide-img {
   margin: auto;
   width: 100%;
@@ -568,23 +568,23 @@ Let's not forget to add the `CSS` for dealing with wide featured images:
   vertical-align: middle;
   object-fit: scale-down !important;
 }
-~~~
+{% endhighlight %}
 
 For the second point of displaying divss into post featured images, it was actually fairly simple. Sasme as before I added a new post image property called `html`, I then edited the file `_includes/component/post.html` so that if `image.html` is definied it will use the html instead of the image path. so I changed this :
 
 {% raw %}
-~~~liquid
+{% highlight liquid %}
 <div class="lead aspect-ratio sixteen-nine flip-project-img">
   {% include_cached components/hy-img.html img=post.image alt=post.title width=864 height=486 %}
 </div>
 
-~~~
+{% endhighlight %}
 {% endraw %}
 
 To this:
 
 {% raw %}
-~~~liquid
+{% highlight liquid %}
   {% if post.image.html %}
     <div class="lead aspect-ratio sixteen-nine flip-project-html">
       {{ post.image.html }}
@@ -593,12 +593,12 @@ To this:
     <div class="lead aspect-ratio sixteen-nine flip-project-img">
       {% include_cached components/hy-img.html img=post.image alt=post.title width=864 height=486 %}
     {% endif %}
-~~~
+{% endhighlight %}
 {% endraw %}
 
 Last touch, I added the console effect `html` to the post property which now looks something like this:
 
-~~~yaml
+{% highlight yaml %}
 ---
 layout: post
 title: How I made the blog's terminal animation
@@ -619,7 +619,7 @@ image:
 description: >
   I made a gif of me mashing  the keyboard on hackertyper and it got me the idea of using this terminal as a welcoming animation!
 ---
-~~~
+{% endhighlight %}
 
 Beware that this only works in the post page or in the post preview, it will NOT work in the post card when showed as related post (you'd have to edit `_includes/component/post-card.html` for that). I would not recommend it as it makes everything more complicated and messy with loading randomg javascript all the time. For this reason I would suggest to have an image to display as a fallback option
 
@@ -627,14 +627,14 @@ Beware that this only works in the post page or in the post preview, it will NOT
 When it comes to the post terminal I can simply add the javascript shown above in between the `<script></script>` tags. For the page, I added the javascript to the `_includes/my-scripts.html`. The event listeners will try to load the terminal at every page but the function returns if there is no element with classes `typing-window blog`.
 
 **IMPORTANT**: When deploying jekyll with the command `JEKYLL_ENV=production bundle exec jekyll build` (to enable the search function) make sure that your javascript is **PERFECT** as in, add a `;` to EVERY statement. Otherwise then it gets minified, something like 
-~~~javascript
+{% highlight javascript %}
 var test = 1
 var test = 3
-~~~
+{% endhighlight %}
 Becomes:
-~~~javascript
+{% highlight javascript %}
 var test = 1var test = 3
-~~~
+{% endhighlight %}
 Generating an error and making your whole javascript code crash
 
 
@@ -643,7 +643,7 @@ An important note, if you end up using IDs instead of classes, multiple terminia
 ## Adding a description to your page terminal
 You will notice I also added a little description to the typing window to link to this post, I simply wrapped the whole window in another div like this:
 
-~~~html
+{% highlight html %}
 <div class="typing-window-wrapper">
   <p class="note-sm">
     Do you want to make one yourself for your website? Check this post out:
@@ -658,15 +658,15 @@ You will notice I also added a little description to the typing window to link t
     <div class="typing-area">▌</div>
   </div>
 </div>
-~~~
+{% endhighlight %}
 
 I then added some extra `CSS` to `_sass/my-style.scss`
 
-~~~css
+{% highlight css %}
 .typing-window-wrapper .note-sm{
   position: absolute;
   right: 23rem;
   width: 21rem;
   padding: 0.5rem 1rem 0 1rem;
 }
-~~~
+{% endhighlight %}

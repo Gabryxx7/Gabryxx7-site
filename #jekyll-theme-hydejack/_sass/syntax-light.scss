@@ -1,11 +1,11 @@
-@mixin darkmode-syntax {
+@mixin lightmode-syntax() {
   .highlight,
   pre.highlight {
-    // background: #282c34;
-    color: #abb2bf;
+    // background: #fafafa;
+    color: #383a42;
   }
   // .highlight pre {
-  //   background: #282c34;
+  //   background: #fafafa;
   // }
   .highlight .ge {
     font-style: italic;
@@ -21,19 +21,19 @@
   .highlight .nn,
   .highlight .o,
   .highlight .p {
-    color: #abb2bf;
+    color: #383a42;
   }
   .highlight .c,
   .highlight .c1,
   .highlight .cm,
   .highlight .cp,
   .highlight .cs {
-    color: #5c6370;
+    color: #a0a1a7;
     font-style: italic;
   }
   .highlight .sr,
   .highlight .ss {
-    color: #56b6c2;
+    color: #0184bc;
   }
   .highlight .k,
   .highlight .kc,
@@ -42,7 +42,7 @@
   .highlight .kp,
   .highlight .kr,
   .highlight .kt {
-    color: #c678dd;
+    color: #a626a4;
   }
   .highlight .l,
   .highlight .ld,
@@ -56,12 +56,12 @@
   .highlight .sh,
   .highlight .si,
   .highlight .sx {
-    color: #98c379;
+    color: #50a14f;
   }
   .highlight .nt,
   .highlight .nx,
   .highlight .vi {
-    color: #e06c75;
+    color: #e45649;
   }
   .highlight .il,
   .highlight .m,
@@ -70,7 +70,7 @@
   .highlight .mi,
   .highlight .mo,
   .highlight .na {
-    color: #d19a66;
+    color: #986801;
   }
   .highlight .bp,
   .highlight .nb,
@@ -84,17 +84,17 @@
   .highlight .py,
   .highlight .vc,
   .highlight .vg {
-    color: #e5c07b;
+    color: #c18401;
   }
   // .highlight .err {
   //   color: #fff;
-  //   background-color: #e05252;
+  //   background-color: #ff1414;
   // }
   .highlight .gd {
-    color: #e05252;
+    color: #ff1414;
   }
   .highlight .gi {
-    color: #43d08a;
+    color: #2db448;
   }
   .highlight .w {
     color: #f8f8f2;
@@ -106,29 +106,28 @@
     color: #75715e;
   }
   .highlight .lineno {
-    color: #636d83;
+    color: #9d9d9f;
     user-select: none;
   }
   .highlight .ln {
-    color: #636d83;
+    color: #9d9d9f;
     user-select: none;
   }
   .highlight .ln:after {
     content: " ";
   }
   .highlight .hll {
-    color: #abb2bf;
-    background-color: #3a3f4b;
+    color: #383a42;
+    background-color: #e5e5e6;
   }
   .highlight .hl {
-    color: #abb2bf;
-    background-color: #3a3f4b;
+    color: #383a42;
+    background-color: #e5e5e6;
   }
   .highlight .language-json .w + .s2 {
-    color: #e06c75;
+    color: #e45649;
   }
   .highlight .language-json .kc {
-    color: #56b6c2;
+    color: #0184bc;
   }
 }
-

@@ -23,8 +23,8 @@ addons: [comments, about]
     {% if photo.file %}
         {% if page.grouped %}
             {% if current_date != prev_date %}
-                <blockquote class="photo-group-date">
-                    <div class="photo-group-date-container">
+                <blockquote class="photo-group-date-container">
+                    <div class="photo-group-date">
                         {{ current_date }}
                     </div>
                 </blockquote>
