@@ -21,7 +21,7 @@ pre {
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    padding: 1.2rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 
     code,
     .code-lines {
@@ -38,6 +38,25 @@ pre {
         border-radius: 0.3rem;
         box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.07);
     }
+}
+
+/* This is for the inline code */
+code, .dark-mode code{
+    color: rgb(175, 97, 97);
+    background-color: #00000024;
+    border-radius: 0.3rem;
+}
+.light-mode code{
+    color: #2f2f2f;
+    background-color: #6f6f6f24;
+    border-radius: 0.3rem;
+}
+
+/* IMPORTANT: this is to avoid the inline code styling applying to the blocks */
+.highlight code{
+    color: unset;
+    background-color: unset;
+    border-radius: unset;
 }
 
 
@@ -60,53 +79,55 @@ pre {
     }
 }
 
-pre code[data-lang]::before,
-pre .code-lines-btn {
-    /* font-family: "Ubuntu Mono",SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New","Noto Serif SC",STSong,monospace; */
-    font-family: var(--font-family);
-    content: attr(data-lang);
-    font-size: 0.9rem;
-    color: #ccc;
+.code-extras{
     position: absolute;
-    display: block;
+    font-family: var(--font-family);
+    color: #ccc;
+    font-size: 0.9rem;
     right: 0.3rem;
     top: 0.1rem;
     z-index: 2;
-    background-color: rgba(0,0,0,0.3);
-    padding: 0.5rem;
     text-align: center;
     line-height: 1;
+
+}
+.code-extras span {
+    position: relative;
+    margin-bottom: 0.3rem;
+    content: attr(data-lang);
+    display: block;
+    background-color: rgba(0,0,0,0.3);
+    padding: 0.5rem;
     border-radius: 0.4rem;
     box-shadow: 0 1px 1px rgba(0,0,0,0.05), 0 2px 2px rgba(0,0,0,0.05), 0 4px 4px rgba(0,0,0,0.05), 0 6px 8px rgba(0,0,0,0.05), 0 8px 16px rgba(0,0,0,0.05);
+    float: right;
+    clear: both;
 }
 
-pre .code-lines-btn{
+.code-lines-btn{
     transition: all 150ms;
-    font-size: 0.8rem;
     width: 3rem;
-    right: unset;
-    left: 0.3rem;
     cursor: pointer;
-    padding: 0.2rem;
 }
 
-pre .code-lines-btn.enabled{
+.code-lines-btn.enabled,
+.code-lines-btn:hover{
     background-color: rgba(200,200,200,0.7);
     color: #666;
 }
 
-pre .code-lines-btn:hover{
-    background-color: rgba(200,200,200,0.7);
-    color: #666;
+.code-lines-btn.enabled{
+    box-shadow: inset -2px -2px 5px #2b2b2ba3;
 }
+
 
 figure table::-webkit-scrollbar,pre::-webkit-scrollbar {
-    height: 5px;
+    height: 0.3rem;
     background-color: rgba(37, 37, 37, 0.2);
     width: 0;
   }
   
   figure table::-webkit-scrollbar-thumb,pre::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: #ccc;
+    background-color: #848484;
   }

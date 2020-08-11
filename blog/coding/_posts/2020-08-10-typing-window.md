@@ -92,6 +92,13 @@ The `html` is really simple, nothing to explain here. I just added a pipe `▌` 
   </div>
 {% endhighlight %}
 
+
+```html
+  <div class='typing-window'>
+    <div class="typing-area">▌</div>
+  </div>
+```
+
 Now that we have our `html` structure we can start styling it and adding the actual typewriter to it!
 
 ## Styling the terminal

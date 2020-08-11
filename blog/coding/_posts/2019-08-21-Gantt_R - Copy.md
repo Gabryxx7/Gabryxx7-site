@@ -21,7 +21,7 @@ list:
 The blog part is a WIP, this is a test
 <!--more-->
 {% comment %}
-{% highlight R linenos %}
+{% highlight R %}
 {% endhighlight %}
 {% endcomment %}
 ```R
