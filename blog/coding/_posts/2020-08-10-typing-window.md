@@ -122,14 +122,10 @@ I wanted to give it a terminal look, but also not a `DOS` look, something a bit 
 }
 {% endhighlight %}
 
-{% raw %}
-
 <div class='typing-window'>
   <div class="typing-area">Terminal Example! The font is <strong><a href="https://github.com/tonsky/FiraCode">FiraCode</a></strong> <br/>
    <- -> != !== ==> |= ▌</div>
   </div>
-
-{% endraw %}
 
 (I LOVE this font, it's amazing and it has some cool ligatures!)
 A few CSS tricks I learnt over the years:
@@ -498,8 +494,8 @@ So first thing I did was to allow for the Hydejack's blog page layout to include
 **TIP:** You can avoid Jekyll capturing liquid code by wrapping it in `\{\% raw \%\} \{\% endraw \%\}`
 {:.message}
 
-{% raw %}
 {% highlight liquid %}
+{% raw %}
 ---
 layout: base
 ---
@@ -521,8 +517,8 @@ layout: base
   {% include components/pagination.html %}
 {% endif %}
 
-{% endhighlight %}
 {% endraw %}
+{% endhighlight %}
 
 So you can see how I added {% raw %}`{{ content | markdownify }}`{% endraw %} to the top to add whatever content I'll write to any page using `blog-custom` as a layout.
 
@@ -537,8 +533,8 @@ I made a few changes to the Hydejack theme so that I could:
 For the first point I simply added custom classes for posts, I added a `class` property to the post `image` (aside from `path`).
 In order to use this new property I edited the `_incudes/component/hy-img.html` as below:
 
-{% raw %}
 {% highlight liquid %}
+{% raw %}
 {% assign img_class = include.img.class | default:"" %}
 {% assign include_class = include.class | default:"" %}
 {% classes = include_class | concat: img_class %}
@@ -551,8 +547,8 @@ In order to use this new property I edited the `_incudes/component/hy-img.html` 
   {% if include.height %}height="{{ include.height }}"{% endif %}
   {% if include.width and include.height %}loading="lazy"{% endif %}
 />
-{% endhighlight %}
 {% endraw %}
+{% endhighlight %}
 I simply always add classes to the `img` tag which are empty by default, in this way I am sure this will work with the pre-existing configuration. If I always added `include.img.class` when it did not exist I could have incurred into issues later, and I definitely wouldn't want to remove `include.class` as it might be used in otehr cases. Furthermore, I did not want to add any `style` tag simply because I noticed the `hy-img` always end up with `style="opacity: 0;` in the final `html` page and I am not sure if that's needed or not so I did not want to overwrite that.
 
 Let's not forget to add the `CSS` for dealing with wide featured images:
@@ -572,19 +568,18 @@ Let's not forget to add the `CSS` for dealing with wide featured images:
 
 For the second point of displaying divss into post featured images, it was actually fairly simple. Sasme as before I added a new post image property called `html`, I then edited the file `_includes/component/post.html` so that if `image.html` is definied it will use the html instead of the image path. so I changed this :
 
-{% raw %}
 {% highlight liquid %}
+{% raw %}
 <div class="lead aspect-ratio sixteen-nine flip-project-img">
   {% include_cached components/hy-img.html img=post.image alt=post.title width=864 height=486 %}
 </div>
-
-{% endhighlight %}
 {% endraw %}
+{% endhighlight %}
 
 To this:
 
-{% raw %}
 {% highlight liquid %}
+{% raw %}
   {% if post.image.html %}
     <div class="lead aspect-ratio sixteen-nine flip-project-html">
       {{ post.image.html }}
@@ -593,8 +588,8 @@ To this:
     <div class="lead aspect-ratio sixteen-nine flip-project-img">
       {% include_cached components/hy-img.html img=post.image alt=post.title width=864 height=486 %}
     {% endif %}
-{% endhighlight %}
 {% endraw %}
+{% endhighlight %}
 
 Last touch, I added the console effect `html` to the post property which now looks something like this:
 
