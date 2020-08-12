@@ -297,9 +297,10 @@ hydejack:
     always:            false
 
     # Set to `true` to use the dark theme based on visitors' preference (OS setting).
-    dynamic:           false
-    sunrise: 9
-    sunset:  17
+    dynamic:           true
+    match_os:          false # If this is 'true' the OS preference has the precedence, if this is false, only sunrise and sunset times will matter
+    sunrise:            9
+    sunset:             18
 
     # Set to `true` to allow visitors to switch between light and dark mode.
     icon:              true

@@ -38,6 +38,7 @@ hydejack:
   dark_mode:
     always:            false
     dynamic:           true
+    match_os:          false # If this is 'true' the OS preference has the precedence, if this is false, only sunrise and sunset times will matter
     sunrise:           6
     sunset:            18
     icon:              true
