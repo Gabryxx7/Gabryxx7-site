@@ -2,7 +2,7 @@
 <script>
   window._sunrise = {{ site.hydejack.dark_mode.sunrise | default:"6"  }};
   window._sunset =  {{ site.hydejack.dark_mode.sunset  | default:"18" }};
-  window.match_os =  {{ site.hydejack.dark_mode.match_os  | default:true }};
-  {% include scripts/dark-mode-fix.min.js %}
+  window.match_os =  {{ site.hydejack.dark_mode.match_os  | default:false }};
+  {% include scripts/dark-mode-fix.js %}
 </script>
 {% endif %}
