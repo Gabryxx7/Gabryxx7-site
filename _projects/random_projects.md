@@ -24,10 +24,12 @@ accent_image:
 
 ## [[R/Plotly]  3D Waves point distribution and animation](/assets/gabryxx7/html/r_plotly_wave.html)
 
-<img src='/assets/gabryxx7/img/r_wave_screenshot.PNG'  width='300' height='200' />
+[<img src='/assets/gabryxx7/img/r_wave_screenshot.PNG'  width='300' height='200' />](/assets/gabryxx7/html/r_plotly_wave.html)
 
+This is a little fun test I have tried some time ago. I wanted to test the animations with Plotly and R and what best way to test it if not some nice smooth waves?
+No crazy math, just a mix of `sin()` and `cos()`
 
-~~~R 
+{% highlight R %}
 library(plotly)
 
 spacing <- 0.15
@@ -61,23 +63,32 @@ p <- plot_ly(data, x = ~x, y = ~y, z = ~z, color = ~z, opacity = ~z, frame=~fram
 p
 
 htmlwidgets::saveWidget(as_widget(p), file = "/assets/gabryxx7/plots/wave.html", selfcontained = TRUE)
-~~~
+{% endhighlight %}
 
 ## [[JS/Plotly] Plotly animation and 3D data visualisation](/assets/gabryxx7/html/plotly.html)
 
-<img src='/assets/gabryxx7/img/plotly_test.PNG'  width='300' height='200'/>
+[<img src='/assets/gabryxx7/img/plotly_test.PNG'  width='300' height='200'/>](/assets/gabryxx7/html/plotly.html)
+
+Similar to the wave test I wanted to tr Plotly with javascript so I tested a few animations and 3D graphs
 
 
 ## [[WebGL] Cubes recursion generator](/assets/gabryxx7/html/cubes.html)
 
-<img src='/assets/gabryxx7/img/cubes_webgl.PNG'  width='300' height='200'/>
+[<img src='/assets/gabryxx7/img/cubes_webgl.PNG'  width='300' height='200'/>](/assets/gabryxx7/html/cubes.html)
+
+While working at the European Central Bank there was a lot of talking about "cubes" of data, three dimensional models of datasets. I like to see it as a bunch of stacked Excel spreadsheet. The spreasheets are 2-dimensional so stacking them would make it 3-dimensional and can be seen as a cube instead of a rectangle.
+So I decided to try my hand at the generation of recursive cubes, with smaller and smaller ones inside each cube.
 
 
 ## [[WebGL] Globe Data Visualisation](/assets/gabryxx7/html/globe.html)
 
-<img src='/assets/gabryxx7/img/miscellaneous.PNG'  width='300' height='200'/>
+[<img src='/assets/gabryxx7/img/miscellaneous.PNG'  width='300' height='200'/>](/assets/gabryxx7/html/globe.html)
+
+A little fun test on global geographical data visualisation with WebGL.
 
 
 ## [[JS] Canvas JSON marker rendering](/assets/gabryxx7/html/map_markers.html)
 
-<img src='/assets/gabryxx7/img/canvas-markers.PNG'  width='300' height='200'/>
+[<img src='/assets/gabryxx7/img/canvas-markers.PNG'  width='300' height='200'/>](/assets/gabryxx7/html/map_markers.html)
+
+A pure javascript implementation of a map with fixed point as markers.
