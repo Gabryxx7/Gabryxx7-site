@@ -147,31 +147,35 @@ education:
     # extra: "test2"
     startDate: "2017-05-01"
     # endDate: ""
-    # grade_description: "with a grade of"
-    grade_description: ""
     # grade: "110/110 *cum laude*"
     # courses:
     #   - "DB1101 - Basic SQL"
     #   - "CS2011 - Java Introduction"
     extra: |-
-      > - "INFO90003 - Designing Novel Interaction (Best Project Award) - H1"
-      > - "COMP90044 - Research Methods - H2B"  
-      > - "MTC-GR - Melbourne Teaching Certificate for Graduate Research"  
+      > - INFO90003 - Designing Novel Interaction (Best Project Award) - H1
+      > - COMP90044 - Research Methods - H2B"
+      > - MTC-GR - Melbourne Teaching Certificate for Graduate Research
   - institution: "Università degli studi di Pisa"
     area: "Computer Science"
     studyType: "MSc"
     startDate: "2014-09-01"
     endDate: "2017-06-01"
     location: Pisa, Italy
-    gradeDescription: with a grade of 
     grade: 110/110 *cum laude*
+    extra: |-
+      > - Advanced Database Systems
+      > - Advanced Programming
+      > - Computational Models
+      > - Distributed Systems: paradigms and models
+      > - Numerical Methods and Optimization
+      > - Principle of Programming Languages
+      > - Computer Graphics Fundamentals
   - institution: "Università degli studi di Cagliari"
     area: "Computer Science"
     studyType: "BSc"
     startDate: "2011-09-01"
     endDate: "2014-07-01"
     location: Cagliari, Italy
-    gradeDescription: with a grade of 
     grade: 110/110 *cum laude*
   # - institution: "University of Melbourne"
   #   description: "TEST2"
@@ -180,7 +184,6 @@ education:
   #   startDate: "2018-05-01"
   #   endDate: ""
   #   grade: ""
-  #   gradeDescription: ""
 awards:
   - title: "Data61 - CSIRO Scholarship"
     date: "2017-05-01"

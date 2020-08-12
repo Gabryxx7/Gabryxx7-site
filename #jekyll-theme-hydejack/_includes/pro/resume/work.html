@@ -43,7 +43,7 @@
 
     <!-- {% include components/message.html class="note" text=work.summary alt="" %} -->
     {% include components/message.html class="message" text=work.summary alt="" style="margin: 0.5rem 0rem 0rem -0.2rem; padding: 0.5rem;" %}
-    {{ work.extra | markdownify }}
+    {{ work.extra | markdownify | replace:'<p>','' | replace:'</p>','' }}
 
     {% if work.highlights.size > 0 %}
     <h4 class="sr-only">{{ strings.resume.highlights | default:"Highlights" }}</h4>

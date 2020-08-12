@@ -12,14 +12,12 @@
         {% capture study_type %}<span class="bc">{{ edu.studyType }}</span>{% endcapture %}
         {% capture area %}<span class="bc">{{ edu.area }}</span>{% endcapture %}
         {% capture institution %}<span class="bc" {% if edu.endDate.size > 0 %}property="name"{% endif %}>{{ edu.institution }}</span>{% endcapture %}
-        {% capture grade_description %}<span class="bc">{{ edu.grade_description | default:"with a GPA of"  }}</span>{% endcapture %}
-        {% capture grade %}<span class="bc">{{ edu.grade | markdownify }}</span>{% endcapture %}
+        {% capture grade %}<span class="bc">{{ edu.grade | markdownify | replace:'<p>','' | replace:'</p>','' }}</span>{% endcapture %}
         {{ strings.resume.education_title
           | default:"<!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->"
           | replace:"<!--study_type-->", study_type
           | replace:"<!--area-->", area
           | replace:"<!--institution-->", institution
-          | replace:" <!--grade_descr-->", 
           | replace:"<!--gpa-->", grade
         }}
       </h3>
@@ -40,7 +38,7 @@
       <div style="clear: both;margin-bottom: -0.5rem;"></div>
     </header>
 
-    {{ edu.extra | markdownify }}
+    {{ edu.extra | markdownify | replace:'<p>','' | replace:'</p>','' }}
 
     {% if edu.courses.size > 0 %}
     <h4 class="sr-only">{{ strings.resume.courses | default:"Courses" }}</h4>
