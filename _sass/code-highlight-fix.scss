@@ -35,7 +35,7 @@ pre > code,
 
 .code-lines {
     transition: opacity 200ms;
-    background-color: #202528;
+    background-color: var(--body-bg);
     padding: 0.3rem 0.4rem;
     margin-top: 0.7rem;
     margin-right: 0.5rem;

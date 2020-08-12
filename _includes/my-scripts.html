@@ -133,7 +133,7 @@ var addCodeLines = function(){
   var codeLanguageTag = "<span class='code-language-tag'></span>";
   var codeExtrasSpan = "<span class='code-extras'></span>";
   var charLength = 0.9;
-  var code = $(".highlight").each(function(index){
+  $(".highlight").each(function(index){
     if($(this).find(".code-lines").length > 0)
       return;
     if($(this).parents(".highlight").length > 0) /*We only want the most external one */

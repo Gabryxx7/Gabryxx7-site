@@ -26,7 +26,7 @@ body.light-mode .highlight pre{
   background-color: $background;
   color: $foreground;
   .c { color: $comment; font-style: italic; } /* Comment */
-  .err { color: $background; background-color: $error; } /* Error */
+  .err { color: $error; text-decoration: underline; font-weight: 500; } /* Error */
   // .g { color: $generic } /* Generic */
   .k { color: $keyword } /* Keyword */
   .l { color: #93a1a1 } /* Literal */
