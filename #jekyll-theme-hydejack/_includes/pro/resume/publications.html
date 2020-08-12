@@ -21,7 +21,6 @@
           <time datetime="{{ pub.releaseDate | date_to_xmlschema }}">({{ pub.releaseDate | date:"%Y" }})</time>
         </span>
       {% endif %}
-       - 
        <!-- <span class="h5 faded"> -->
         <span class="faded">
         {% capture name %}{% include components/link.html title=pub.name href=pub.website span_class="bc" %}{% endcapture %}
@@ -40,7 +39,6 @@
     </section>
   </li>
   {% endfor %}
-
 </ol>
 </div>
 </section>
