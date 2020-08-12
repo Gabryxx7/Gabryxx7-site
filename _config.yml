@@ -190,7 +190,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     default_lang: javascript
-    css_class: 'highlight'
+    # css_class: 'highlight'
     block:
       line_numbers: false
     # formatter: HTMLPygments

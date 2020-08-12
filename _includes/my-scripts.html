@@ -128,12 +128,15 @@ var startTypers = function(){
 };
 
 var addCodeLines = function(){
-  var codeLinesSpan = "<span class='code-lines' style='max-width: 0px; font-size: 0px; padding: 0px;'> </span>";
+  var codeLinesSpan = "<span class='code-lines' style='display: none;'> </span>";
   var codeLinesBtn = "<span class='code-lines-btn'>lines</span>";
   var codeLanguageTag = "<span class='code-language-tag'></span>";
   var codeExtrasSpan = "<span class='code-extras'></span>";
-  var code = $(".highlight pre").each(function(index){
+  var charLength = 0.9;
+  var code = $(".highlight").each(function(index){
     if($(this).find(".code-lines").length > 0)
+      return;
+    if($(this).parents(".highlight").length > 0) /*We only want the most external one */
       return;
     var code = $(this).find("code");
     var languageClass = code.attr('class');
@@ -145,20 +148,26 @@ var addCodeLines = function(){
     languageTag.text(language);
     var codeExtras = $(codeExtrasSpan);
     codeExtras.prepend(languageTag);
-    var noLines = code.text().split(/\r\n|\r|\n/).length;
+    var noLines = code.text().trim().split(/\r\n|\r|\n/).length;
     if(noLines > 5){
       var linesSpan = $(codeLinesSpan);
+      linesSpan.attr("code-lines", noLines);
       var linesBtnSpan = $(codeLinesBtn);
       linesBtnSpan.click(function(){
         if( $(this).hasClass("enabled")){
-          $(this).parent().parent().find(".code-lines").css('max-width', '0px');    
-          $(this).parent().parent().find(".code-lines").css('font-size', '0');      
-          $(this).parent().parent().find(".code-lines").css('padding', '0');        
+          var par = $(this).parent().parent();
+          var codeLines = par.find(".code-lines");
+          par.find("code").parent().css("padding-left", "");
+          codeLines.css('opacity', '0');
+          codeLines.css('display', 'none');
         }
         else{   
-          $(this).parent().parent().find(".code-lines").css('max-width', '2000px');      
-          $(this).parent().parent().find(".code-lines").css('font-size', '');      
-          $(this).parent().parent().find(".code-lines").css('padding', '');   
+          var par = $(this).parent().parent();
+          var codeLines = par.find(".code-lines");
+          var padding = Math.max(2,codeLines.attr("code-lines").length)+"rem";
+          par.find("code").parent().css("padding-left", padding);
+          codeLines.css('display', '');
+          codeLines.css('opacity', '1');
         };
         $(this).toggleClass("enabled");
       });
