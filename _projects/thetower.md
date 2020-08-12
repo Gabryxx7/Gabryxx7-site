@@ -19,7 +19,7 @@ accent_image:
     <script>
     document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
       console.log("Say what!");
-      particlesJS.load('test-particles-js', '/assets/gabryxx7/js/particles.json', function() {
+      particlesJS.load('test-particles-js', '/assets/gabryxx7/json/particles.json', function() {
         console.log('callback - particles.js config loaded');
       });
     });</script>

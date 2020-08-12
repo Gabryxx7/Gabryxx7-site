@@ -1,0 +1,242 @@
+{
+    "markers": [
+        {
+            "id": 0,
+            "n": 11,
+            "deployed": false
+        },
+        {
+            "id": 1,
+            "n": 12,
+            "deployed": true,
+            "circle": {
+                "x": 1563,
+                "y": 1014,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 2,
+            "n": 13,
+            "deployed": true,
+            "circle": {
+                "x": 1979,
+                "y": 1007,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 3,
+            "n": 14,
+            "deployed": true,
+            "circle": {
+                "x": 915,
+                "y": 1395,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 4,
+            "n": 15,
+            "deployed": true,
+            "circle": {
+                "x": 1374,
+                "y": 1858,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 5,
+            "n": 16,
+            "deployed": true,
+            "circle": {
+                "x": 1806,
+                "y": 1011,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 6,
+            "n": 17,
+            "deployed": false
+        },
+        {
+            "id": 7,
+            "n": 18,
+            "deployed": true,
+            "circle": {
+                "x": 1380,
+                "y": 1207,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 8,
+            "n": 19,
+            "deployed": false
+        },
+        {
+            "id": 9,
+            "n": 20,
+            "deployed": true,
+            "circle": {
+                "x": 1436,
+                "y": 1378,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 10,
+            "n": 21,
+            "deployed": false
+        },
+        {
+            "id": 11,
+            "n": 22,
+            "deployed": true,
+            "circle": {
+                "x": 1610,
+                "y": 1630,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 12,
+            "n": 23,
+            "deployed": true,
+            "circle": {
+                "x": 1411,
+                "y": 1023,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 13,
+            "n": 24,
+            "deployed": true,
+            "circle": {
+                "x": 1140,
+                "y": 1655,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 14,
+            "n": 25,
+            "deployed": true,
+            "circle": {
+                "x": 1971,
+                "y": 1213,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 15,
+            "n": 26,
+            "deployed": false
+        },
+        {
+            "id": 16,
+            "n": 27,
+            "deployed": true,
+            "circle": {
+                "x": 1788,
+                "y": 1213,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 17,
+            "n": 28,
+            "deployed": true,
+            "circle": {
+                "x": 509,
+                "y": 1593,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 18,
+            "n": 29,
+            "deployed": true,
+            "circle": {
+                "x": 1361,
+                "y": 1537,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": 19,
+            "n": 30,
+            "deployed": true,
+            "circle": {
+                "x": 1563,
+                "y": 1204,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        },
+        {
+            "id": "server",
+            "n": 0,
+            "deployed": false
+        },
+        {
+            "id": 20,
+            "n": 0,
+            "deployed": true,
+            "circle": {
+                "x": 730,
+                "y": 631,
+                "innerSize": 15,
+                "innerFill": "#ff460abd",
+                "outerSize": 30,
+                "outerFill": "#f58d04b8"
+            }
+        }
+    ]
+}
