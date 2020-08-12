@@ -1,33 +1,45 @@
 {% if resume.publications.size > 0 %}
 <section>
+  <ol>
   <div class="npb">
   <h2 id="publications" class="h3 hr-bottom">
     {{ strings.resume.publications | default:"Publications" }}
     <span class="symbol {{ icons.publications | default:'icon-book' }}"></span>
   </h2>
   {% for pub in resume.publications %}
+  <li>
   <section>
     <header class="{% unless forloop.first %}mt2{% endunless %}">
-      {% if pub.releaseDate.size > 0 %}
+       <span class="pub-authors">
+         {% for author in pub.authors %}
+           {{ author }}, 
+         {% endfor %}
+       </span>
+       {% if pub.releaseDate.size > 0 %}
         <span class="faded">
-          <time datetime="{{ pub.releaseDate | date_to_xmlschema }}">{{ pub.releaseDate | date:from_to_format }}</time>
+          <time datetime="{{ pub.releaseDate | date_to_xmlschema }}">({{ pub.releaseDate | date:"%Y" }})</time>
         </span>
       {% endif %}
        - 
-      <span class="h4 faded">
+       <!-- <span class="h5 faded"> -->
+        <span class="faded">
         {% capture name %}{% include components/link.html title=pub.name href=pub.website span_class="bc" %}{% endcapture %}
-        {% capture publisher %}<span class="bc">{{ pub.publisher }}</span>{% endcapture %}
+        {% capture publisher %}<span class="bc">{% if pub.publisher == "None" %} {{ pub.journal }} {% else %} {{ pub.publisher }} {% endif %}</span>{% endcapture %}
+        {% capture year %}{{ pub.releaseDate | date:'%Y' }}{% endcapture %}
         {{ strings.resume.publications_title
-          | default:"<!--name--> by <!--publisher-->"
+          | default:"<!--name--> by <!--publisher--> <!--year-->"
           | replace:"<!--name-->", name
           | replace:"<!--publisher-->", publisher
+          | replace:"<!--year-->", year
         }}
       </span>
     </header>
 
     {% include components/message.html class="note" text=pub.summary alt="" %}
-  </section>
+    </section>
+  </li>
   {% if forloop.first %}</div>{% endif %}
   {% endfor %}
+</ol>
 </section>
 {% endif %}

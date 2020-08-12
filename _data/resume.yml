@@ -199,24 +199,6 @@ awards:
   - title: "3rd Place Open Water Swimming Circuit"
     date: "2014-07-01"
     awarder: "FIN Sardegna"
-publications:
-  - name: "A System to Quantify Mobility and Occupancy Levels in ClinicalSettings: Development and Implementation"
-    publisher: "Submitted to JMIR mHealth & uHealth"
-    releaseDate: "2020-05-05"
-    website: "https://dl.acm.org/citation.cfm?id=3349306"
-  - name: "Northern Health gets its teeth into patient flow"
-    publisher: "VicHealth"
-    publisherUrl: "http://www.health.vic.gov.au"
-    releaseDate: "2019-07-01"
-    website: "http://www.health.vic.gov.au/healthvictoria/jul19/flow.htm"  
-  - name: "Towards context-free Semantic Localisation"
-    publisher: "UbiComp/ISWC '19 Adjunct "
-    releaseDate: "2019-07-01"
-    website: "https://dl.acm.org/citation.cfm?id=3349329"
-  - name: "Towards indoor localisation analytics for modelling flows of movements"
-    publisher: "UbiComp/ISWC '19 Adjunct "
-    releaseDate: "2019-07-01"
-    website: "https://dl.acm.org/citation.cfm?id=3349306"
 
 languages:
   - language: "Italian"
@@ -322,3 +304,136 @@ references:
   #     It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
   #     Company proved that he will be a valuable addition to any company.
 
+publications:
+  - name: 'A System to Quantify Mobility and Occupancy Levels in ClinicalSettings: Development
+    and Implementation'
+    publisher: Submitted to JMIR mHealth & uHealth
+    releaseDate: '2020-05-05'
+    website: https://dl.acm.org/citation.cfm?id=3349306
+  - name: Northern Health gets its teeth into patient flow
+    publisher: VicHealth
+    publisherUrl: http://www.health.vic.gov.au
+    releaseDate: '2019-07-01'
+  - name: '"Hi! I am the Crowd Tasker" Crowdsourcing through Digital Voice Assistants.'
+    type: inproceedings
+    releaseDate: '2020-06-15'
+    year: '2020'
+    month: None
+    journal: None
+    editors: []
+    publisher: CHI
+    pages: 1-14
+    publisherDBLP: None
+    school: None
+    authors:
+    - Danula Hettiachchi
+    - Zhanna Sarsenbayeva
+    - Fraser Allison
+    - Niels van Berkel
+    - Tilman Dingler
+    - <ins><strong>Gabriele Marini</strong></ins>
+    - Vassilis Kostakos
+    - "Jorge Gon\xE7alves"
+    website: https://doi.org/10.1145/3313831.3376320
+  - name: Does Smartphone Use Drive our Emotions or vice versa? A Causal Analysis.
+    type: inproceedings
+    releaseDate: '2020-06-15'
+    year: '2020'
+    month: None
+    journal: None
+    editors: []
+    publisher: CHI
+    pages: 1-15
+    publisherDBLP: None
+    school: None
+    authors:
+    - Zhanna Sarsenbayeva
+    - <ins><strong>Gabriele Marini</strong></ins>
+    - Niels van Berkel
+    - Chu Luo
+    - Weiwei Jiang
+    - Kangning Yang
+    - Greg Wadley
+    - Tilman Dingler
+    - Vassilis Kostakos
+    - "Jorge Gon\xE7alves"
+    website: https://doi.org/10.1145/3313831.3376163
+  - name: Probing Sucrose Contents in Everyday Drinks Using Miniaturized Near-Infrared
+      Spectroscopy Scanners.
+    type: article
+    releaseDate: '2020-03-27'
+    year: '2019'
+    month: None
+    journal: IMWUT
+    editors: []
+    publisher: None
+    pages: 136:1-136:25
+    publisherDBLP: None
+    school: None
+    authors:
+    - Weiwei Jiang
+    - <ins><strong>Gabriele Marini</strong></ins>
+    - Niels van Berkel
+    - Zhanna Sarsenbayeva
+    - Zheyu Tan
+    - Chu Luo
+    - Xin He
+    - Tilman Dingler
+    - "Jorge Gon\xE7alves"
+    - Yoshihiro Kawahara
+    - Vassilis Kostakos
+    website: https://doi.org/10.1145/3369834
+  - name: Towards indoor localisation analytics for modelling flows of movements.
+    type: inproceedings
+    releaseDate: '2019-09-18'
+    year: '2019'
+    month: None
+    journal: None
+    editors: []
+    publisher: UbiComp/ISWC Adjunct
+    pages: 377-382
+    publisherDBLP: None
+    school: None
+    authors:
+    - <ins><strong>Gabriele Marini</strong></ins>
+    website: https://doi.org/10.1145/3341162.3349306
+  - name: Towards context-free semantic localisation.
+    type: inproceedings
+    releaseDate: '2019-12-27'
+    year: '2019'
+    month: None
+    journal: None
+    editors: []
+    publisher: UbiComp/ISWC Adjunct
+    pages: 584-591
+    publisherDBLP: None
+    school: None
+    authors:
+    - <ins><strong>Gabriele Marini</strong></ins>
+    - "Jorge Gon\xE7alves"
+    - Eduardo Velloso
+    - Raja Jurdak
+    - Vassilis Kostakos
+    website: https://doi.org/10.1145/3341162.3349329
+  - name: A Mobile Scanner for Probing Liquid Samples in Everyday Settings.
+    type: inproceedings
+    releaseDate: '2020-03-27'
+    year: '2018'
+    month: None
+    journal: None
+    editors: []
+    publisher: UbiComp/ISWC Adjunct
+    pages: 1172-1177
+    publisherDBLP: None
+    school: None
+    authors:
+    - Weiwei Jiang
+    - <ins><strong>Gabriele Marini</strong></ins>
+    - Niels van Berkel
+    - Zhanna Sarsenbayeva
+    - Chu Luo
+    - Xin He
+    - Tilman Dingler
+    - Yoshihiro Kawahara
+    - Vassilis Kostakos
+    website: https://doi.org/10.1145/3267305.3274764

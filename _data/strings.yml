@@ -129,7 +129,7 @@ resume:
   awards:              Awards
   awards_title:        <!--title--> from <!--awarder-->
   publications:        Publications
-  publications_title:  <!--name--> by <!--publisher-->
+  publications_title:  "\"<!--name-->\" by <!--publisher--> <!--year-->"
   references:          References
   languages:           Languages
   fluency:             Fluency
