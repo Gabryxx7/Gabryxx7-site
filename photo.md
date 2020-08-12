@@ -35,6 +35,7 @@ addons: [comments, about]
         {% else %}
             <article class='photo-card'>
         {% endif %}
+            <div class='photo-icon'><span class='{{ photo.icon }}'></span></div>
             <div class='photo-card-img img'>
                 <img data-ignore src='{{ photolist.preview_folder }}{{ photo.file }}' loading='lazy'/>
             </div>
