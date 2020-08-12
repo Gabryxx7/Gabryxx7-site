@@ -7,7 +7,7 @@ image:
   path: /assets/gabryxx7/img/typing-window.png
   class: "wide-img"
   html: |-
-    <div class='typing-window post'>
+    <div class='typing-window post' style='margin: 2rem;'>
     <div class='typing-toolbar'>
     <div class="typing-toolbar-btn min">—</div>
     <div class="typing-toolbar-btn size">☐</div>
