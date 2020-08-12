@@ -30,7 +30,7 @@
  $_dark_generic: #e06c75;
 //  .dark-mode .highlight {
 // body.dark-mode pre.highlight{
-  .highlight pre,
+  body .highlight pre,
   body.light-mode .highlight pre,
   body.dark-mode .highlight pre{
   background-color: $_dark_background;
