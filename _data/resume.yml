@@ -308,7 +308,16 @@ publications:
   - name: 'A System to Quantify Mobility and Occupancy Levels in ClinicalSettings: Development
     and Implementation'
     publisher: Submitted to JMIR mHealth & uHealth
-    releaseDate: '2020-05-05'
+    releaseDate: '2020-09-01'
+    authors:
+    - <ins><strong>Gabriele Marini</strong></ins>
+    - Benjamin Tag
+    - "Jorge Gon\xE7alves"
+    - Eduardo Velloso
+    - Raja Jurdak
+    - Vassilis Kostakos
+    - Bill Shearer
+    - Clare McCarthy
     website: https://dl.acm.org/citation.cfm?id=3349306
   - name: Northern Health gets its teeth into patient flow
     publisher: VicHealth

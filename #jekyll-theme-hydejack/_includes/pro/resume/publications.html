@@ -1,4 +1,5 @@
 {% if resume.publications.size > 0 %}
+{% assign publications = resume.publications | sort:"releaseDate" | reverse %}
 <section>
   <ol>
   <div class="npb">
@@ -6,7 +7,7 @@
     {{ strings.resume.publications | default:"Publications" }}
     <span class="symbol {{ icons.publications | default:'icon-book' }}"></span>
   </h2>
-  {% for pub in resume.publications %}
+  {% for pub in publications %}
   <li>
   <section>
     <header class="{% unless forloop.first %}mt2{% endunless %}">
