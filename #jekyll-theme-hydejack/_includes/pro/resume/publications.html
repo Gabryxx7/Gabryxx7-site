@@ -1,12 +1,12 @@
 {% if resume.publications.size > 0 %}
 {% assign publications = resume.publications | sort:"releaseDate" | reverse %}
 <section>
-  <ol>
   <div class="npb">
   <h2 id="publications" class="h3 hr-bottom">
     {{ strings.resume.publications | default:"Publications" }}
     <span class="symbol {{ icons.publications | default:'icon-book' }}"></span>
   </h2>
+  <ol>
   {% for pub in publications %}
   <li>
   <section>
@@ -39,8 +39,9 @@
     {% include components/message.html class="note" text=pub.summary alt="" %}
     </section>
   </li>
-  {% if forloop.first %}</div>{% endif %}
   {% endfor %}
+
 </ol>
+</div>
 </section>
 {% endif %}

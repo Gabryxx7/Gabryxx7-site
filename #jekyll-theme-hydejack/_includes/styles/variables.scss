@@ -28,6 +28,10 @@ $root-font-size-large:  {{ vars.root_font_size_large  | default:17 }}px;
 $root-font-size-print:  {{ vars.root_font_size_print  | default:8  }}pt;
 $root-line-height:      {{ vars.root_line_height      | default:1.75 }};
 
+$code-blocks-font-size:      {{ vars.code_blocks_font_size | default:0.8 }}rem;
+
+
+
 $font-weight:         {{ vars.font_weight         | default:400 }};
 $font-weight-bold:    {{ vars.font_weight_bold    | default:700 }};
 $font-weight-heading: {{ vars.font_weight_heading | default:700 }};

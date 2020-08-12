@@ -1,21 +1,24 @@
 ---
-  root_font_size: 15 #px
-  root_font_size_medium: 16 #px
-  root_font_size_large: 17 #px
+  root_font_size: 14 #px
+  root_font_size_medium: 15 #px
+  root_font_size_large: 16 #px
+  
+  code_blocks_font_size: 0.8 #rem
 
   root_font_size_print: 8 #pt
 
-  root_line_height: 1.75
+  root_line_height: 1.5
 
   font_weight: 400 #=normal
   font_weight_bold: 700 #=bold
   font_weight_heading: 700 #=bold
 
-  content_width: 45 #rem
-  content_width_2: 50 #rem
-  content_width_5: 60 #rem
 
-  sidebar_width: 21 #rem
+  content_width: 50 #rem
+  content_width_2: 55 #rem
+  content_width_5: 65 #rem
+
+  sidebar_width: 23 #rem
 
   break_point_1: 42 #em
   break_point_2: 54 #em
