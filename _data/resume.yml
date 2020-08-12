@@ -145,7 +145,7 @@ education:
     location: Melbourne, Australia
     # description: "test"
     # extra: "test2"
-    startDate: "2017-05-01"
+    startDate: "2018-05-01"
     # endDate: ""
     # grade: "110/110 *cum laude*"
     # courses:
@@ -186,7 +186,7 @@ education:
   #   grade: ""
 awards:
   - title: "Data61 - CSIRO Scholarship"
-    date: "2017-05-01"
+    date: "2018-05-01"
     awarder: Data61 - CSIRO
     website: "https://www.data61.csiro.au/"
     # summary : ""
