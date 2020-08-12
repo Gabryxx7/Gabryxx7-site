@@ -5,11 +5,11 @@ caption: A collection of Javascript/WebGL fun tests
 description: >
   A collection of Javascript/WebGL tests
 image: 
-  path: /assets/gabryxx7/img/miscellaneous.png
+  path: /assets/gabryxx7/img/miscellaneous.PNG
   #  srcset:
-  #    1920w: /assets/gabryxx7/img/level0.png
-  #    960w:  /assets/gabryxx7/img/level0@0,5x.png
-  #    480w:  /assets/gabryxx7/img/level0.png@0,25x.png
+  #    1920w: /assets/gabryxx7/img/level0.PNG
+  #    960w:  /assets/gabryxx7/img/level0@0,5x.PNG
+  #    480w:  /assets/gabryxx7/img/level0.PNG@0,25x.PNG
 date: 01 Aug 2020
 #  accent_image: "https://austinhuang.me/assets/sidebar-bg.jpg"
 accent_image: 
@@ -24,10 +24,10 @@ accent_image:
 
 ## [[R/Plotly]  3D Waves point distribution and animation](/assets/gabryxx7/html/r_plotly_wave.html)
 
-<img src='/assets/gabryxx7/img/r_wave_screenshot.png'  width='300' height='200' />
+<img src='/assets/gabryxx7/img/r_wave_screenshot.PNG'  width='300' height='200' />
 
 
-~~~R
+~~~R 
 library(plotly)
 
 spacing <- 0.15
@@ -60,24 +60,24 @@ p <- plot_ly(data, x = ~x, y = ~y, z = ~z, color = ~z, opacity = ~z, frame=~fram
    animation_opts(1000/fps)
 p
 
-htmlwidgets::saveWidget(as_widget(p), file = "../plots/wave.html", selfcontained = TRUE)
+htmlwidgets::saveWidget(as_widget(p), file = "/assets/gabryxx7/plots/wave.html", selfcontained = TRUE)
 ~~~
 
 ## [[JS/Plotly] Plotly animation and 3D data visualisation](/assets/gabryxx7/html/plotly.html)
 
-<img src='/assets/gabryxx7/img/plotly_test.png'  width='300' height='200'/>
+<img src='/assets/gabryxx7/img/plotly_test.PNG'  width='300' height='200'/>
 
 
 ## [[WebGL] Cubes recursion generator](/assets/gabryxx7/html/cubes.html)
 
-<img src='/assets/gabryxx7/img/cubes_webgl.png'  width='300' height='200'/>
+<img src='/assets/gabryxx7/img/cubes_webgl.PNG'  width='300' height='200'/>
 
 
 ## [[WebGL] Globe Data Visualisation](/assets/gabryxx7/html/globe.html)
 
-<img src='/assets/gabryxx7/img/miscellaneous.png'  width='300' height='200'/>
+<img src='/assets/gabryxx7/img/miscellaneous.PNG'  width='300' height='200'/>
 
 
 ## [[JS] Canvas JSON marker rendering](/assets/gabryxx7/html/map_markers.html)
 
-<img src='/assets/gabryxx7/img/canvas-markers.png'  width='300' height='200'/>
+<img src='/assets/gabryxx7/img/canvas-markers.PNG'  width='300' height='200'/>

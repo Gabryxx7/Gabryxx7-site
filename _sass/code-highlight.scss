@@ -1,9 +1,9 @@
 @import "ayu-mirage";
 // @import "ayu-light";
 
-pre {
-    font-size: 0.8rem;
-    background-color: transparent;
+pre > code,
+pre > .code-lines{
+    font-size: 0.7rem;
 }
 
 .gutter.gl{    
@@ -32,7 +32,6 @@ pre {
         transition: max-width 150ms;
         background-color: #71717112;
         padding: 0.3rem;
-        font-size: 100%;
         margin-right: 0.5rem;
         margin-left: -0.6rem;
         border-radius: 0.3rem;
