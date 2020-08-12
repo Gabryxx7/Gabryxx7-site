@@ -72,7 +72,7 @@ pre > code {
   padding: 0;
   color: inherit;
   background-color: transparent;
-  font-size: 1em;
+  font-size: $code-blocks-font-size;
 
   .highlight-code-line {
     @extend .color-transition;
