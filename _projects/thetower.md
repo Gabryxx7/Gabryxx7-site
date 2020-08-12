@@ -29,7 +29,7 @@ links:
 accent_color: 'rgb(76,195,85)'
 theme_color: '#bada55'
 ---
-<h2><a href="https://gabryxx7.github.io/slides.html"> TheTower Project Presentation </a></h2>
+<h2><a href="/assets/gabryxx7/html/slides.html"> TheTower Project Presentation </a></h2>
 
 Virtual Reality game using XVR engine and HTC Vive, final project of the "Ambienti Virtuali" (Virtual Environments) course
 
