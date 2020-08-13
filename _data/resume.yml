@@ -12,7 +12,7 @@ basics:
   picture: "/assets/icons/icon-small.jpg"
   email: "giaga7@gmail.com"
   phone: "(+61) 048 1149376"
-  website: "http://gabryxx7.com"
+  website: "http://gmarini.com"
   summary: |
     Computer Scientist, researcher, photographer and traveller. Currently pursuing a PhD in Computing and Information System at the University of Melbourne.
   location:
@@ -25,9 +25,6 @@ basics:
     - network: "LinkedIn"
       username: "Gabriele Marini"
       url: "https://www.linkedin.com/in/gabryxx7/"
-    - network: "Email"
-      username: "giaga7@gmail.com"
-      url: "mailto:giaga7@gmail.com"
     - network: "Email"
       username: "marinig@student.unimelb.edu.au"
       url: "mailto:marinig@student.unimelb.edu.au"

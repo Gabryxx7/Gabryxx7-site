@@ -18,10 +18,10 @@ selected_posts:
   - hydejack/_posts/2018-06-01-example-content-iii.md
 posts_page: /posts/
 no_third_column: true
-title: Gabryxx7
+title: Gabriele Marini
 ---
 
-# [Gabryxx7 Personal Blog](http://gabryxx7.com/)
+# [Gabryxx7 Personal Blog](http://gmarini.com/)
 ![Screenshot](/assets/gabryxx7/img/matrix_coding.gif){:.lead width="1920" height="1080" loading="lazy"}
 
 ~~~r
@@ -206,7 +206,7 @@ generateGantt <- function(tasks, hlines, vlines=NULL, plotTitle="Timeline", font
 }
 ```
 
-[Gabryxx7.com](http://gabryxx7.com/)
+[gmarini.com](http://gmarini.com/)
 
 Developded with [Jekyll](https://jekyllrb.com/) and [Hydejack](https://hydejack.com/).
 
