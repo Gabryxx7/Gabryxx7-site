@@ -105,18 +105,22 @@ code, .dark-mode code{
     line-height: 1;
 
 }
+
+.code-language-tag{
+    text-transform: capitalize;
+}
 .code-extras span {
+    margin-left: 0.2rem;
     width: auto;
     position: relative;
     margin-bottom: 0.3rem;
     content: attr(data-lang);
-    display: block;
+    display: inline;
     background-color: rgba(0,0,0,0.3);
     padding: 0.5rem;
     border-radius: 0.4rem;
     box-shadow: 0 1px 1px rgba(0,0,0,0.05), 0 2px 2px rgba(0,0,0,0.05), 0 4px 4px rgba(0,0,0,0.05), 0 6px 8px rgba(0,0,0,0.05), 0 8px 16px rgba(0,0,0,0.05);
     float: right;
-    clear: both;
     color: var(--gray-text);
 }
 

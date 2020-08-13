@@ -135,9 +135,9 @@ var addCodeLines = function(){
   }
   linesAdded = true;
   var codeLinesSpan = "<span class='code-lines' style='display: none;'> </span>";
-  var codeLinesBtn = "<span class='code-lines-btn'>lines</span>";
+  var codeLinesBtn = "<span class='code-lines-btn icon-list-numbered'></span>";
   var codeLanguageTag = "<span class='code-language-tag'></span>";
-  var codeOutputTag = "<span class='code-output-tag'>show output</span>";
+  var codeOutputTag = "<span class='code-output-tag icon-enlarge2'></span>";
   var codeOutputMinHeight = "3rem";
   var codeExtrasSpan = "<span class='code-extras'></span>";
   var charLength = 0.9;
@@ -148,7 +148,6 @@ var addCodeLines = function(){
     if($(this).parents(".highlight").length > 0){ /*We only want the most external one */
       return;
     };
-    console.log($(this).parents(".highlight"));
     var code = $(this).find("code");
     var languageClass = code.attr('class');
     if(!languageClass){
@@ -156,7 +155,11 @@ var addCodeLines = function(){
     };
     var language = languageClass.split("-")[1].split(" ")[0].trim();
     var codeExtras = $(codeExtrasSpan);
+      var languageTag = $(codeLanguageTag);
     if(language === "plaintext"){
+      languageTag.text("output");
+      codeExtras.prepend(languageTag);
+      $(this).addClass("code-output");
       var outputTag = $(codeOutputTag);
       code.parent().css("max-height", codeOutputMinHeight);
       outputTag.click(function(){
@@ -173,7 +176,6 @@ var addCodeLines = function(){
       codeExtras.append(outputTag);    
     }
     else{
-      var languageTag = $(codeLanguageTag);
       languageTag.text(language);
       codeExtras.prepend(languageTag);
       var noLines = code.text().trim().split(/\r\n|\r|\n/).length;
@@ -205,6 +207,7 @@ var addCodeLines = function(){
       };
     };
     $(this).prepend(codeExtras);
+    $(this).addClass("code-extended");
   });
 };
 
