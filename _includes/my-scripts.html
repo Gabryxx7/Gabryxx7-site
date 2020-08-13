@@ -129,9 +129,10 @@ var startTypers = function(){
 
 var linesAdded = false;
 var addCodeLines = function(){
-  console.log(linesAdded)
-  if(linesAdded)
+  console.log(linesAdded);
+  if(linesAdded){
     return;
+  }
   linesAdded = true;
   var codeLinesSpan = "<span class='code-lines' style='display: none;'> </span>";
   var codeLinesBtn = "<span class='code-lines-btn'>lines</span>";
