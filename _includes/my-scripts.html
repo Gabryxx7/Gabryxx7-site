@@ -128,19 +128,19 @@ var startTypers = function(){
 };
 
 var linesAdded = false;
+var codeLinesSpan = "<span class='code-lines' style='display: none;'> </span>";
+var codeLinesBtn = "<span class='code-lines-btn icon-list-numbered'></span>";
+var codeLanguageTag = "<span class='code-language-tag'></span>";
+var codeOutputTag = "<span class='code-output-tag icon-enlarge2'></span>";
+var codeOutputMinHeight = "{{ site.data.variables.code_output_peek_height }}rem";
+var codeExtrasSpan = "<span class='code-extras'></span>";
+var charLength = {{ site.data.variables.code_blocks_font_size }}+0.1;
 var addCodeLines = function(){
   console.log(linesAdded);
   if(linesAdded){
     return;
   }
   linesAdded = true;
-  var codeLinesSpan = "<span class='code-lines' style='display: none;'> </span>";
-  var codeLinesBtn = "<span class='code-lines-btn icon-list-numbered'></span>";
-  var codeLanguageTag = "<span class='code-language-tag'></span>";
-  var codeOutputTag = "<span class='code-output-tag icon-enlarge2'></span>";
-  var codeOutputMinHeight = "3rem";
-  var codeExtrasSpan = "<span class='code-extras'></span>";
-  var charLength = 0.9;
   $(".highlight").each(function(index){
     if($(this).find(".code-lines").length > 0){
       return;
@@ -156,19 +156,19 @@ var addCodeLines = function(){
     var language = languageClass.split("-")[1].split(" ")[0].trim();
     var codeExtras = $(codeExtrasSpan);
       var languageTag = $(codeLanguageTag);
-    if(language === "plaintext"){
-      languageTag.text("output");
+    if(language === '{{ site.data.variables.code_output_alias }}'){
+      languageTag.text("{{ site.data.variables.code_output_name }}");
       codeExtras.prepend(languageTag);
       $(this).addClass("code-output");
       var outputTag = $(codeOutputTag);
       code.parent().css("max-height", codeOutputMinHeight);
       outputTag.click(function(){
-        if( $(this).hasClass("enabled")){
           var par = $(this).parent().parent();
+          par.toggleClass("expanded");
+        if( $(this).hasClass("enabled")){
           par.find("code").parent().css('max-height', codeOutputMinHeight);
         }
         else{   
-          var par = $(this).parent().parent();
           par.find("code").parent().css('max-height', '');
         };
         $(this).toggleClass("enabled");

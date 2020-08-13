@@ -30,7 +30,14 @@ pre > code,
     code {
         display: inline-block;
     }
+}
 
+.code-output>pre {
+    box-shadow: inset 1px -4px 7px rgba(21, 21, 21, 0.4);
+}
+
+.code-output.expanded>pre {
+    box-shadow: inset -3px 1px 2px rgba(0, 0, 0, 0.1), inset -9px -4px 14px -7px rgba(0, 0, 0, 0.12), 0 1px 0 rgba(255, 255, 255, 0.04), 0 -1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .code-lines {
@@ -131,6 +138,7 @@ code, .dark-mode code{
     cursor: pointer;
 }
 
+.code-language-btn.enabled,
 .code-lines-btn.enabled,
 .code-lines-btn:hover,
 .code-output-tag.enabled,

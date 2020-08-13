@@ -3,7 +3,6 @@
   root_font_size_medium: 15 #px
   root_font_size_large: 16 #px
   
-  code_blocks_font_size: 0.8 #rem
 
   root_font_size_print: 8 #pt
 
@@ -26,3 +25,9 @@
   break_point_4: 72 #em
   break_point_5: 86 #em
   break_point_font_large: 124 #em
+
+  
+  code_output_alias: plaintext # language class to look for to classify as output
+  code_output_name: output # name to use to replace the alias
+  code_output_peek_height: 3 # rem
+  code_blocks_font_size: 0.8 # rem
