@@ -149,15 +149,15 @@ var addCodeLines = function(){
     var codeExtras = $(codeExtrasSpan);
     if(language === "plaintext"){
       var outputTag = $(codeOutputTag);
-      code.parent().css("max-height", codeOutputMinHeight)
+      code.parent().css("max-height", codeOutputMinHeight);
       outputTag.click(function(){
         if( $(this).hasClass("enabled")){
           var par = $(this).parent().parent();
-            par.find("code").parent().css('max-height', codeOutputMinHeight);
+          par.find("code").parent().css('max-height', codeOutputMinHeight);
         }
         else{   
           var par = $(this).parent().parent();
-            par.find("code").parent().css('max-height', '');
+          par.find("code").parent().css('max-height', '');
         };
         $(this).toggleClass("enabled");
       });
@@ -194,7 +194,7 @@ var addCodeLines = function(){
         $(this).prepend(linesSpan);
         codeExtras.prepend(linesBtnSpan);
       };
-    }
+    };
     $(this).prepend(codeExtras);
   });
 };
