@@ -8,7 +8,7 @@
   <header>
     <h1 class="post-title flip-project-title">
       {% unless no_link_title %}<a href="{{ post.url | relative_url }}" class="flip-title">{% endunless %}
-        {{ post.title }}
+        {{ post.title  | markdownify |  replace:'<p>','' | replace:'</p>',''}}
       {% unless no_link_title %}</a>{% endunless %}
     </h1>
 

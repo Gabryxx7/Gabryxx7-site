@@ -105,13 +105,19 @@ So as you can see here:
 
 We can actually take it a step further and put the figures in each post's separate folder in the `r_figures` base folder:
 ```r
-
-knitr::opts_chunk$set(echo = TRUE, fig.path = paste0(Sys.Date(),'-',xfun::sans_ext(basename(knitr::current_input())),"/"))
+knitr::opts_chunk$set(echo = TRUE,
+                      strip.white=TRUE,
+                      message=FALSE,
+                      warning=FALSE,
+                      results="markup",
+                      class.output="plaintext",
+                      fig.path = paste0(Sys.Date(),'-',xfun::sans_ext(basename(knitr::current_input())),"/"))
 ```
 
 In this way:
 - The final path will be `C:\Users\Gabryxx7\Documents\GitHub\blog\assets\gabryxx7\r_figures\2020-08-13-ggantt`
 - The images url will be `/assets/gabryxx7/r_figures/2020-08-13-ggantt/nice_plot.png`
+- Message and warnings won't be included in the code output. The code output will be wrapped in a code chunk with language `plaintext` so that we can capture it with javascript and do something with it
 
 ## Knitting it!
 Well there is not much left to do, just press `knit` on RStudio with your `.rmd` file opened and you're good to go!

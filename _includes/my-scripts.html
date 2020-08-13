@@ -131,6 +131,8 @@ var addCodeLines = function(){
   var codeLinesSpan = "<span class='code-lines' style='display: none;'> </span>";
   var codeLinesBtn = "<span class='code-lines-btn'>lines</span>";
   var codeLanguageTag = "<span class='code-language-tag'></span>";
+  var codeOutputTag = "<span class='code-output-tag'>show output</span>";
+  var codeOutputMinHeight = "3rem";
   var codeExtrasSpan = "<span class='code-extras'></span>";
   var charLength = 0.9;
   $(".highlight").each(function(index){
@@ -143,38 +145,56 @@ var addCodeLines = function(){
     if(!languageClass){
       languageClass = $($(this).parents(".highlighter-rouge")[0]).attr('class');
     };
-    var language = languageClass.split("-")[1].split(" ")[0];
-    var languageTag = $(codeLanguageTag);
-    languageTag.text(language);
+    var language = languageClass.split("-")[1].split(" ")[0].trim();
     var codeExtras = $(codeExtrasSpan);
-    codeExtras.prepend(languageTag);
-    var noLines = code.text().trim().split(/\r\n|\r|\n/).length;
-    if(noLines > 5){
-      var linesSpan = $(codeLinesSpan);
-      linesSpan.attr("code-lines", noLines);
-      var linesBtnSpan = $(codeLinesBtn);
-      linesBtnSpan.click(function(){
+    if(language === "plaintext"){
+      var outputTag = $(codeOutputTag);
+      code.parent().css("max-height", codeOutputMinHeight)
+      outputTag.click(function(){
         if( $(this).hasClass("enabled")){
           var par = $(this).parent().parent();
-          var codeLines = par.find(".code-lines");
-          par.find("code").parent().css("padding-left", "");
-          codeLines.css('opacity', '0');
-          codeLines.css('display', 'none');
+            par.find("code").parent().css('max-height', codeOutputMinHeight);
         }
         else{   
           var par = $(this).parent().parent();
-          var codeLines = par.find(".code-lines");
-          var padding = Math.max(2,codeLines.attr("code-lines").length)+"rem";
-          par.find("code").parent().css("padding-left", padding);
-          codeLines.css('display', '');
-          codeLines.css('opacity', '1');
+            par.find("code").parent().css('max-height', '');
         };
         $(this).toggleClass("enabled");
       });
-      linesSpan.text([...Array(noLines).keys()].join("\n"));
-      $(this).prepend(linesSpan);
-      codeExtras.prepend(linesBtnSpan);
-    };
+      codeExtras.append(outputTag);    
+    }
+    else{
+      var languageTag = $(codeLanguageTag);
+      languageTag.text(language);
+      codeExtras.prepend(languageTag);
+      var noLines = code.text().trim().split(/\r\n|\r|\n/).length;
+      if(noLines > 5){
+        var linesSpan = $(codeLinesSpan);
+        linesSpan.attr("code-lines", noLines);
+        var linesBtnSpan = $(codeLinesBtn);
+        linesBtnSpan.click(function(){
+          if( $(this).hasClass("enabled")){
+            var par = $(this).parent().parent();
+            var codeLines = par.find(".code-lines");
+            par.find("code").parent().css("padding-left", "");
+            codeLines.css('opacity', '0');
+            codeLines.css('display', 'none');
+          }
+          else{   
+            var par = $(this).parent().parent();
+            var codeLines = par.find(".code-lines");
+            var padding = Math.max(2,codeLines.attr("code-lines").length)+"rem";
+            par.find("code").parent().css("padding-left", padding);
+            codeLines.css('display', '');
+            codeLines.css('opacity', '1');
+          };
+          $(this).toggleClass("enabled");
+        });
+        linesSpan.text([...Array(noLines).keys()].join("\n"));
+        $(this).prepend(linesSpan);
+        codeExtras.prepend(linesBtnSpan);
+      };
+    }
     $(this).prepend(codeExtras);
   });
 };
