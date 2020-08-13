@@ -51,7 +51,7 @@ addons: [comments, about]
         {% if photo.title.size > 0 %}
             <div class='img-title'> <h3>{{ photo.title }}</h3></div>
         {% endif %}
-        <div class='img-descr'> <p> {{ photo.caption }} </p> </div>
+        <div class='img-descr'> {{ photo.caption }} </div>
     </a>     
     {% if photo.location %}
         <div class="location"> <span class="icon-location2" style="font-size: 0.9rem;"> </span> {{ photo.location }}</div>
