@@ -196,6 +196,12 @@ kramdown:
     # formatter: HTMLPygments
 
 
+titles_from_headings:
+  enabled:     false
+  strip_title: true
+  collections: false
+
+
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
 
