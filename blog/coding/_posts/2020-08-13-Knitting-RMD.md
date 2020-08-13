@@ -110,7 +110,9 @@ knitr::opts_chunk$set(echo = TRUE,
                       message=FALSE,
                       warning=FALSE,
                       results="markup",
+                      out.format="jekyll",
                       class.output="plaintext",
+                      out.extra = "",
                       fig.path = paste0(Sys.Date(),'-',xfun::sans_ext(basename(knitr::current_input())),"/"))
 ```
 
@@ -118,6 +120,7 @@ In this way:
 - The final path will be `C:\Users\Gabryxx7\Documents\GitHub\blog\assets\gabryxx7\r_figures\2020-08-13-ggantt`
 - The images url will be `/assets/gabryxx7/r_figures/2020-08-13-ggantt/nice_plot.png`
 - Message and warnings won't be included in the code output. The code output will be wrapped in a code chunk with language `plaintext` so that we can capture it with javascript and do something with it
+- **DO NOT FORGET to add `out.extra = ""` otherwise knitr will add images with an ending comment like `![](/assets/gabryxx7/r_figures/2020-08-13-ggantt/test.png)<!-- -->` completely messing up the `html` page
 
 ## Knitting it!
 Well there is not much left to do, just press `knit` on RStudio with your `.rmd` file opened and you're good to go!
