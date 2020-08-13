@@ -120,7 +120,8 @@ code, .dark-mode code{
     color: var(--gray-text);
 }
 
-.code-output-tag{
+.code-output-tag,
+.code-lines-btn{
     transition: all 150ms;
     width: 3rem;
     cursor: pointer;
