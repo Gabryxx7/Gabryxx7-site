@@ -127,7 +127,12 @@ var startTypers = function(){
   
 };
 
+var linesAdded = false;
 var addCodeLines = function(){
+  console.log(linesAdded)
+  if(linesAdded)
+    return;
+  linesAdded = true;
   var codeLinesSpan = "<span class='code-lines' style='display: none;'> </span>";
   var codeLinesBtn = "<span class='code-lines-btn'>lines</span>";
   var codeLanguageTag = "<span class='code-language-tag'></span>";
@@ -140,9 +145,9 @@ var addCodeLines = function(){
       return;
     };
     if($(this).parents(".highlight").length > 0){ /*We only want the most external one */
-      console.log($(this).attr('class'));
       return;
     };
+    console.log($(this).parents(".highlight"));
     var code = $(this).find("code");
     var languageClass = code.attr('class');
     if(!languageClass){
@@ -206,6 +211,11 @@ var addCodeLines = function(){
 document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
     startTypers();
     addCodeLines();
+});
+
+
+document.getElementById('_pushState').addEventListener('hy-push-state-start', function() {
+  linesAdded = false;
 });
 document.addEventListener('DOMContentLoaded', function(){ 
     startTypers();
