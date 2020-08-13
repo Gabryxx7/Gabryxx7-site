@@ -132,3 +132,14 @@ setwd("C:\\Users\\Gabryxx7\\Documents\\GitHub\\whatever\\") # adjust to your pre
 knitr::knit("rmarkdown_file.rmd") # Generate to working directory
 knitr::knit("ggantt.rmd", output = "C:\\Users\\Gabryxx7\\Documents\\GitHub\\blog\\blog\\coding\\_posts\\2020-08-13-rmarkdown_file.md") # Generate to Jekyll's post directory
 ```
+
+You can also make your own function in case you have multiple files:
+```r
+knit_to_jekyll <- function(input, ...) {
+  rmarkdown::render(input=input,
+    output_file=paste0(Sys.Date(),'-',xfun::sans_ext(basename(input)),'.md'),
+    encoding = encoding,
+    output_dir="C:\\Users\\Gabryxx7\\Documents\\GitHub\\blog\\blog\\coding\\_posts")
+  }
+knit_to_jekyll("r_notebook_markdown.rmd")
+```
