@@ -23,6 +23,7 @@
   >
   <meta property="name" content="{{ project.title }}"/>
   {% if image_base %}<meta property="image" content="{% include_cached smart-url url=image_base %}"/>{% endif %}
+  {% if project.icon %} <span class='project-icon'><span class='{{ project.icon }}'></span></span>{% endif %}
 
   <a href="{{ project.url | relative_url }}" class="no-hover no-print-link flip-project" tabindex="-1">
     <div class="project-card-img aspect-ratio sixteen-nine flip-project-img">

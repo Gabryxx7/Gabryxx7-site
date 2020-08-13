@@ -41,6 +41,31 @@
   }
   
   
+  .photo-icon, .project-icon {
+    display: block;
+    background-color: transparent;
+    color: #ffffffbd !important;
+    text-shadow: 1px 1px 1px #29292966;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2%;
+    transition: all 250ms;
+    z-index: 2;
+    font-size: 1rem;
+    cursor: pointer;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  .project-icon{
+    font-size: 1.2rem;
+
+  }
+  
   .photo-feed .photo-card {
     transition: all 250ms ease-out;
     position: relative;
@@ -61,25 +86,6 @@
       transition: all 250ms;
       transform: scale(1.0);
       filter: blur(0px);
-    }
-
-    .photo-icon {
-      display: block;
-      background-color: transparent;
-      color: #ffffffbd !important;
-      text-shadow: 1px 1px 1px #29292966;
-      position: absolute;
-      top: 0;
-      right: 0;
-      padding: 2%;
-      transition: all 250ms;
-      z-index: 2;
-      font-size: 90%;
-      -webkit-transform: translate3d(0,0,0);
-      -moz-transform: translate3d(0,0,0);
-      -ms-transform: translate3d(0,0,0);
-      -o-transform: translate3d(0,0,0);
-      transform: translate3d(0,0,0);
     }
   
     .photo-card-caption {
