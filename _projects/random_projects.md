@@ -10,7 +10,7 @@ image:
   #    1920w: /assets/gabryxx7/img/level0.PNG
   #    960w:  /assets/gabryxx7/img/level0@0,5x.PNG
   #    480w:  /assets/gabryxx7/img/level0.PNG@0,25x.PNG
-date: 01 Aug 2020
+date: 2020-08-15
 #  accent_image: "https://austinhuang.me/assets/sidebar-bg.jpg"
 accent_image: 
   background: "linear-gradient(202deg, rgb(0 11 121) 13%, rgb(255 255 255) 87%)"
