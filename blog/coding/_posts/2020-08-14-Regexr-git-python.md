@@ -259,6 +259,7 @@ def download_and_replace(match):
   
 ...
 ```
+
 The function is fairly simple but has a few catches:
 - First we need to get our captured image path/url:
     - `match.group(0)` represents the **WHOLE** pattern, not just the captured groups
@@ -274,8 +275,22 @@ The function is fairly simple but has a few catches:
 
 We then return the edited `README.md` output to the for loop to then write everything to the new `README.md` file with the `yaml` header.
 
+The final images' path it's now replaced with the local path of the file downloaded on our computer (or server), so lines like these ones:
+```markdown
+![Blynk App](Blynk1.jpg) ![Blynk App](Blynk2.jpg)
+<img  alt="The Tower Logo" width="250" src="https://github.com/Gabryxx7/TheTower/blob/master/Textures/thetower1.png"/><br/>
+<img src='https://github.com/Gabryxx7/TheTower/blob/master/Textures/thetower2.png' alt="The Tower Logo" width="250"/> <img src='https://github.com/Gabryxx7/TheTower/blob/master/Textures/thetower3.png' alt="The Tower Logo" width="250"/> 
+```
 
-So the final code looks something like this:
+Will now look something like this:
+```markdown
+![Blynk App](/assets/Gabryxx7/GitHub/img/ShrekIntruderAlert/Blynk1.jpg) ![Blynk App](/assets/gabryxx7/img/GitHub/ShrekIntruderAlert/Blynk2.jpg)
+<img  alt="The Tower Logo" width="250" src="/assets/Gabryxx7/GitHub/img/thetower1.png"/><br/>
+<img src='/assets/Gabryxx7/GitHub/img/thetower2.png' alt="The Tower Logo" width="250"/> <img src='/assets/Gabryxx7/GitHub/img/thetower3.png' alt="The Tower Logo" width="250"/> 
+```
+
+
+Putting it all together, the script ends up looking like this:
 
 ```python
 from github import Github
