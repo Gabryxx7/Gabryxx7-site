@@ -24,8 +24,8 @@ Connect with me:  &nbsp; &nbsp;
 [<img alt="Gabryxx7 | LinkedIn" width="15px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/linkedin.svg" />][linkedin] &nbsp; &nbsp;
 [<img alt="Gabryxx7 | Instagram" width="15px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/instagram.svg" />][instagram] &nbsp; &nbsp;
 
-[![Gabryxx7's github stats](/assets/gabryxx7/img/GitHub/Gabryxx7/api)](https://github.com/Gabryxx7)
-[![Top Langs](/assets/gabryxx7/img/GitHub/Gabryxx7/)](https://github.com/Gabryxx7)
+[![Gabryxx7's github stats](https://github-readme-stats.vercel.app/api?username=Gabryxx7&count_private=true&show_icons=true&theme=onedark&include_all_commits=1)](https://github.com/Gabryxx7)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Gabryxx7&layout=compact&theme=onedark)](https://github.com/Gabryxx7)
 
 ## Photography [<img alt="Gabryxx7 | Instagram" width="15px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/instagram.svg" />][instagram]
 [<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/79841217_555270635156572_8260864494112333405_n.jpg" />][instagram] &nbsp; 

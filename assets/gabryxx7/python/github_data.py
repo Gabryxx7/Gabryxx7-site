@@ -23,6 +23,8 @@ def download_and_replace(match):
         cap_group = match.group(2).strip()
     url = ""
     if len(cap_group) > 0:
+        if 'github-readme-stats' in cap_group:
+            return match.group(0)
         if 'http' in cap_group:
             if 'github.com' in cap_group:                
                 url = cap_group.replace('github.com', 'raw.githubusercontent.com').replace('blob/','')
