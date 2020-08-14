@@ -13,15 +13,15 @@ Connect with me:  &nbsp; &nbsp;
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Gabryxx7&layout=compact&theme=onedark)](https://github.com/Gabryxx7)
 
 ## Photography [<img alt="Gabryxx7 | Instagram" width="15px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/photos/202006/79841217_555270635156572_8260864494112333405_n.jpg" />][instagram] &nbsp; 
-[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/photos/202006/d921048b9f8858f8fbbd9f651a64c5cb.jpg" />][instagram] &nbsp; 
-[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/photos/202006/105949108_979756645775165_8661279133103583059_n.jpg" />][instagram] &nbsp; 
-[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/photos/202004/eeadc6e1a203c084fe15656aaa7528ee.jpg" />][instagram] &nbsp; 
-[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/photos/201909/260a4453657269ad127dfc1b661bbea5.jpg" />][instagram] &nbsp; 
+[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/202006/79841217_555270635156572_8260864494112333405_n.jpg" />][instagram] &nbsp; 
+[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/202006/d921048b9f8858f8fbbd9f651a64c5cb.jpg" />][instagram] &nbsp; 
+[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/202006/105949108_979756645775165_8661279133103583059_n.jpg" />][instagram] &nbsp; 
+[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/202004/eeadc6e1a203c084fe15656aaa7528ee.jpg" />][instagram] &nbsp; 
+[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/201909/260a4453657269ad127dfc1b661bbea5.jpg" />][instagram] &nbsp; 
 
 
 
-[website]: 
+[website]: http://gmarini.com/
 [twitter]: https://twitter.com/Gabryxx7
 [youtube]: https://youtube.com/gabryxx7
 [instagram]: https://www.instagram.com/gabryxx7
