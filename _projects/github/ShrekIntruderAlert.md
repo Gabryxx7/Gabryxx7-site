@@ -4,10 +4,13 @@ title: ShrekIntruderAlert
 icon: icon-github
 caption: The safest security system ever created. When intruders will make any movement
   inside your house, Shrek will be ready to welcome them!
+date: 2020-08-02 09:07:02
+image:
+  path: /assets/gabryxx7/img/GitHub/ShrekIntruderAlert/shrekAlarm.gif
 description: The safest security system ever created. When intruders will make any
   movement inside your house, Shrek will be ready to welcome them!
 links:
-- title: Link
+- title: Source
   url: https://github.com/Gabryxx7/ShrekIntruderAlert
 
 ---
@@ -18,7 +21,7 @@ The safest security system ever created. When intruders will make any movement i
 [Youtube Videp](https://youtu.be/K1jZ_DM9J60)
 
 
-![Demo](shrekAlarm.gif)
+![Demo](/assets/gabryxx7/img/GitHub/ShrekIntruderAlert/shrekAlarm.gif)
 
 The project is made of three parts:
 - Raspberry Pi (I used the model 3 B+) with a PIR sensor
@@ -31,8 +34,8 @@ The project is made of three parts:
 - Python 3.8.0 with `RPiGPIO` and `Blynk` packages
 - Also needs the `socket` python library to connect to the Windows laptop and send an intruder signal
 
-![The Raspberry pi](raspberry.jpg)
-![The PIR sensor](sensor.jpg)
+![The Raspberry pi](/assets/gabryxx7/img/GitHub/ShrekIntruderAlert/raspberry.jpg)
+![The PIR sensor](/assets/gabryxx7/img/GitHub/ShrekIntruderAlert/sensor.jpg)
 
 ### Windows Laptop and Lights
 I am using a LIFX Mini Color bulb screwed to a cheak Kmart lamp. It is connected to the same wifi as the laptop
@@ -45,7 +48,7 @@ The Blynk app setup is simple
 - An LED on the virtual pin V1
 Don't forget to update the auth token on the Raspberry Pi script
 
-![Blynk App](Blynk1.jpg) ![Blynk App](Blynk2.jpg)
+![Blynk App](/assets/gabryxx7/img/GitHub/ShrekIntruderAlert/Blynk1.jpg) ![Blynk App](/assets/gabryxx7/img/GitHub/ShrekIntruderAlert/Blynk2.jpg)
 ## How it works
 It's fairly simple although the code ended up being messy and complicated for no apparent reason:
 1. The windows laptop runs the server-like script `Windows_ShrekAlarm.py` waiting for connections to the RPi

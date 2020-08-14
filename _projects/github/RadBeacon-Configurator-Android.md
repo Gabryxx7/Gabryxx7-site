@@ -3,9 +3,12 @@ layout: project
 title: RadBeacon-Configurator-Android
 icon: icon-github
 caption: An Android Java app to scan and batch-configure RadBeacon Dots BLE beacons.
+date: 2020-08-05 13:10:46
+image:
+  path: /assets/gabryxx7/img/GitHub/RadBeacon-Configurator-Android/screenshot_list.jpg
 description: An Android Java app to scan and batch-configure RadBeacon Dots BLE beacons.
 links:
-- title: Link
+- title: Source
   url: https://github.com/Gabryxx7/RadBeacon-Configurator-Android
 
 ---
@@ -15,9 +18,9 @@ A (not that) simple Android App to configure and **batch-configure** [RadBeacon 
 
 ## Screenshots
 
-<img src="images/screenshot_list.jpg" height="400"> &nbsp; 
-<img src="images/screenshot_config.jpg" height="400"> &nbsp; 
-<img src="images/screenshot_batch.jpg" height="400">
+<img src="/assets/gabryxx7/img/GitHub/RadBeacon-Configurator-Android/screenshot_list.jpg" height="400"> &nbsp; 
+<img src="/assets/gabryxx7/img/GitHub/RadBeacon-Configurator-Android/screenshot_config.jpg" height="400"> &nbsp; 
+<img src="/assets/gabryxx7/img/GitHub/RadBeacon-Configurator-Android/screenshot_batch.jpg" height="400">
 
 ## Features
 - Scan for beacons

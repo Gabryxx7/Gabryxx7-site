@@ -6,12 +6,15 @@ caption: Windows control through facial gestures and emotion recognition. You ca
   now act surprised when caught on stack overflow and boom your work windows are back
   on top. Raise or Lower the volume with your eyebrows, take a screenshot with a smile
   or send a message with a kiss.
+date: 2019-04-23 10:47:26
+image:
+  path: /assets/gabryxx7/img/GitHub/FacialGestureControls/Start.png
 description: Windows control through facial gestures and emotion recognition. You
   can now act surprised when caught on stack overflow and boom your work windows are
   back on top. Raise or Lower the volume with your eyebrows, take a screenshot with
   a smile or send a message with a kiss.
 links:
-- title: Link
+- title: Source
   url: https://github.com/Gabryxx7/FacialGestureControls
 
 ---
@@ -31,13 +34,13 @@ There should be a release in the repository but if there is not, you'll find the
 Once started you should be greeted with this window:
 
 
-![Start](Start.png)
+![Start](/assets/gabryxx7/img/GitHub/FacialGestureControls/Start.png)
 
 
 ## Camera Feed
 The camera feed should look something like this:
 
-![Main Window](main1.png)
+![Main Window](/assets/gabryxx7/img/GitHub/FacialGestureControls/main1.png)
 
 # Features and facial expressions
 There are three categories of expressions:
@@ -86,13 +89,13 @@ featuresActions.Add(new AffectivaFeature(AffectivaFeature.FeatureType.Emoji,"win
 ...
 
 ```
-![Features](features.png)
+![Features](/assets/gabryxx7/img/GitHub/FacialGestureControls/features.png)
 
 
 # Screenshot 
-![Screenshot](Screenshot1.jpg)
+![Screenshot](/assets/gabryxx7/img/GitHub/FacialGestureControls/Screenshot1.jpg)
 
 # YouTube Presentation
 [Youtube Link](https://www.youtube.com/watch?v=fw9QCx4QEHs)
-[![Video](https://img.youtube.com/vi/fw9QCx4QEHs/0.jpg)](https://www.youtube.com/watch?v=fw9QCx4QEHs)
+[![Video](/assets/gabryxx7/img/GitHub/FacialGestureControls/0.jpg)](https://www.youtube.com/watch?v=fw9QCx4QEHs)
 

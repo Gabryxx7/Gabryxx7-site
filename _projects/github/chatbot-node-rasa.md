@@ -4,11 +4,14 @@ title: chatbot-node-rasa
 icon: icon-github
 caption: A simple chat bot based on Rasa NLU and developed with Node.js, Express and
   Socket.io as backend and HTML, CSS and Javascript with Jquery on the frontend side.
+date: 2017-12-15 08:55:00
+image:
+  path: /assets/gabryxx7/img/GitHub/chatbot-node-rasa/screenshot1.PNG
 description: A simple chat bot based on Rasa NLU and developed with Node.js, Express
   and Socket.io as backend and HTML, CSS and Javascript with Jquery on the frontend
   side.
 links:
-- title: Link
+- title: Source
   url: https://github.com/Gabryxx7/chatbot-node-rasa
 
 ---
@@ -16,7 +19,7 @@ links:
 # Rasa/Nodejs Chatbot
 The project features a simple Rasa NLU based Chatbot developed with Node.js, Express and Socket.io as backend and HTML, CSS and Javascript with Jquery on the frontend side.
 
-![alt text](https://raw.githubusercontent.com/Gabryxx7/chatbot-node-rasa/master/imgs/screenshot1.PNG)
+![alt text](/assets/gabryxx7/img/GitHub/chatbot-node-rasa/screenshot1.PNG)
 
 # Backend
 The backend side is quite simple. The server uses Socket.io for the communication between the user and the bot, everytime someone accesses the website, it will create a new socket and will immediately send out two greeting messages to the user.
@@ -96,7 +99,7 @@ INFO:__main__:Started http server on port 3000
 ```
 
 # Frontend
-![alt text](https://raw.githubusercontent.com/Gabryxx7/chatbot-node-rasa/master/imgs/screenshot2.PNG)
+![alt text](/assets/gabryxx7/img/GitHub/chatbot-node-rasa/screenshot2.PNG)
 
 The frontend is has some more trickery, mostly to give a nice feeling to the webapp. The server will always point to the `public` folder and would serve the file requested in the `index.html` file.
 The HTML structure is fairly simple, I added at the end a `message-template` div containing the HTML code for the single message bubble.

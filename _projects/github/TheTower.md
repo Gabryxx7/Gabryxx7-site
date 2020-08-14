@@ -1,52 +1,71 @@
 ---
 layout: project
-title: TheTower
+title: The Tower
 icon: icon-github
-caption: Virtual Reality game using XVR engine and HTC Vive, final project of the
-  "Ambienti Virtuali" course
-description: Virtual Reality game using XVR engine and HTC Vive, final project of
-  the "Ambienti Virtuali" course
+caption: A Virtual Reality game using XVR engine and HTC Vive
+description: >
+  Virtual Reality game using XVR engine and HTC Vive, final project of the "Ambienti Virtuali" course
+image: 
+  path: /assets/gabryxx7/img/GitHub/TheTower/Level0Prev.png
+  #  srcset:
+  #    1920w: /assets/gabryxx7/img/GitHub/TheTower/level0.png
+  #    960w:  /assets/gabryxx7/img/GitHub/TheTower/level0@0,5x.png
+  #    480w:  /assets/gabryxx7/img/GitHub/TheTower/level0.png@0,25x.png
+date: 01 Sep 2016
+#  accent_image: "https://austinhuang.me/assets/sidebar-bg.jpg"
+accent_image: 
+  background: "linear-gradient(202deg, rgb(0 11 121) 13%, rgb(255 255 255) 87%)"
+  html_background: |-
+    <div id='test-particles-js'> </div>
+    <script>
+    document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
+      console.log("Say what!");
+      particlesJS.load('test-particles-js', '/assets/gabryxx7/json/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    });</script>
 links:
-- title: Link
-  url: https://github.com/Gabryxx7/TheTower
-
+  - title: Link
+    url: https://github.com/Gabryxx7/TheTower
+accent_color: 'rgb(76,195,85)'
+theme_color: '#bada55'
 ---
+<h2><a href="/assets/gabryxx7/html/slides.html"> TheTower Project Presentation </a></h2>
 
-#TheTower<br/>
-<img src="https://github.com/Gabryxx7/TheTower/blob/master/Textures/thetower.png" alt="The Tower Logo" width="250"/><br/>
-Virtual Reality game using XVR engine and HTC Vive, final project of the "Ambienti Virtuali" course
+Virtual Reality game using XVR engine and HTC Vive, final project of the "Ambienti Virtuali" (Virtual Environments) course
 
-<h2><a href="https://gabryxx7.github.io/slides.html"> TheTower Project Presentation </a></h2>
+# TheTower<br/>
+<img src="/assets/gabryxx7/img/GitHub/TheTower/thetower.png" alt="The Tower Logo" width="250"/><br/>
 
 The main idea of the game is a puzzle, a tower with many different levels whose completion will open the elevator's doors to reach the next level.
 
-###Levels
+### Levels
 The game has actually a total of **8 levels**:
 
 - **LevelMenu**: This level will show a list of all the levels allowing the player to choose one of the levels to play.
 
 - **Level0**: Probably the most important level in the game, creates the elevator and initialize variables used by other levels.
-<img src="https://github.com/Gabryxx7/TheTower/blob/master/Textures/Level0Prev.png" alt="Level 0 Prev" width="150"/>
+<img src="/assets/gabryxx7/img/GitHub/TheTower/Level0Prev.png" alt="Level 0 Prev" width="150"/>
 
 - **Level1**: Drawing level. It's called like that because of the 3d drawing by means of the vive controllers. The player will have to connect all of the light color cones in the correct order to proceed.<br/>
-<img src="https://github.com/Gabryxx7/TheTower/blob/master/Textures/Level1Prev.png" alt="Level 1 Prev" width="150"/>
+<img src="/assets/gabryxx7/img/GitHub/TheTower/Level1Prev.png" alt="Level 1 Prev" width="150"/>
 
 - **Level2**: Drawing Level. Same as Level1 but with slightly different mechanics.<br/>
-<img src="https://github.com/Gabryxx7/TheTower/blob/master/Textures/Level2Prev.png" alt="Level 2 Prev" width="150"/>
+<img src="/assets/gabryxx7/img/GitHub/TheTower/Level2Prev.png" alt="Level 2 Prev" width="150"/>
 
 - **Level3**: The player will find himself in a small room with flying moving objects and an invisible floor. Tiles will appear from the depth as the player moves around the room. Each path completion will animate the same color objects in order to form a number. All of the numbers will then form a code to be typed in the numpad besides the elevator.<br/>
-<img src="https://github.com/Gabryxx7/TheTower/blob/master/Textures/Level3Prev.png" alt="Level 3 Prev" width="150"/>
+<img src="/assets/gabryxx7/img/GitHub/TheTower/Level3Prev.png" alt="Level 3 Prev" width="150"/>
 
 - **Level4**: This is an easy level mainly created to exploit the vive controllers capabilites. The player will have to move back the outermost blocks at the same level as the others.<br/>
-<img src="https://github.com/Gabryxx7/TheTower/blob/master/Textures/Level5Prev.png" alt="Level 5 Prev" width="150"/>
+<img src="/assets/gabryxx7/img/GitHub/TheTower/Level5Prev.png" alt="Level 5 Prev" width="150"/>
 
 - **Level5**: FPS style level. The player will have to shoot targets (still or moving), choosing among different weapons.<br/>
-<img src="https://github.com/Gabryxx7/TheTower/blob/master/Textures/Level6Prev.png" alt="Level 6 Prev" width="150"/>
+<img src="/assets/gabryxx7/img/GitHub/TheTower/Level6Prev.png" alt="Level 6 Prev" width="150"/>
 
 - **Level6**: This one is tricky and will lead to the end of the game.<br/>
-<img src="https://github.com/Gabryxx7/TheTower/blob/master/Textures/Level4Prev.png" alt="Level 4 Prev" width="150"/>
+<img src="/assets/gabryxx7/img/GitHub/TheTower/Level4Prev.png" alt="Level 4 Prev" width="150"/>
 	
-###Main Classes
+### Main Classes
 Classes for more complex objects were created such as:
 - **Virtual Keyboard and Numpad**: These two classes defines an input device in the 3d world in order to insert codes or text for game mechanics
 - **Drawing Connectors**: Light color cones used in level1 and level2
@@ -55,7 +74,7 @@ Classes for more complex objects were created such as:
 - **RandomMeshes**: This class generate a random set of elements given room coordinate, each one with its own random animations
 - **TilesPath**: This class allows the player to create a path of meshes by defining turning points and number of steps in an array of directions. Customizable in distance between tiles, tiles size ecc...
 
-###Game Managers
+### Game Managers
 The game mechanics are managed and organized by:
 
 - **GameManager**: This class will call the levels cosntructor, Init() function, Render() function and UpdateLogicFunction(), with some other features not level-specific (teleportation or level switching)
@@ -95,7 +114,7 @@ The game mechanics are managed and organized by:
 		- Remove animation given the obj or the animationID (if generic) associated with the animation
 		- Check whether the object or an animationID has or not an animation associated
 
-###Shaders
+### Shaders
 A lot of different Shaders have been defined, I will list the most used:
 - **ToonShader**: The one that gives the cartoonish feeling
 - **DrawingShader**: Used for 3d drawing
@@ -104,14 +123,14 @@ A lot of different Shaders have been defined, I will list the most used:
 All of the sounds were generated with sound generators or professional programs
 All of the meshes were exported in AAM format with blender 2.49b version, and were moslty found on sketchfab.com and properly modified.
 
-##How to play it
-1. Download the XVR engine from http://www.vrmedia.it/wiki/index.php?title=Downloads
+## How to play it
+1. Download the XVR engine from [http://www.vrmedia.it/wiki/index.php?title=Downloads](http://www.vrmedia.it/wiki/index.php?title=Downloads)
 2. Download the project
 3. Import che project (mantaining the folder structure) into XVR engine
 4. Build and play
 
-##Technical examples
-###Animator Tutorial
+## Technical examples
+### Animator Tutorial
 It is possible to create animations (that will immediately start, right after the creation) using the animator, in the following way:
 ```javascript
 var mAnimator = Animator(); //Initialize animator
@@ -140,7 +159,7 @@ dt is the difference between the lastTime the function has been called and the a
 UpdateTransitions(dt);
 ```
 
-###Vive Controllers Tutorial
+### Vive Controllers Tutorial
 The vive controllers are actually managed by 2 classes:
 - ViveManager: This class updates the controller matrix and its button states by calling the relative functions on the DLL. It will also update the camera associated with the hmd in order to reflect rotation and position in the real life.
 - ViveController: This class manages the actual Object which is made up of the different meshes of the controller parts (body, touchpad, trigger button...). Its function UpdateStatus() will update the controller object to reflect user actions:
@@ -187,7 +206,6 @@ function Render(){
 ```
 
 A presentation about the project can be seen at:
-https://gabryxx7.github.io/slides.html
+[Presentation](/assets/gabryxx7/html/slides.html) (code of the presentation is also on [GitHub](https://github.com/Gabryxx7/TheTowerPresentation))
 
-While the code of the presentation itself can be found at:
-https://github.com/Gabryxx7/TheTowerPresentation
+The project's code is available on [GitHub](https://github.com/Gabryxx7/TheTower)

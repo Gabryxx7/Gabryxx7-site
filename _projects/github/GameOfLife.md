@@ -5,11 +5,14 @@ icon: icon-github
 caption: 'A Multi-threaded version of the popular Game Of Life implemented in four
   versions: Using Java8 threads, using the Skandium framework, using standard Java
   Threads and sequential'
+date: 2017-07-03 14:30:01
+image:
+  path: null
 description: 'A Multi-threaded version of the popular Game Of Life implemented in
   four versions: Using Java8 threads, using the Skandium framework, using standard
   Java Threads and sequential'
 links:
-- title: Link
+- title: Source
   url: https://github.com/Gabryxx7/GameOfLife
 
 ---

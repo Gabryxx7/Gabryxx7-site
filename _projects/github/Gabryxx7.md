@@ -3,9 +3,12 @@ layout: project
 title: Gabryxx7
 icon: icon-github
 caption: null
+date: 2020-08-05 05:37:47
+image:
+  path: /assets/gabryxx7/img/GitHub/Gabryxx7/globe.svg
 description: null
 links:
-- title: Link
+- title: Source
   url: https://github.com/Gabryxx7/Gabryxx7
 
 ---
@@ -17,19 +20,19 @@ links:
 
 
 Connect with me:  &nbsp; &nbsp;
-[<img alt="gmarini.com" width="15px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website] &nbsp; &nbsp;
-[<img alt="Gabryxx7 | LinkedIn" width="15px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin] &nbsp; &nbsp;
-[<img alt="Gabryxx7 | Instagram" width="15px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram] &nbsp; &nbsp;
+[<img alt="gmarini.com" width="15px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/globe.svg" />][website] &nbsp; &nbsp;
+[<img alt="Gabryxx7 | LinkedIn" width="15px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/linkedin.svg" />][linkedin] &nbsp; &nbsp;
+[<img alt="Gabryxx7 | Instagram" width="15px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/instagram.svg" />][instagram] &nbsp; &nbsp;
 
-[![Gabryxx7's github stats](https://github-readme-stats.vercel.app/api?username=Gabryxx7&count_private=true&show_icons=true&theme=onedark&include_all_commits=1)](https://github.com/Gabryxx7)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Gabryxx7&layout=compact&theme=onedark)](https://github.com/Gabryxx7)
+[![Gabryxx7's github stats](/assets/gabryxx7/img/GitHub/Gabryxx7/api)](https://github.com/Gabryxx7)
+[![Top Langs](/assets/gabryxx7/img/GitHub/Gabryxx7/)](https://github.com/Gabryxx7)
 
-## Photography [<img alt="Gabryxx7 | Instagram" width="15px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/202006/79841217_555270635156572_8260864494112333405_n.jpg" />][instagram] &nbsp; 
-[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/202006/d921048b9f8858f8fbbd9f651a64c5cb.jpg" />][instagram] &nbsp; 
-[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/202006/105949108_979756645775165_8661279133103583059_n.jpg" />][instagram] &nbsp; 
-[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/202004/eeadc6e1a203c084fe15656aaa7528ee.jpg" />][instagram] &nbsp; 
-[<img alt="Gabryxx7 | Instagram" height="100px" src="http://gmarini.com/assets/gabryxx7/img/photos/201909/260a4453657269ad127dfc1b661bbea5.jpg" />][instagram] &nbsp; 
+## Photography [<img alt="Gabryxx7 | Instagram" width="15px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/instagram.svg" />][instagram]
+[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/79841217_555270635156572_8260864494112333405_n.jpg" />][instagram] &nbsp; 
+[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/d921048b9f8858f8fbbd9f651a64c5cb.jpg" />][instagram] &nbsp; 
+[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/105949108_979756645775165_8661279133103583059_n.jpg" />][instagram] &nbsp; 
+[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/eeadc6e1a203c084fe15656aaa7528ee.jpg" />][instagram] &nbsp; 
+[<img alt="Gabryxx7 | Instagram" height="100px" src="/assets/gabryxx7/img/GitHub/Gabryxx7/260a4453657269ad127dfc1b661bbea5.jpg" />][instagram] &nbsp; 
 
 
 

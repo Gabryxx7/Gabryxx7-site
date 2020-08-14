@@ -189,7 +189,7 @@ kramdown:
   input:          GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    default_lang: r
+    default_lang: text
     # css_class: 'highlight'
     block:
       line_numbers: false

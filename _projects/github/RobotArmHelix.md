@@ -4,10 +4,13 @@ title: RobotArmHelix
 icon: icon-github
 caption: 3D Simulation, forward and inverse kinematics of a robotic arm in C# using
   WPF and helix-toolkit
+date: 2017-08-15 22:21:39
+image:
+  path: /assets/gabryxx7/img/GitHub/RobotArmHelix/robotArmHelix.png
 description: 3D Simulation, forward and inverse kinematics of a robotic arm in C#
   using WPF and helix-toolkit
 links:
-- title: Link
+- title: Source
   url: https://github.com/Gabryxx7/RobotArmHelix
 
 ---
@@ -15,7 +18,7 @@ links:
 # RobotArmHelix
 3D Simulation, forward and inverse kinematics of a robotic arm in C# using WPF and helix-toolkit
 
-![alt text](https://raw.githubusercontent.com/Gabryxx7/RobotArmHelix/master/Images/robotArmHelix.png)
+![alt text](/assets/gabryxx7/img/GitHub/RobotArmHelix/robotArmHelix.png)
 
 This is a simple project developed in C# by using [helix-tookit](https://github.com/helix-toolkit/helix-toolkit). In order to compile this project the DLLs of Helix need to be compiled by downloading the source code from the helix repository and compiling them.
 

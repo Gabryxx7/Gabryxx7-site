@@ -6,19 +6,22 @@ caption: What to do when you end up single during a pandemic in 2020? Create an 
   to deal with dating apps for you! Analyse bios, messages, pictures and more! Or
   just use this as a desktop client for Tinder (and Bumble) or to scrape some data
   for research purposes!
+date: 2020-07-29 03:07:45
+image:
+  path: /assets/gabryxx7/img/GitHub/AI_Dating/tinderai.png
 description: What to do when you end up single during a pandemic in 2020? Create an
   AI to deal with dating apps for you! Analyse bios, messages, pictures and more!
   Or just use this as a desktop client for Tinder (and Bumble) or to scrape some data
   for research purposes!
 links:
-- title: Link
+- title: Source
   url: https://github.com/Gabryxx7/AI_Dating
 
 ---
 
 # AI Dating
 ## An augmented desktop client for dating apps
-![Screenshot](tinderai.png)
+![Screenshot](/assets/gabryxx7/img/GitHub/AI_Dating/tinderai.png)
 
 I have been looking to start a fun project in python for a while now. 
 I had not used python much except for simple scripts to quickly deal with a large amount of files.

@@ -1,11 +1,5 @@
 ---
 title: Knitting RMarkdown to Jekyll post
-output:
-  md_document:
-    variant: gfm
-    preserve_yaml: TRUE
-knit: (function(inputFile, encoding) {
-  rmarkdown::render(paste(format(Sys.time(), "%Y-%m-%d"), "-",inputFile, sep = " ", collapse = NULL), encoding = encoding, output_dir = "../_posts/") })
 ---
 
 One thing I would love to do with this blog is to post data anlysis done in R (or Python sometimes). They can be a lot of fun and I would prefer to spend the time writing the R notebook rather than converting it afterward to pure Markdown for Jekyll.
