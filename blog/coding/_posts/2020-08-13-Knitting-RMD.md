@@ -1,10 +1,17 @@
 ---
 title: Knitting RMarkdown to Jekyll post
+excerpt_separator: <!--more-->
 ---
 
 One thing I would love to do with this blog is to post data anlysis done in R (or Python sometimes). They can be a lot of fun and I would prefer to spend the time writing the R notebook rather than converting it afterward to pure Markdown for Jekyll.
 So here is a few tips for an easy R Markdown to Jekyll Markdown port (Thanks to [this guide](http://svmiller.com/blog/2019/08/two-helpful-rmarkdown-jekyll-tips/) ).
 Another interesting package is `blogdown` whith has Jekyll [support](https://bookdown.org/yihui/blogdown/jekyll.html). The most interesting part was their code for generating markdown files and figures in different folders
+
+
+- Table of Contents
+{:toc .large-only}
+
+<!--more-->
 
 ```r
 local({

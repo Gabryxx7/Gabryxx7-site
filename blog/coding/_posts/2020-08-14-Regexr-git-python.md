@@ -1,5 +1,6 @@
 ---
 title: Extracting data with `python` and regular expressions `regEx`
+excerpt_separator: <!--more-->
 ---
 
 A big portion of my PhD is to deal with patterns. They present themselves in many ways: Movements, images and pixels, sounds etc... But since computers deal mostly with numbers and code, the easiest way is to reduce any pattern to text, or  code.
@@ -11,6 +12,11 @@ While the semantic of a sentence is not easy to parse and understand for a compu
 Emails for instance are defined by `username@domain` and we all know how to read them, we all know that `username` is anything that preceeds the `@` character, and anything after it is the `domain`.
 
 I find this concept of patterns, text and encoding extremely fascinating and stimulating. I might make a post just about them but for now let's focus on this little project.
+
+- Table of Contents
+{:toc .large-only}
+
+<!--more-->
 
 ## Downloading GitHub repositories data
 ### Downloading the `README.md` 

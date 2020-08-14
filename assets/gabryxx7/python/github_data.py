@@ -105,8 +105,8 @@ links:
 # Then play with your Github objects:
 # print(dir(g.get_user().get_repos()[0]))
 for repo in g.get_user().get_repos():
-    if "orkshop" not in repo.name:
-        if 'abryxx7' in repo.owner.login and not repo.fork:
+    if "orkshop" not in repo.name.lower():
+        if 'abryxx7' in repo.owner.login.lower() and not repo.fork:
             print(repo.name)
             # print(repo.html_url)
             try:
