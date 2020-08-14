@@ -24,7 +24,7 @@ I wanted to port all of my GitHub projects on my website. Since the `README.md` 
 
 The first thing I needed to do is to find out whether GitHub had an API or not. Depending on the answer I could have used a python-based browser, for instance `beautifulsoup` or the `request` package to send `GET` and `POST`.
 
-Luckily GitHub does have an API and of course there already was a package wrapped around it, (`PyGithub`)[https://github.com/PyGithub/PyGithub].
+Luckily GitHub does have an API and of course there already was a package wrapped around it, [`PyGithub`](https://github.com/PyGithub/PyGithub).
 So let's start by importing it and getting my own info from github
 
 ```python
@@ -62,7 +62,7 @@ for repo in g.get_user().get_repos():
 
 Now we are talking! If the name `workshop` appears in the title of the repository we'll just skip it. Same if the owner is not me.
 Unfortunately, `PyGithub` documentation is not great so it's hard to know what variables or methods the repository object has.
-In these cases I usually just go to the (source code repository)[https://github.com/PyGithub/PyGithub/blob/master/github/Repository.py] and with a simple `ctrl + f` I look for whatever I need. In this case I was looking for:
+In these cases I usually just go to the [source code repository](https://github.com/PyGithub/PyGithub/blob/master/github/Repository.py) and with a simple `ctrl + f` I look for whatever I need. In this case I was looking for:
 
 - The name of the repository
 - The `README.md` file url
@@ -156,7 +156,7 @@ I have never really paid much attention to how I put images in it, so they are o
 Now let's say we want to download all of these images on our computer and then maybe reference them in the same `README.md` we downloaded earlier, but with their new path in our computer. Now that sounds like a mess! We need to extract the image filename, understand whether it's relative to the repository or not, and then even replace its occurrences with the new local path.
 Man that's a lot of different patterns, how to deal with all of this?
 
-Luckily we have our "friends" the regular expressions. It took me around an hour to get the right expression and I saved it here for future references (RegExr)[regexr.com/5a6b1].
+Luckily we have our "friends" the regular expressions. It took me around an hour to get the right expression and I saved it here for future references [RegExr](regexr.com/5a6b1).
 
 ```python
 IMG_REGEXR = "(?:!\[[^\]]*\]\(([^\)]*)\))+|(?:<img\s.*?src=(?:'|\")([^'\">]+)(?:'|\"))"
