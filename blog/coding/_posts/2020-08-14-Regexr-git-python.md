@@ -13,10 +13,10 @@ Emails for instance are defined by `username@domain` and we all know how to read
 
 I find this concept of patterns, text and encoding extremely fascinating and stimulating. I might make a post just about them but for now let's focus on this little project.
 
+<!--more-->
+
 - Table of Contents
 {:toc .large-only}
-
-<!--more-->
 
 ## Downloading GitHub repositories data
 ### Downloading the `README.md` 
@@ -164,7 +164,7 @@ IMG_REGEXR = "(?:!\[[^\]]*\]\(([^\)]*)\))+|(?:<img\s.*?src=(?:'|\")([^'\">]+)(?:
 Now that looks like some sort of alien language, does it? Let's break it down.
 Before that, a quick explanation on regexp.
 
-## How do regular expression work
+## How regular expressions work
 Regular Expressions are used to define patterns in text. The idea is to define a pattern and then execute it on your string or document, and it will return you all the "matches" or occurrences of that pattern in your string/document.
 
 They have a few important special features and characters, I'll go through the most common ones:

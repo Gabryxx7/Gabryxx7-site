@@ -71,10 +71,10 @@ So I opted for something simple, it's just text after all! But it's also quite c
 
 So here is how I have achieved this effect, it's nothing crazy hard really but I love playing with CSS and Javascript and so I did.
 
+<!--more-->
+
 - Table of Contents
 {:toc .large-only}
-
-<!--more-->
 
 I started by looking for Javascript libraries that implemented the typewriter effect. I would rather go for pure javsacript than JQuery, even better if it's a lightweight specific library that only includes that effect.
 

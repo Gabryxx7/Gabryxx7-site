@@ -7,11 +7,10 @@ One thing I would love to do with this blog is to post data anlysis done in R (o
 So here is a few tips for an easy R Markdown to Jekyll Markdown port (Thanks to [this guide](http://svmiller.com/blog/2019/08/two-helpful-rmarkdown-jekyll-tips/) ).
 Another interesting package is `blogdown` whith has Jekyll [support](https://bookdown.org/yihui/blogdown/jekyll.html). The most interesting part was their code for generating markdown files and figures in different folders
 
+<!--more-->
 
 - Table of Contents
 {:toc .large-only}
-
-<!--more-->
 
 ```r
 local({
